@@ -2,18 +2,24 @@ Title: Opening
 new-page: true
 tags: events
 
-= Your first day?
+= An early morning
 
-You wake up rather early in the morning. Checking the clock, you notice that there is still quite some time before you have to go to the Royal Palace.
+You woke up rather early in the morning as the sun was yet to be visible above the horizon.
 
-As you prepare for the day, your mind begins wandering elsewhere...
+You felt pleasantly surprised. It had been quite a while since you've managed to wake up this early, after all.
 
-- @bio: You, and who you are
+Checking the clock, you noticed that there was still quite some time left before you have to go to the Royal Palace. As you prepare for the day, your mind began wandering elsewhere...
+
+- @myself: You, and who you are
 - @job: Your assigned tasks
 - @darlyne: The princess herself
 
-@bio
+@myself
+max-visits: 1
 
 @job
+max-visits: 1
 
 @darlyne
+max-visits: 1
+

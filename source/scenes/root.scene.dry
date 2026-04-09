@@ -1,12 +1,13 @@
 title: Root Scene
 new-page: true
 go-to: menu_start
+set-bg: img\wbmap.png
 
 = Nocturnia: Trial of the Century
 
-> *”With all these innovations, it is very difficult for an officer of the King... to know where his duty lies: the kingdom or the people.”*
+> *”With all these innovations, it is very difficult for an officer of the King... to know where his duty lies: the kingdom or its people.”*
 
- - *The garrison commander during the Storming of the Bastille*, 1789
+ - *An unnamed officer before the Storming of the Bastille*, 1789
 
 This is a short story from another world. A story of a trial that shook the entire continent, from the very eyes of those closest to it.
 
