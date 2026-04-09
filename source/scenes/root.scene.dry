@@ -21,8 +21,11 @@ new-page: true
 go-to: opening
 
 @library
+go-to: library_menu
 
 Herein contains relevant information about the Empire of Nocturnia in this era.
+
+@library_menu
 
 - @nocturnia: Kingdom of Nocturnia
 - @royal_fam: The Royal Family
@@ -31,16 +34,16 @@ Herein contains relevant information about the Empire of Nocturnia in this era.
 - @menu_start: Return
 
 @nocturnia
-go-to: library
+go-to: library_menu
 
 @royal_fam
-go-to: library
+go-to: library_menu
 
 @nobility
-go-to: library
+go-to: library_menu
 
 @imperial_forum
-go-to: library
+go-to: library_menu
 
 
 @credits
