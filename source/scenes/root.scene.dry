@@ -9,16 +9,16 @@ new-page: true
 
 This is a short story from another world. A story of a trial that shook the entire continent, from the very eyes of those closest to it.
 
-- #start: Start
-- #library: Library
-- #credits: Credits
+- @start: Start
+- @library: Library
+- @credits: Credits
 
-#start
+@start
 new-page: true
 
 Welcome!
 
-#library
+@library
 
-#credits
+@credits
 
