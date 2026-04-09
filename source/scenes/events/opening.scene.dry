@@ -16,29 +16,27 @@ Checking the clock, you noticed that there was still quite some time left before
 - @myself: You, and who you are
 - @job: Your assigned tasks
 - @darlyne: The princess herself
-- @newspaper
 
 @myself
 max-visits: 1
-go-to: option_intro
+go-to: option_intro if not job or not darlyne; newspaper if job and darlyne
 
 
 
 @job
 max-visits: 1
-go-to: option_intro
+go-to: option_intro if not myself or not darlyne; newspaper if myself and darlyne
 
 
 
 @darlyne
 max-visits: 1
-go-to: option_intro
+go-to: option_intro if not job or not myself; newspaper if job and myself
 
 
 
 @newspaper
 title: And then...
-view-if: myself and job and darlyne
 go-to: newspaper
 
 Before you realized it, the sun was already well and above the horizon, and the sky has already turned a rather bright blue.
