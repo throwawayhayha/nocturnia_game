@@ -16,7 +16,7 @@ Checking the clock, you noticed that there was still quite some time left before
 - @myself: You, and who you are
 - @job: Your assigned tasks
 - @darlyne: The princess herself
-- @newspaper
+- @intro_news
 
 @myself
 max-visits: 1
@@ -39,8 +39,9 @@ go-to: option_intro
 
 
 
-@newspaper
+@intro_news
 title: And then...
+max-visits: 1
 view-if: intro_myself_seen = 1 and intro_job_seen = 1 and intro_darlyne_seen = 1
 go-to: newspaper
 
