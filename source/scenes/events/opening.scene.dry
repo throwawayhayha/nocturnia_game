@@ -1,6 +1,7 @@
 title: Opening
 new-page: true
 tags: events
+go-to: option_intro
 
 = An early morning
 
@@ -10,6 +11,8 @@ You felt pleasantly surprised. It had been quite a while since you've managed to
 
 Checking the clock, you noticed that there was still quite some time left before you have to go to the Royal Palace. As you prepare for the day, your mind began wandering elsewhere...
 
+@option_intro
+
 - @myself: You, and who you are
 - @job: Your assigned tasks
 - @darlyne: The princess herself
@@ -18,11 +21,17 @@ Checking the clock, you noticed that there was still quite some time left before
 @myself
 max-visits: 1
 
+- @option_intro
+
 @job
 max-visits: 1
 
+- @option_intro
+
 @darlyne
 max-visits: 1
+
+- @option_intro
 
 @newspaper
 title: And then...
