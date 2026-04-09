@@ -2,6 +2,7 @@ title: Opening
 new-page: true
 tags: events
 go-to: option_intro
+on-arrival: Q.darlyne = 0; Q.myself = 0; Q.job = 0;
 
 = An early morning
 
@@ -19,19 +20,22 @@ Checking the clock, you noticed that there was still quite some time left before
 
 @myself
 max-visits: 1
-go-to: option_intro if not job or not darlyne; newspaper if job and darlyne
+on-arrival: Q.myself = 1
+go-to: option_intro; newspaper if Q.job = 1 and Q.darlyne = 1
 
 
 
 @job
 max-visits: 1
-go-to: option_intro if not myself or not darlyne; newspaper if myself and darlyne
+on-arrival: Q.job = 1
+go-to: option_intro; newspaper if Q.myself = 1 and Q.darlyne = 1
 
 
 
 @darlyne
 max-visits: 1
-go-to: option_intro if not job or not myself; newspaper if job and myself
+on-arrival: Q.darlyne = 1
+go-to: option_intro; newspaper if Q.job = 1 and Q.myself = 1
 
 
 
