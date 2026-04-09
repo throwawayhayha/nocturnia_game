@@ -13,15 +13,15 @@ This is a short story from another world. A story of a trial that shook the enti
 @menu_start
 
 - @start: Start
-- @library: Library
+- @lib: Library
 - @credits: Credits
 
 @start
 new-page: true
 go-to: opening
 
-@library
-go-to: library_menu
+@lib
+go-to: library
 
 
 @credits
