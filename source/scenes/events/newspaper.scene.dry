@@ -6,9 +6,10 @@ tags: events
 - @newspaper_1: The newspaper has arrived!
 
 @newspaper_1
-go-to: newspaper_headline
 
 The morning newspaper arrived right before you were about to head out. Curiously, you picked it up to read what the headline said.
+
+- @newspaper_headline: And the headline reads...
 
 @newspaper_headline
 audio: music\dadar_intro.mp3
