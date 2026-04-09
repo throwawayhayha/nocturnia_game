@@ -9,7 +9,7 @@ Herein contains relevant information about the Empire of Nocturnia in this era.
 - @royal_fam: The Royal Family
 - @nobility: Nobility
 - @imperial_forum: Imperial Forum of Nocturnia
-- @menu_start: Return
+- @root: Return
 
 @nocturnia
 go-to: library_menu
