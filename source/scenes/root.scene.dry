@@ -21,6 +21,7 @@ This is a short story from another world. A story of a trial that shook the enti
 new-page: true
 go-to: opening
 
+
 @lib
 go-to: library
 
