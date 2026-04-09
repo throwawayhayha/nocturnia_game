@@ -19,25 +19,28 @@ Checking the clock, you noticed that there was still quite some time left before
 
 @myself
 max-visits: 1
+on-arrival: intro_myself_seen = 1
 go-to: option_intro
 
 
 
 @job
 max-visits: 1
+on-arrival: intro_job_seen = 1
 go-to: option_intro
 
 
 
 @darlyne
 max-visits: 1
+on-arrival: intro_darlyne_seen = 1
 go-to: option_intro
 
 
 
 @newspaper
 title: And then...
-view-if: myself = "seen" and job = "seen" and darlyne = "seen"
+view-if: intro_myself_seen = 1 and intro_job_seen = 1 and intro_darlyne_seen = 1
 go-to: newspaper
 
 Before you realized it, the sun was already well and above the horizon, and the sky has already turned a rather bright blue.
