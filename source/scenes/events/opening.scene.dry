@@ -9,11 +9,11 @@ You wake up rather early in the morning as the sun is yet to be visible above th
 
 You feel pleasantly surprised. It has been quite a while since you've managed to wake up this early, after all.
 
-Checking the clock, you notice that there is still quite some time left before you have to go to the Royal Palace. As you prepare for the day, your mind begins wandering elsewhere...
+Checking the clock, you notice that there is still quite some time left before you have to go to the Royal Palace. As you prepare for the day, your mind begins wandering about...
 
 @option_intro
 
-- @myself: You
+- @myself: Yourself
 - @job: Your assigned tasks
 - @darlyne: The princess herself
 - @intro_news
@@ -52,9 +52,9 @@ title: And then...
 max-visits: 1
 view-if: intro_myself_seen = 1 and intro_job_seen = 1 and intro_darlyne_seen = 1
 
-Before you realized it, the sun was already well and above the horizon, and the sky has already turned a rather bright blue.
+Before you realize it, the sun is already well and above the horizon, and the sky has already turned a rather bright blue.
 
-After everything was nicely put into the bag, you opened the door, preparing to head out towards the palace.
+You quickly finish up your preparation before heading towards the door. Everything is nicely put into the bag, and you are now ready to go.
 
 - @intro_news_2: It's time to head out.
 
