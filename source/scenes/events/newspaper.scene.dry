@@ -1,0 +1,16 @@
+title: The morning newspaper has arrived!
+subtitle: You wonder what the headline has in store for the day.
+new-page: true
+tags: events
+
+- @newspaper_1: The newspaper has arrived!
+
+@newspaper_1
+go-to: newspaper_headline
+
+The morning newspaper arrived right before you were about to head out. Curiously, you picked it up to read what the headline said.
+
+@newspaper_headline
+audio: music\dadar_intro.mp3
+
+= REVEALED: THE CRIMES OF NOCTURNIA’S PRINCESS!

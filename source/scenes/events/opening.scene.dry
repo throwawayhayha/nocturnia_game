@@ -1,4 +1,4 @@
-Title: Opening
+title: Opening
 new-page: true
 tags: events
 
@@ -13,6 +13,7 @@ Checking the clock, you noticed that there was still quite some time left before
 - @myself: You, and who you are
 - @job: Your assigned tasks
 - @darlyne: The princess herself
+- @newspaper
 
 @myself
 max-visits: 1
@@ -23,3 +24,11 @@ max-visits: 1
 @darlyne
 max-visits: 1
 
+@newspaper
+title: And then...
+view-if: myself and job and darlyne
+go-to: newspaper
+
+Before you realized it, the sun was already well and above the horizon, and the sky has already turned a rather bright blue.
+
+After everything was nicely put into the bag, you opened the door, preparing to head out towards the palace.
