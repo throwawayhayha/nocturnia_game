@@ -17,15 +17,21 @@ Herein contains relevant information about the Kingdom of Nocturnia in this era.
 @lib_nocturnia
 go-to: library_menu
 
+**Kingdom of Nocturnia**
+
 The Kingdom of Nocturnia is a kingdom in the northeasternmost region of the continent, with its capital being the city of Nocturnia. The kingdom is ruled by the Nightbloom family since its founding a long time ago. The capital is surrounded by mountainous terrain, causing the weather to be consistently cool compared to other regions on the continent.
 
 @lib_royal_fam
 go-to: library_menu
 
+**The Royal Family**
+
 The Royal Family is the current ruling family in the Kingdom of Nocturnia. They belong to the Nightbloom family which has ruled Nocturnia since the founding of this kingdom. Currently, the main family consists of the King, the Queen, and their sole daughter, Princess Darlyne.
 
 @lib_nobility
 go-to: library_menu
+
+**Nobility**
 
 The nobility in Nocturnia consists of various families appointed by and ranked below the Royal Family and above the common people. Many of these families have become parts of the nobility since shortly after the founding of Nocturnia, allowing them to wield significant influence in Nocturnian day-to-day politics and judiciary.
 
@@ -34,5 +40,7 @@ Their loyalty towards the Royal Family have subtly been divided recently after a
 
 @lib_imperial_forum
 go-to: library_menu
+
+**Imperial Forum of Nocturnia**
 
 Equivalent to a parliament, this is where members meet to debate laws and regulations in the Kingdom of Nocturnia. Although members of this forum consist of representatives from various parts of society (including nobles, merchants, and fishermen), the nobility would practically dominate the discussion, while representatives from the commoners would be inclined to side with their respective villages’ ruling nobility. However, they are not a truly powerful independent body, as their decisions can be overruled with a veto from the King.
