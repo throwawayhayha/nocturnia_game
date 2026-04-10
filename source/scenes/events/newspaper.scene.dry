@@ -13,7 +13,10 @@ The morning newspaper arrives in front of the door right as you are about to hea
 
 @newspaper_headline
 audio: music/dadar_intro.mp3
-on-arrival: {! dendryUI.audioQueue = [music/dadar_intro.mp3] !}
+on-arrival:
+    !javascript
+        dendryUI.audio.tracks['bgm_1'] = 'music/dadar_intro.mp3';
+        audio.playBGM('bgm_1', {loop: true});
 
 = REVEALED: THE CRIMES OF NOCTURNIA’S PRINCESS!
 
