@@ -12,7 +12,8 @@ The morning newspaper arrives in front of the door right as you are about to hea
 - @newspaper_headline: And the headline reads...
 
 @newspaper_headline
-audio: music/dadar_intro.mp3 shuffle music/dadar_intro.mp3 
+on-arrival: audio.playBGM(music/dadar_intro.mp3, {loop: true})
+#audio: music/dadar_intro.mp3 shuffle music/dadar_intro.mp3 
 
 = REVEALED: THE CRIMES OF NOCTURNIA’S PRINCESS!
 
