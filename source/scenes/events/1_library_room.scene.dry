@@ -12,7 +12,7 @@ As you walk through the library, your eyes wander from shelves to shelves in sea
 
 - @chemistry: Natural Alchemy of the World Ahead.
 - @law: Under the Nightbloom: Evolution of Law and Order in Nocturnia.
-- @relations: Circles and Squares: The Nobility's Written and Unwritten Norms
+- @relations: Circles and Squares: Between the Nobility's Handshakes
 
 @chemistry
 on-arrival: knowledge_alchemy += 3
@@ -40,3 +40,9 @@ Without much hesitation, you grab the book from the shelf before heading towards
 
 @relations
 on-arrival: knowledge_politics += 3
+
+*Circles and Squares: Between the Nobility's Handshakes*. Released around three years ago, the book delves into detail the various written and unwritten conventions of the nobility in different parts of the continent, including Nocturnia.
+
+Though the book does get a bit... *quirky*, at times, it is still considered one of the most comprehensive books when talking about how politics is viewed and acted upon from within the nobility, and is thus often recommended for anyone trying to understand the balance of political power in this kingdom.
+
+Without much hesitation, you grab the book from the shelf before heading towards the reading tables to read it.
