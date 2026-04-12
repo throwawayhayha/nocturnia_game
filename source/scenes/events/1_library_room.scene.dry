@@ -52,24 +52,4 @@ Without much hesitation, you grab the book from the shelf before heading towards
 
 
 
-@next_scene
-new-page: true
 
-You don't know how long it has been since you started reading when out of nowhere, you feel a hand rests itself on your left shoulder.
-
-- @next_scene_2: ...?
-
-@next_scene_2
-on-arrival: relation_darlyne -= 1;
-
-"Wha-!" You hold back your surprised scream as you turn your head to the left.
-
-It turns out, the person resting its hand on you is none other than Princess Darlyne herself.
-
-- @next_scene_3: Princess... Darlyne?
-
-@next_scene_3
-
-"Yes, it's me," Princess Darlyne pulls her hand back as she crosses her arms. "Didn't I tell you to meet me in the office last week?"
-
-"Uh..." You let out a sheepish smile.
