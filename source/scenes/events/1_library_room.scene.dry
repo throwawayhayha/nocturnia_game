@@ -176,7 +176,7 @@ on-arrival: relation_darlyne += 3
 
 Princess Darlyne chuckles, and inwardly, you feel an immense sense of relief washing over you. She is not that weak of a princess, after all. 
 
-"Pfft, thank you, my dear assistant," Princess Darlyne cheekily replies, and you notice that tears no longer falling from her eyes. "I knew I can count on you."
+"Pfft, thank you, my dear assistant," Princess Darlyne cheekily replies, and you notice that tears are no longer falling from her eyes. "I knew I can count on you."
 
 You give a nod, this time with a more sincere smile. "You're always welcome, Your Highness."
 
@@ -184,11 +184,28 @@ Princess Darlyne replies with a silent nod, visibly pleased with the answer.
 
 "Now, come on, help me put these flasks back in there." She stands up from her seat with several flasks in hand as she motions you to follow her.
 
-You sigh inwardly. Time for another errand session.
+You sigh inwardly as you pick up the rest of the flasks. Time for another errand session it is, then.
 
 - @next_file: Let's get back to work.
 
 @hope
+on-arrival: relation_darlyne += 1
+
+"It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
+
+Princess Darlyne lets out a chuckle. She is still visibly unconvinced, but you get the feeling that she just chooses to believe your words anyway.
+
+"Pfft, thank you, my dear assistant," Princess Darlyne cheekily replies, and you notice that tears are no longer falling from her eyes. "I hope I can always count on you."
+
+You give a nod, this time with a more sincere smile. "Of course, Your Highness. I wouldn't be here if I couldn't do so."
+
+Princess Darlyne replies with a silent nod, visibly pleased with the answer. 
+
+"Now, come on, help me put these flasks back in there." She stands up from her seat with several flasks in hand as she motions you to follow her.
+
+You sigh inwardly as you pick up the rest of the flasks. Time for another errand session it is, then.
+
+- @next_file: Let's get back to work.
 
 @not_bring_up
 
