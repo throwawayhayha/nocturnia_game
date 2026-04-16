@@ -1,5 +1,4 @@
 title: Root Scene
-set-bg: img/wbmap.jpg
 new-page: true
 go-to: menu_start
 
