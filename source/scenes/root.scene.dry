@@ -11,15 +11,23 @@ go-to: menu_start
 
 This is a short story from another world. The story of a trial that shook the entire continent, from the very eyes of one standing closest to it.
 
+*This mini-game is an non-commercial fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
+
 @menu_start
 
 - @start: Start
 - @library: Library
 - @credits: Credits
+- @disclaim: Disclaimer
 
 @start
 new-page: true
 #on-arrival: relation_king = 5; relation_darlyne = 5; relation_nobility = 0; relation_judiciary = 2; relation_police = 1; relation_alchemy_center = 10; knowledge_law = 10; knowledge_alchemy = 15; knowledge_politics = 7
 go-to: opening
 
+@disclaim
+new-page: true
 
+*Nocturnia: Trial of the Century* is a fan-made work of fiction created for non-commercial entertainment purposes. Portions of the materials used are properties of *WhickerButler*.
+
+- @menu_start: Back

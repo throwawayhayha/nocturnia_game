@@ -1,0 +1,53 @@
+title: The morning newspaper has arrived!
+new-page: true
+tags: events
+
+- @newspaper_1: The morning newspaper has arrived!
+
+@newspaper_1
+subtitle: You wonder whether another news could snatch the headline away.
+
+The morning newspaper arrives in front of the door right as you are about to head out. You decide to pick it up to read what the headline said.
+
+- @headline: And the headline reads...
+
+@headline
+audio: music/val_intro.mp3 loop
+
+= PRINCESS CAUGHT IN A WEB OF AFFAIRS!
+
+- @no_way: ...There is no way.
+
+@no_way
+
+"...There's no way." 
+
+You squint your eyes as you read through the headline, and then following it up with a scan through the articles below.
+
+Somehow, true to your worst expectation, the news has survived the day. Even worse, it snatches up another headline.
+
+- no_way: There's no way it could get any worse.
+
+You shake your head once more. There is no way this could get any worse, right?
+
+At least... that was until you spot the paragraph on the bottom-left corner of the article.
+
+*Multiple victims of these cases of infidelity which the Princess is being accused to be complicit of have also revealed to have been under the protection of several noble families. It is not inconceivable to say that her status as a member of royalty may turn out to be far more precarious than it was from the last incident.*
+
+Fear begins to creep in as the weight of this impending crisis slowly dawns upon you.
+
+- @noble_involved: It's over.
+
+@noble_involved
+subtitle: There will be no way back from this.
+
+The news will grow bigger, and this will soon turn into an unstoppable catastrophe. For the princess, for the Royal Family, for *you*, and the fate of the Kingdom itself.
+
+Quickly, you fold the newspaper into the bag as you run as fast as you can towards the nearest carriage to the Royal Palace.
+
+- @second_meet
+
+@second_meet
+title: Time to go to work.
+subtitle: Before everything comes crashing down.
+go-to: day_2

@@ -1,0 +1,32 @@
+title: Second day in the palace
+new-page: true
+tags: events
+
+- @hurry
+
+@hurry
+title: You need to hurry up.
+subtitle: Unlike any workday you've ever experienced before.
+go-to: option
+
+You have finally arrived at the front gate of the palace. The guards, already familiar with your face by now, greeted with a polite bow as they open the gates for you.
+
+You couldn't even manage to nod back in time as you run past the gate at full speed, heading towards the princess' office.
+
+Normally, it's already time to get to work. Or research, whichever you want to deal with first. However, in such urgent situation, you decide to...
+
+@option
+
+- @room_1: Head to the library.
+- @room_2: Head to the brewing room.
+- @room_3: Head straight to the Princess' office.
+
+@room_1
+
+
+
+@room_2
+
+
+
+@room_3
