@@ -81,8 +81,9 @@ h1 + p {
 }
 h1 + p:first-line {
   font-weight: normal; 
+  /*font-weight: bold;*/
 }
-h1 + p:first-letter {
+/*h1 + p:first-letter {
   position: relative;
   padding-top: 0.16em;
   display: block;
@@ -90,7 +91,7 @@ h1 + p:first-letter {
   font-weight: normal;
   font-size: 3.2em;
   line-height: 0.75em;
-}
+}*/
 p.game-over {
   border: 2px solid #bbb;
   padding: 0.5em;
