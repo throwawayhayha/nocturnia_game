@@ -1,0 +1,10 @@
+title: Library scene #2
+new-page: true
+tags: events
+
+You rush into the library, hoping that the princess is somehow here as well. In fairness, she would usually already be here, reading some chemical books that you have never even heard of before.
+
+However, when you step your feet inside, you couldn't spot anyone else in this room. You don't know whether it would be better off looking for her actively or just wait for her to show up in this place. After briefly considering your options, you decide to...
+
+- @stay: Stay where you are.
+- @search: Look around the place.

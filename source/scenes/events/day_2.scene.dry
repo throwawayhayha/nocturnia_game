@@ -9,24 +9,26 @@ title: You need to hurry up.
 subtitle: Unlike any workday you've ever experienced before.
 go-to: option
 
-You have finally arrived at the front gate of the palace. The guards, already familiar with your face by now, greeted with a polite bow as they open the gates for you.
+You have finally arrived at the front gate of the palace. The guards, already familiar with your face by now, greet with a polite bow as they open the gates for you.
 
-You couldn't even manage to nod back in time as you run past the gate at full speed, heading towards the princess' office.
+However, you couldn't even manage to nod back in time as you run past the gate at full speed, heading straight towards... wherever the princess might be.
 
-Normally, it's already time to get to work. Or research, whichever you want to deal with first. However, in such urgent situation, you decide to...
+Normally, it's already time to get to work. Or research, whichever you would want to deal with first. However, in such urgent situation, you decide to...
 
 @option
 
 - @room_1: Head to the library.
-- @room_2: Head to the brewing room.
+- @room_2: Head to the alchemy chamber.
 - @room_3: Head straight to the Princess' office.
 
 @room_1
-
+go-to: 2_library_room
 
 
 @room_2
-
+go-to: 2_alchemy_chamber
 
 
 @room_3
+view-if: brought_up < 1
+go-to: 2_princess_office

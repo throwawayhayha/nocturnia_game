@@ -9,11 +9,11 @@ title: Another day, another meeting
 subtitle: Just like any other workday.
 go-to: option
 
-You have finally arrived at the front gate of the palace. The guards, already familiar with your face by now, greeted with a polite bow as they open the gates for you.
+You have finally arrived at the front gate of the palace. The guards, already familiar with your face by now, greet with a polite bow as they open the gates for you.
 
-You politely nod back in reply as you walk past the gate, before quickly heading towards the princess' office.
+You politely nod back in reply as you walk past the gate, before quickly heading towards the princess' office. That, or one of her many rooms, wherever she might be.
 
-...Yes, as weird as it sounds, the princess has her own office, along with other miscellanous rooms, inside the Royal Palace. 
+...Yes, as weird as it sounds, aside from her own office, the princess also has several other miscellanous rooms inside the Royal Palace. 
 
 You remembered in one of your private meetings with the head of the Alchemy Center about it, he casually explained how there were incredibly wide rooms dedicated to her chemical activities. *"Heh, that's just the kind of person the Princess is!"* he would jest afterwards.
 
@@ -22,7 +22,7 @@ In any case, it's already time to get to work. Or research, whichever you want t
 @option
 
 - @room_1: Head to the library first.
-- @room_2: Head to the brewing room first.
+- @room_2: Head to the alchemy chamber first.
 - @room_main: Head to the Princess' office first.
 
 @room_1
@@ -30,7 +30,7 @@ go-to: 1_library_room
 
 
 @room_2
-go-to: 1_brewing_room
+go-to: 1_alchemy_chamber
 
 
 @room_main
