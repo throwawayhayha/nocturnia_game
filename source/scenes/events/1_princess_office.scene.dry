@@ -1,3 +1,178 @@
 title: Princess' office scene #1
 new-page: true
 tags: events
+
+It does not take long for you to reach the princess' office. It isn't that far from the main gate, after all, and you have been working here long enough to memorize many of the routes inside the Royal Palace.
+
+Standing in front of the office, you give a light knock towards the door. Normally, the princess would be inside early in the morning, before heading towards either the library or the alchemy chamber.
+
+Just moments later, you can hear Princess Darlyne shouting from the inside. "Come in!"
+
+You open the door slowly, bowing your head as you greet her. "Good morning, Your Highness."
+
+Princess Darlyne smiles. "Morning, ----. You came in at the right time!"
+
+As you lift your head, you notice that her desk is still... a bit messy, to say the least. Several half-empty flasks are put on the corner of the desks, while several stacks of papers are left on the opposite side from them.
+
+Even though it's something that you have seen quite often since you've worked here, you still couldn't help but be surprised at how much of a workaholic the princess is.
+
+- @desk_messy: The desk is as messy as usual, huh?
+- @why_right: Why the right time?
+
+@desk_messy
+on-arrival: relation_darlyne -= 1
+
+"...The desk is as messy as usual, huh?" You respond with a cheeky remark. "I wonder what you've been working on, Your Highness."
+
+"Hmph, is that all that you pay attention to?" Princess Darlyne let out an indignant huff as she crosses her arms. However, her annoyed expression soon gives way to a hearty chuckle. "Anyway, I'm happy to say, another progress have been made this morning!"
+
+"Oh, another progress?"
+
+"Yep. The color of the potion is finally turning into something I'm happy with!" she responds with excitement as she picks up one of the flasks filled with a ???-colored liquid. "Here, I spent a good part of this morning fixing this before you came in, and it's finally done!"
+
+"Wow..."
+
+It's impossible for you to not be amazed by that. After all, it was not that long ago when she confided to you about how it felt like her research had hit an insurmountable wall. And now, in the past few days, her progress bar is ticking up again, all by herself.
+
+She really, *really* is a prodigy in a league of her own.
+
+The conversation eventually settles into a temporary lull as Princess Darlyne briefly focuses her attention back onto the potion. While the topic of the conversation hasn't changed yet, you wonder if you should bring up the newspaper you read this morning.
+
+- @bring_up: Bring it up.
+- @not_bring_up: Avoid the subject.
+
+@why_right
+on-arrival: relation_darlyne += 2
+
+"...Why the right time, if I may ask?" You ask, slightly confused at that.
+
+Princess Darlyne's smile grows even wider. "Well, I'm happy to say, another progress have been made this morning!"
+
+"Oh, wow, really?"
+
+"Yep. The color of the potion is finally turning into something I'm happy with!" she responds with excitement as she picks up one of the flasks filled with a ???-colored liquid. "Here, I spent a good part of this morning fixing this before you came in, and it's finally done!"
+
+"That is... incredible."
+
+You don't really know what to say except with an amazed remark. It's impossible for you to not be in awe by that. After all, it was not that long ago when she confided to you about how it felt like her research had hit an insurmountable wall. And now, in the past few days, her progress bar is ticking up again, all by herself.
+
+She really, *really* is a prodigy in a league of her own.
+
+The conversation eventually settles into a temporary lull as Princess Darlyne briefly focuses her attention back onto the potion. While the topic of the conversation hasn't changed yet, you wonder if you should bring up the newspaper you read this morning.
+
+- @bring_up: Bring it up.
+- @not_bring_up: Avoid the subject.
+
+@bring_up
+on-arrival: brought_up += 1;
+
+Inwardly, you take a deep breath. 
+
+"Um... Your Highness?"
+
+The princess, still counting the flasks scattered in front of her, immediately stops as she turns her gaze to you. "Yes?"
+
+"Have you heard any worrying news recently?" You ask, trying to sound as nonchalant as possible. Inwardly, you hope that she has at least had an idea of the news so you don't have to be the first to tell her about it.
+
+Princess Darlyne tilted her head. "Worrying news? Hmm... Not really, at least not since the threats from that chaos a while back, but I don't think there has been much more to it."
+
+"..."
+
+You take another deep breath.
+
+As you open the bag to pull out the newspaper from this morning, you reply with a cautious voice.
+
+- @apologize: "Your Highness, I apologize in advance, but..."
+
+@apologize
+
+"Your Highness, I apologize in advance, but... you are being accused in the news this morning of being complicit in several cases of infidelity." 
+
+Princess Darlyne's eyes immediately goes wide. 
+
+Her gaze slowly trails from your eyes down to the newspaper as you hand it over to her. "I saw it in this newspaper's headline. I hope this is nothing but some sensationalist nonsense, but..."
+
+Her eyes carefully read through the article, furiously flipping the pages with an intensity you have almost never seen before.
+
+After what feels like an eternity of her flipping back and forth between pages with her eyes scanning up and down over and over, she finally hands the newspaper back to you.
+
+Her eyes still hold the same wide-eyed, horrified expression from before. 
+
+Actually, it's even worse now. 
+
+She almost seems to be on the verge of tears. You don't exactly know what to do in this situation, and you're now unsure whether it was truly the right choice to tell her now.
+
+"That... That's not true, is it?" She asks, almost in a pleading fashion. "I'm not one to commit infidelity. *Never.*"
+
+"I understand, Your Highness-"
+
+"**Never!**" Princess Darlyne shouts in visible fury as she aggressively stands up from her seat. She looks completely immersed in her rage.
+
+You decide to remain silent in your seat for now, waiting for her to come back to her senses before anything else. 
+
+As much as you want to assure her by saying *No, it's nothing but an empty rumour*, you know that this matter is completely out of your hands.
+
+The next few minutes is spent in near-silence as Princess Darlyne tries to calm herself down with several consecutive deep breaths. You patiently wait in silence until her anger subsides.
+
+"...I'm sorry you had to witness that," Princess Darlyne apologizes with a raspy voice as she wipes her watery eyes. "I thought the chaos from last time has subsided, but..."
+
+- @its_fine: "Don't worry, I will always help you."
+- @hope: "I hope nothing big happens."
+
+@its_fine
+on-arrival: relation_darlyne += 3
+
+"Don't worry, if anything happens, I'll always help you," you confidently reply with a grin on your face.
+
+Princess Darlyne chuckles, and inwardly, you feel an immense sense of relief washing over you. She is not that weak of a princess, after all. 
+
+"Pfft, thank you, my dear assistant," Princess Darlyne cheekily responds, and you notice that tears are no longer falling from her eyes. "I knew I can count on you."
+
+You give a nod, this time with a more sincere smile. "You're always welcome, Your Highness."
+
+Princess Darlyne replies with a silent nod, visibly pleased with the answer. 
+
+"Now, come on, help me put these flasks back in there." She stands up from her seat with several flasks in hand as she motions you to follow her.
+
+You sigh inwardly as you pick up the rest of the flasks on the floor. Time for another errand session it is, then.
+
+- @next_file: Let's get back to work.
+
+@hope
+on-arrival: relation_darlyne -= 1
+
+"It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
+
+Princess Darlyne lets out a chuckle. She is still visibly unconvinced, but you get the feeling that she just chooses to believe your words anyway.
+
+"Pfft, thank you, my dear assistant," Princess Darlyne cheekily responds, and you notice that tears are no longer falling from her eyes. "I hope I can always count on you."
+
+You give a nod, this time with a more sincere smile. "Of course, Your Highness. I wouldn't be here if I couldn't do so."
+
+Princess Darlyne replies with a silent nod, visibly pleased with the answer. 
+
+"Now, come on, help me put these flasks back in the cabinet." She motions you to follow her with several flasks in hand.
+
+You sigh inwardly as you pick up the rest of the flasks on the floor. Time for another errand session it is, then.
+
+- @next_file: Let's get back to work.
+
+@not_bring_up
+on-arrival: knowledge_alchemy += 2
+
+"So... what would be the next steps after, Your Highness?" You ask, deciding to break the silence with a more simple question. 
+
+You still have no idea if it would be worth it to tell her right now, and you might end up giving the newspaper too much attention than what they would've gotten otherwise.
+
+Princess Darlyne's expression turns into a thoughtful one as she rests her chin on her hand. "Hmm... As far as I remember, it would just be a couple more steps, including the checking for side effects, and then..."
+
+She continues to list off stuff as you try to memorize them in your head, hoping to keep them in mind to prepare for similar research cases in the future.
+
+"Oh, that reminds me now," Princess Darlyne suddenly remarks as she stands up from her seat, motioning you to follow her after picking up several flasks in her hand. "Come on, help me put these flasks back in the cabinet. We can continue our discussion about the research afterwards."
+
+You sigh inwardly as you pick up the rest of the flasks on the floor. Time for another errand session it is, then.
+
+- @next_file: Let's get back to work.
+
+@next_file
+go-to: end_of_day_1

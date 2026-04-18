@@ -41,6 +41,7 @@ Granted, rumours about the Royal Family are not so rare amongst the common popul
 - @posthink: Perhaps this is nothing but made-up rumours?
 
 @posthink
+on-arrival: brought_up = 0
 
 You try to keep your thoughts positive, hoping that this would be nothing but a typical sensasionalist hearsay on a slow news day.
 

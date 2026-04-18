@@ -98,7 +98,6 @@ As Princess Darlyne moves to sit on the seat next to you, you notice her carryin
 - @what_is_that: "What are those?"
 
 @what_is_that
-on-arrival: brought_up = 0;
 
 "What are those?" You inquire with your eyes still staring at the empty flasks. Princess Darlyne is a bit confused at what you are referring to at first, but then seems to realize it from what your eyes are staring at.
 
