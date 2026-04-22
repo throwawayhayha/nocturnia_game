@@ -6,7 +6,18 @@ tags: events
 
 @await
 subtitle: The hour of judgement has finally arrived.
-face-image: img/dadar_3.png
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/dadar_3.png";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 = Darlyne found guilty!
 
