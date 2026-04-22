@@ -187,6 +187,16 @@
       window.dendryUI.saveSettings();
   };
 
+   window.disableAudio = function() {
+      window.dendryUI.toggle_audio(false);
+      window.dendryUI.saveSettings();
+  };
+
+  window.enableAudio = function() {
+      window.dendryUI.toggle_audio(true);
+      window.dendryUI.saveSettings();
+  };
+
   window.disableAnimate = function() {
       window.dendryUI.animate = false;
       window.dendryUI.saveSettings();
@@ -207,7 +217,7 @@
     window.dendryUI.saveSettings();
     };
 
-  window.disableAnimateBg = function() {
+  /*window.disableAnimateBg = function() {
       window.dendryUI.animate_bg = false;
       window.dendryUI.saveSettings();
   };
@@ -215,7 +225,7 @@
   window.enableAnimateBg = function() {
       window.dendryUI.animate_bg = true;
       window.dendryUI.saveSettings();
-  };
+  };*/
 
   // populates the checkboxes in the options view
  window.populateOptions = function() {
