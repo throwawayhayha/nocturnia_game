@@ -6,14 +6,14 @@ tags: events
 
 @await
 subtitle: The hour of judgement has finally arrived.
-
-= Darlyne found guilty!
-
-Princess Darlyne is officially found guilty on all accusations! The trial is completely out of her hands now.
-
+on-display:{!
 <div class="face-figure2">
   <img src="img/dadar_3.png" class="face-img">
 </div>
+!}
+= Darlyne found guilty!
+
+Princess Darlyne is officially found guilty on all accusations! The trial is completely out of her hands now.
 
 - @what_nex: What next?
 
