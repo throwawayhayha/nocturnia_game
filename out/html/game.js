@@ -197,6 +197,16 @@
       window.dendryUI.saveSettings();
   };
 
+   window.enableImages = function() {
+    window.dendryUI.show_portraits = true;
+    window.dendryUI.saveSettings();
+   };
+
+  window.disableImages = function() {
+    window.dendryUI.show_portraits = false;
+    window.dendryUI.saveSettings();
+    };
+
   window.disableAnimateBg = function() {
       window.dendryUI.animate_bg = false;
       window.dendryUI.saveSettings();
@@ -208,10 +218,11 @@
   };
 
   // populates the checkboxes in the options view
-  window.populateOptions = function() {
+ window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
     var animate = window.dendryUI.animate;
-    var animate_bg = window.dendryUI.animate_bg;
+    var disable_audio = window.dendryUI.disable_audio;
+    var show_portraits = window.dendryUI.show_portraits;
     if (disable_bg) {
         $('#backgrounds_no')[0].checked = true;
     } else {
@@ -222,10 +233,15 @@
     } else {
         $('#animate_no')[0].checked = true;
     }
-    if (animate_bg) {
-        $('#animate_bg_yes')[0].checked = true;
+    if (disable_audio) {
+        $('#audio_no')[0].checked = true;
     } else {
-        $('#animate_bg_no')[0].checked = true;
+        $('#audio_yes')[0].checked = true;
+    }
+    if (show_portraits) {
+        $('#images_yes')[0].checked = true;
+    } else {
+        $('#images_no')[0].checked = true;
     }
   };
   

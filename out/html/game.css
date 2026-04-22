@@ -213,6 +213,37 @@ blockquote + blockquote.attribution {
 .delete_button {
 }
 
+/* Unlike cards, face images can have different sizes. */
+.face-figure {
+  /*vertical-align: top;*/
+  display: inline-block;
+  border: 5px solid var(--card-border-color);
+  float: left;
+  max-width: 35%;
+  /*max-height: 180px;*/
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.face-figure2 {
+  /*vertical-align: top;*/
+  display: inline-block;
+  border: 5px solid #ccc;
+  float: left;
+  /*max-height: 180px;*/
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.face-img {
+  /*max-width: 150px;*/
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+
 /*
  * sprite stuff- feel free to comment out/remove if not using
  */
