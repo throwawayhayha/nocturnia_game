@@ -2,12 +2,74 @@ title: Princess' office scene #2
 new-page: true
 tags: events
 
-## Only available if news is NOT brought up before. So this scene has to be Darlyne reacting BAD in the morning.
-## Unfinished
+// Only available if news is NOT brought up before. So this scene has to be Darlyne reacting BAD in the morning.
+// Finished, but could still be polished further
 
-sdsd
+It does not take long for you to reach the princess' office. In a hurry, you give several strong knocks towards the door.
 
-- @sds: something something
+You wait for her to respond from the inside, as is the usual. However, you couldn't hear any reply at all, even as you wait a few more seconds.
 
-@sds
+You give another strong knock on the door. Finally, you hear a response not long after.
 
+"C-come in!" You could hear Princess Darlyne shouting from inside. Her voice sounds slightly shaky, somehow.
+
+You open the door slowly, bowing your head as you enter the office to greet her. "Good morning, Your Highness."
+
+Contrary to the usual, you do not hear any response from her.
+
+- @princess: "...Princess?"
+
+@princess
+
+"...Princess?"
+
+As you lift your head, your gaze slowly moves towards the direction of the main desk where the princess would usually sit. What you see, however, is something completely beyond any of your expectations.
+
+The desk is far messier than usual with stacks of paper scattered across it. Several of them are even hanging on for dear life on the edge of the desk, and a few had already fallen to the floor.
+
+Princess Darlyne herself doesn't look to be in a good condition either. In fact, you can very see various emotions mixed on her face; a mixture of sadness, fury, and disappointment. Her hand is gripping several papers tightly, and you can see sweat forming on her temples.
+
+As you look more closely, you recognize the paper she is holding. It's the same newspaper you just read a while ago.
+
+- @newspaper_morning: "Is that the news from this morning?"
+
+@newspaper_morning
+
+"Princess, is that the news from this morning?" You ask, not hiding the feeling of worry in your tone as you close the door before rushing to her desk.
+
+Princess Darlyne lifts her head up to look right into your eyes. "That is... correct," she replies with a slow nod. "The headline of this morning's newspaper... I simply cannot believe this."
+
+You nod along. However, before you could open your mouth to reply, she immediately cuts you off.
+
+"This is libel of insane proportions; what the hell do they mean by *cases of infidelity*?!" Princess Darlyne shouts, her voice laced with intense fury. "How dare they- How dare those newspapers write such blatantly libelous headlines! All for their own gains!"
+
+You could only stand there with lips sealed, still too stunned to speak. You have never seen her as infuriated as this before.
+
+"I have suffered through this kind of thing before, and they want me to go through this *all over again*?" Her tirade continues as she flails her arms. "Even with only the slightest of my mistakes, they blast me off like that. Incredible! Insane! Madness!"
+
+She vigorously slams the table as she stands up from her seat. Tears are starting to gather on the corner of her eyes. It is almost inconceivable to think that the girl in front of you is the acclaimed alchemist, the Princess of Nocturnia herself. She looks so... vulnerable. 
+
+"I- Ugh..." Princess Darlyne puts her hand over her mouth, and then her entire face. She slumps back on her chair, as though there is no more energy left in her. "I'm sorry, ----. This is just... awful."
+
+- @its_fine: "It's fine, Your Highness."
+
+@its_fine
+
+You give a calm nod. "It's fine, Your Highness. This has just simply been an incredibly unfortunate turn of events."
+
+You try to answer as reassuringly as possible. You know very well that your role as her personal assistant means that you will have to be the one to stand firmly by her side.
+
+And that means becoming a reliable shoulder for her to lean on; a trustworthy helper for her to confide in; a consistent ally for her to move forward.
+
+- @ready: And you will be ready to face the storm.
+
+@ready
+
+Whether you are prepared or not, you will have to be ready to face the impending storm.
+
+"I will always have faith in you, Your Highness," you continue with a light bow, "but for now, we will have to prepare for whatever is about to come."
+
+- @next_page: It's time to go.
+
+@next_page
+go-to: meet_royal_family

@@ -22,7 +22,7 @@ Normally, it's already time to get to work. Or research, whichever you would wan
 - @room_3: Head straight to the Princess' office.
 
 @room_1
-view-if: brought_up > 0
+view-if: brought_up == 1
 go-to: 2_library_room
 
 
@@ -31,5 +31,5 @@ go-to: 2_alchemy_chamber
 
 
 @room_3
-view-if: brought_up < 1
+view-if: brought_up == 0
 go-to: 2_princess_office
