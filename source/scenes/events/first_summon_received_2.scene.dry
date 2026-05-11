@@ -7,17 +7,9 @@ tags: events
 
 - @king_meet: The King of Nocturnia is inside.
 
-@meet_1
+@king_meet
 subtitle: You wonder what awaits behind the majestic door.
 new-page: true
 
 sdss
 
-
-
-
-
-- @time_to_go: It's time to go.
-
-@time_to_go
-go-to: first_summon_received_2
