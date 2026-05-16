@@ -7,6 +7,7 @@ tags: events
 
 @intro_1
 subtitle: Time to wake up!
+new-page: true
 go-to: option_intro
 
 = An early morning
