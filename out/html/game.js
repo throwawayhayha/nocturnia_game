@@ -18,133 +18,11 @@
 
   var TITLE = "Nocturnia: Trial of the Century" + '_' + "Hayha";
 
-  window.quickSave = function() {
-      var saveString = JSON.stringify(window.dendryUI.dendryEngine.getExportableState());
-      localStorage[TITLE+'_save_q'] = saveString;
-      window.alert("Saved.");
-  };
-
-  window.saveSlot = function(slot) {
-      var saveString = JSON.stringify(window.dendryUI.dendryEngine.getExportableState());
-      localStorage[TITLE+'_save_' + slot] = saveString;
-      var scene = window.dendryUI.dendryEngine.state.sceneId;
-      var date = new Date(Date.now());
-      date = scene + '\n(' + date.toLocaleString(undefined, DateOptions) + ')';
-      localStorage[TITLE+'_save_timestamp_' + slot] = date;
-      window.populateSaveSlots(slot + 1, 2);
-  };
-  
-  // writes an autosave slot
-  window.autosave = function() {
-      var oldData = localStorage[TITLE+'_save_' + 'a0'];
-      if (oldData) {
-          localStorage[TITLE+'_save_'+'a1'] = oldData;
-          localStorage[TITLE+'_save_timestamp_'+'a1'] = localStorage[TITLE+'_save_timestamp_'+'a0'];
-      }
-      var slot = 'a0';
-      var saveString = JSON.stringify(window.dendryUI.dendryEngine.getExportableState());
-      localStorage[TITLE+'_save_' + slot] = saveString;
-      var scene = window.dendryUI.dendryEngine.state.sceneId;
-      var date = new Date(Date.now());
-      date = scene + '\n(' + date.toLocaleString(undefined, DateOptions) + ')';
-      localStorage[TITLE+'_save_timestamp_' + slot] = date;
-      window.populateSaveSlots(slot + 1, 2);
-  };
-
-
-  window.quickLoad = function() {
-      if (localStorage[TITLE+'_save_q']) {
-          var saveString = localStorage[TITLE+'_save_q'];
-          window.dendryUI.dendryEngine.setState(JSON.parse(saveString));
-          window.alert("Loaded.");
-      } else {
-          window.alert("No save available.");
-      }
-  };
-
-  window.loadSlot = function(slot) {
-      if (localStorage[TITLE+'_save_' + slot]) {
-          var saveString = localStorage[TITLE+'_save_' + slot];
-          window.dendryUI.dendryEngine.setState(JSON.parse(saveString));
-          window.hideSaveSlots();
-          window.alert("Loaded.");
-      } else {
-          window.alert("No save available.");
-      }
-  };
-
-  window.deleteSlot = function(slot) {
-      if (localStorage[TITLE+'_save_' + slot]) {
-          localStorage[TITLE+'_save_' + slot] = '';
-          localStorage[TITLE+'_save_timestamp_' + slot] = '';
-          window.populateSaveSlots(slot + 1, 2);
-      } else {
-          window.alert("No save available.");
-      }
-  };
-
-  window.populateSaveSlots = function(max_slots, max_auto_slots) {
-      // this fills in the save information
-      function createLoadListener(i) {
-          return function(evt) {
-                window.loadSlot(i);
-          };
-      }
-      function createSaveListener(i) {
-          return function(evt) {
-                window.saveSlot(i);
-          };
-      }
-      function createDeleteListener(i) {
-          return function(evt) {
-                window.deleteSlot(i);
-          };
-      }
-      function populateSlot(id) {
-          var save_element = document.getElementById('save_info_' + id);
-          var save_button = document.getElementById('save_button_' + id);
-          var delete_button = document.getElementById('delete_button_' + id);
-          if (localStorage[TITLE+'_save_' + id]) {
-              var timestamp = localStorage[TITLE+'_save_timestamp_' + id];
-              save_element.textContent = timestamp;
-              save_button.textContent = "Load";
-              save_button.onclick = createLoadListener(id);
-              delete_button.onclick = createDeleteListener(id);
-          } else {
-              save_button.textContent = "Save";
-              save_element.textContent = "Empty";
-              save_button.onclick = createSaveListener(id);
-          }
-
-      }
-      for (var i = 0; i < max_slots; i++) {
-          populateSlot(i);
-      }
-      for (i = 0; i < max_auto_slots; i++) {
-          populateSlot('a'+i);
-      }
-  };
-
-
-  window.showSaveSlots = function() {
-      var save_element = document.getElementById('save');
-      save_element.style.display = "block";
-      // magic number lol
-      window.populateSaveSlots(8, 2);
-      if (!save_element.onclick) {
-          save_element.onclick = function(evt) {
-              var target = evt.target;
-              var save_element = document.getElementById('save');
-              if (target == save_element) {
-                  window.hideSaveSlots();
-              }
-          };
-      }
-  };
-
-  window.hideSaveSlots = function() {
-      var save_element = document.getElementById('save');
-      save_element.style.display = "none";
+  // the url is a link to game.json
+  // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
+  // TODO; 
+  window.loadMod = function(url) {
+      ui.loadGame(url);
   };
 
   window.showStats = function() {
@@ -152,6 +30,15 @@
         window.dendryUI.dendryEngine.goToScene('backSpecialScene');
     } else {
         window.dendryUI.dendryEngine.goToScene('library');
+    }
+  };
+
+  window.showMods = function() {
+    window.hideOptions();
+    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('mod_loader')) {
+        window.dendryUI.dendryEngine.goToScene('backSpecialScene');
+    } else {
+        window.dendryUI.dendryEngine.goToScene('mod_loader');
     }
   };
   
@@ -187,16 +74,6 @@
       window.dendryUI.saveSettings();
   };
 
-   window.disableAudio = function() {
-      window.dendryUI.toggle_audio(false);
-      window.dendryUI.saveSettings();
-  };
-
-  window.enableAudio = function() {
-      window.dendryUI.toggle_audio(true);
-      window.dendryUI.saveSettings();
-  };
-
   window.disableAnimate = function() {
       window.dendryUI.animate = false;
       window.dendryUI.saveSettings();
@@ -207,17 +84,7 @@
       window.dendryUI.saveSettings();
   };
 
-   window.enableImages = function() {
-    window.dendryUI.show_portraits = true;
-    window.dendryUI.saveSettings();
-   };
-
-  window.disableImages = function() {
-    window.dendryUI.show_portraits = false;
-    window.dendryUI.saveSettings();
-    };
-
-  /*window.disableAnimateBg = function() {
+  window.disableAnimateBg = function() {
       window.dendryUI.animate_bg = false;
       window.dendryUI.saveSettings();
   };
@@ -225,10 +92,41 @@
   window.enableAnimateBg = function() {
       window.dendryUI.animate_bg = true;
       window.dendryUI.saveSettings();
-  };*/
+  };
+
+  window.disableAudio = function() {
+      window.dendryUI.toggle_audio(false);
+      window.dendryUI.saveSettings();
+  };
+
+  window.enableAudio = function() {
+      window.dendryUI.toggle_audio(true);
+      window.dendryUI.saveSettings();
+  };
+
+  window.enableImages = function() {
+      window.dendryUI.show_portraits = true;
+      window.dendryUI.saveSettings();
+  };
+
+  window.disableImages = function() {
+      window.dendryUI.show_portraits = false;
+      window.dendryUI.saveSettings();
+  };
+
+  window.enableLightMode = function() {
+      window.dendryUI.dark_mode = false;
+      document.body.classList.remove('dark-mode');
+      window.dendryUI.saveSettings();
+  };
+  window.enableDarkMode = function() {
+      window.dendryUI.dark_mode = true;
+      document.body.classList.add('dark-mode');
+      window.dendryUI.saveSettings();
+  };
 
   // populates the checkboxes in the options view
- window.populateOptions = function() {
+  window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
     var animate = window.dendryUI.animate;
     var disable_audio = window.dendryUI.disable_audio;
@@ -253,7 +151,13 @@
     } else {
         $('#images_no')[0].checked = true;
     }
+    if (window.dendryUI.dark_mode) {
+        $('#dark_mode')[0].checked = true;
+    } else {
+        $('#light_mode')[0].checked = true;
+    }
   };
+
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
@@ -268,17 +172,69 @@
   // This function runs on a new page. Right now, this auto-saves.
   window.onNewPage = function() {
     var scene = window.dendryUI.dendryEngine.state.sceneId;
-    if (scene != 'root') {
-        window.autosave();
+    if (scene != 'root' && !window.justLoaded) {
+        window.dendryUI.autosave();
+    }
+    if (window.justLoaded) {
+        window.justLoaded = false;
     }
   };
 
+  // TODO: have some code for tabbed sidebar browsing.
+  window.updateSidebar = function() {
+      $('#qualities').empty();
+      var scene = dendryUI.game.scenes[window.statusTab];
+      dendryUI.dendryEngine._runActions(scene.onArrival);
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+  };
 
+  window.onDisplayContent = function() {
+      window.updateSidebar();
+  };
+
+  /*
+   * This function copied from the code for Infinite Space Battle Simulator
+   *
+   * quality - a number between max and min
+   * qualityName - the name of the quality
+   * max and min - numbers
+   * colors - if true/1, will use some color scheme - green to yellow to red for high to low
+   * */
+  window.generateBar = function(quality, qualityName, max, min, colors) {
+      var bar = document.createElement('div');
+      bar.className = 'bar';
+      var value = document.createElement('div');
+      value.className = 'barValue';
+      var width = (quality - min)/(max - min);
+      if (width > 1) {
+          width = 1;
+      } else if (width < 0) {
+          width = 0;
+      }
+      value.style.width = Math.round(width*100) + '%';
+      if (colors) {
+          value.style.backgroundColor = window.probToColor(width*100);
+      }
+      bar.textContent = qualityName + ': ' + quality;
+      if (colors) {
+          bar.textContent += '/' + max;
+      }
+      bar.appendChild(value);
+      return bar;
+  };
+
+
+  window.justLoaded = true;
+  window.statusTab = "status";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
   window.onload = function() {
-    window.dendryUI.loadSettings();
+    window.dendryUI.loadSettings({show_portraits: false});
+    if (window.dendryUI.dark_mode) {
+        document.body.classList.add('dark-mode');
+    }
   };
 
 }());
