@@ -213,6 +213,96 @@ blockquote + blockquote.attribution {
 .delete_button {
 }
 
+/*
+ * Card stuff for dendrynexus
+ * 
+ */
+
+ul.decks,
+ul.hand,
+ul.pinned-cards {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hand {}
+
+.pinned-cards {}
+
+.deck {}
+
+a.card {
+  display: inline-block;
+  width: 120px;
+  height: 150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 10px solid var(--card-border-color);
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+a.card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: -5px;
+}
+
+div.blank-card {
+  display: inline-block;
+  width: 120px;
+  height: 150px;
+  background-color: var(--card-bg-color);
+  border: 10px solid var(--card-border-color);
+  margin-bottom: 0.5em;
+}
+
+.card-in-hand,
+.pinned-card,
+.deck {
+  display: inline-block;
+  position: relative;
+  max-width: 150px;
+  margin-right: 1em;
+  vertical-align: top;
+}
+
+.unavailable-card {
+  color: var(--unavailable-color);
+  background-color: var(--unavailable-bg-color) !important;
+  cursor: default !important;
+}
+
+.card-caption {
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card-tooltip {
+  position: absolute;
+  visibility: hidden;
+  width: 150px;
+  max-width: 200px;
+  font-size: 0.9em;
+  z-index: 2;
+  padding: 0.2em;
+  border: 1px solid var(--border-color);;
+  background-color: var(--content-bg-color);;
+  left: 105%;
+}
+
+.card-img {
+  height: 150px;
+  width: 120px;
+  object-fit: cover;
+}
+
+a.card:focus .card-tooltip,
+a.card:hover .card-tooltip {
+  visibility: visible;
+  position: absolute;
+}
+
 /* Unlike cards, face images can have different sizes. */
 .face-figure {
   /*vertical-align: top;*/
@@ -243,14 +333,14 @@ blockquote + blockquote.attribution {
   object-fit: cover;
 }
 
-
 /*
  * sprite stuff- feel free to comment out/remove if not using
  */
 img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
+
 #contentSpriteContainer {
   position: fixed;
   width: 100%;
@@ -261,27 +351,155 @@ img {
   margin: 0 auto;
   z-index: -97;
 }
+
 .sprite {
-    position: absolute;
-    width: 180px;
+  position: absolute;
+  width: 180px;
 }
+
 #topLeftSprite {
-    float: left;
-    top: -1em;
-    left: 0.4em;
+  float: left;
+  top: -1em;
+  left: 0.4em;
 }
+
 #topRightSprite {
-    float: right;
-    top: -1em;
-    right: 0.4em;
+  float: right;
+  top: -1em;
+  right: 0.4em;
 }
+
 #bottomLeftSprite {
-    float: left;
-    left: 0.4em;
-    top: 50%;
+  float: left;
+  left: 0.4em;
+  top: 50%;
 }
+
 #bottomRightSprite {
-    float: right;
-    right: 0.4em;
-    top: 50%;
+  float: right;
+  right: 0.4em;
+  top: 50%;
+}
+
+/* smaller screens: hide left margin */
+@media screen and (max-width: 1200px) {
+  .tools {
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+  }
+
+  #mid_panel {
+    margin-right: 0.4em;
+  }
+}
+
+/* mobile: move the stat box to the top if the screen is too small,
+ * and reduce font size slightly. */
+@media screen and (max-width: 560px) {
+  #page {
+    position: static;
+  }
+
+  #content {
+    position: static;
+    font-size: 1em;
+    line-height: 160%;
+    padding: 1em 1em 1.5em 1em;
+  }
+
+  #qualities {
+    font-size: 1em;
+  }
+
+  #content td.small-font {
+    font-size: 0.8em !important;
+  }
+
+  #tools_wrapper {
+    position: static;
+  }
+
+  .tools {
+    width: 90%;
+    margin: 2em 0 1em 0;
+    margin: 0.4em;
+  }
+
+  .tools.left {
+    float: none;
+    left: 0;
+  }
+
+  .tools.right {
+    display: none;
+    float: none;
+    right: 0;
+    marginRight: -6em;
+  }
+
+  #mid_panel {
+    margin: 0 auto;
+  }
+
+  /* cards are smaller on mobile */
+  .card-img {
+    height: 125px;
+    width: 100px;
+  }
+
+  a.card {
+    width: 100px;
+    height: 125px;
+    border: 8px solid #ccc;
+    margin-bottom: 0.5em;
+    position: relative;
+  }
+
+  div.blank-card {
+    width: 100px;
+    height: 125px;
+    border: 8px solid #ccc;
+    margin-bottom: 0.5em;
+  }
+
+  .card-in-hand,
+  .pinned-card,
+  .deck {
+    max-width: 120px;
+    margin-right: 1em;
+    vertical-align: top;
+  }
+}
+
+
+/* New stuff just for this game */
+
+/* colored box div */
+.box {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+.box2 {
+  display: inline-block;
+  height: 1em;
+  width: 0.5em;
+}
+
+.box3 {
+  display: inline-block;
+  height: 1em;
+  width: 0.75em;
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 0.5em;
+}
+
+td,
+th {
+  white-space: nowrap;
+  /* Prevents text from wrapping */
 }
