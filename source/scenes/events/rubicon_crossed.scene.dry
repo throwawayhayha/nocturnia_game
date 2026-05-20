@@ -41,6 +41,9 @@ if (qualitiesH1) {
     qualitiesH1.style.color = 'white';
 }
 
+const statusTab = document.getElementById('main_tab');
+statusTab.style.display = '';
+statusTab.style.width = '100%';
 
 const headerLinks = document.querySelectorAll('#header-links a');
 headerLinks.forEach(link => {
@@ -52,6 +55,24 @@ if (tabContainer) {
     tabContainer.style.backgroundColor = '#c3b8a0';
 }
 
+const tabButtons = document.querySelectorAll('.tab_button');
+tabButtons.forEach((button) => {
+    button.style.backgroundColor = '#c3b8a0';
+    if (button.id !== 'emergency_tab') {
+        button.style.paddingRight = '59px';
+    }
+    if (button.id == 'main_tab') {
+        button.style.marginLeft = '2px';
+    }
+    if (button.id == 'poll_tab') {
+        button.style.display = 'none';
+    }
+});
+
+const activeTabButton = document.querySelector('.tab_button.active');
+if (activeTabButton) {
+    activeTabButton.style.backgroundColor = '#f3f3f3';
+}
 
 tabButtons.forEach(button => {
     const computedStyle = window.getComputedStyle(button);
@@ -66,7 +87,7 @@ tabButtons.forEach(button => {
     });
 });
 
-window.changeTab('status.status_tab', 'status_tab')
+window.changeTab('status', 'main_tab')
 
 dendryUI.audioPlaylist = []
 
