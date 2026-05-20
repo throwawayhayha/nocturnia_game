@@ -79,8 +79,6 @@ tabButtons.forEach(button => {
     });
 });
 
-window.changeTab('status', 'main_tab')
-
 dendryUI.audioPlaylist = []
 
 !}

@@ -252,6 +252,7 @@ blockquote+blockquote.attribution {
 
 .tools.left {
   float: left;
+  display: none;
   left: 0.4em;
 }
 
