@@ -280,7 +280,7 @@
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
-  
+
   window.changeTab = function(newTab, tabId) {
       var tabButton = document.getElementById(tabId);
       var tabButtons = document.getElementsByClassName('tab_button');
@@ -290,7 +290,6 @@
       tabButton.className += ' active';
       window.statusTab = newTab;
       window.updateSidebar();
-    }
   };
 
   window.onDisplayContent = function() {
