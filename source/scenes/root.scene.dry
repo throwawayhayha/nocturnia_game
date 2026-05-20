@@ -1,6 +1,6 @@
 title: Root Scene
 new-page: true
-go-to: bts_var_calc if started = 1; menu_start if started = 0;
+go-to: bts_var_calc if started = 1; menu_start if started = 0
 
 = *Nocturnia: Trial of the Century*
 
