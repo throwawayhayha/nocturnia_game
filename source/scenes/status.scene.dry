@@ -3,16 +3,16 @@ new-page: true
 is-special: true
 
 
-= Trial Strength
+= **Trial Strength**
 
 Defense Counsel strength: [+ defense : defense_strength +]
 
 Prosecution strength: [+ prosecution : prosecution_strength +]
 
 
-= Relationship
+= **Relationship**
 
-[? if not guilty : **Princess' status:** ?] [? if guilty : **Former Princess' status: ?]
+[? if not guilty : **Princess' status:** ?] [? if guilty : **Former Princess' status:** ?]
 
 Darlyne Nightbloom: [+ relation_darlyne : darlyne_relation +]
 
@@ -28,9 +28,7 @@ Judiciary: [+ relation_judiciary : relationships +]
 
 Alchemy Center: [+ relation_alchemy_center : relationships +]
 
-# {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
-
-= Knowledge
+= **Knowledge**
 
 Internal politics: [+ knowledge_politics : knowledges +]
 
