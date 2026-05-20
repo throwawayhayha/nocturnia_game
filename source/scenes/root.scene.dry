@@ -1,6 +1,6 @@
 title: Root Scene
 new-page: true
-go-to: menu_start
+go-to: bts_var_calc if started = 1; menu_start if started = 0;
 
 = *Nocturnia: Trial of the Century*
 
@@ -21,11 +21,13 @@ This is a short story from another world. The story of a trial that shook the en
 @start
 new-page: true
 on-arrival: {!
-relation_king = 5; 
+started = 1;
+
+darlyne_mood = 3;
 relation_darlyne = 5; 
+relation_king = 5; 
 relation_nobility = 0; 
 relation_judiciary = 2; 
-relation_police = 1; 
 relation_alchemy_center = 10; 
 
 knowledge_law = 10; 

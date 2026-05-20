@@ -1,0 +1,100 @@
+title: The Trial of the Century begins
+subtitle: The fate of Nocturnia rests in their hands.
+# priority: 3 (decides the priority level of this scene compared to others)
+# frequency: 100 (decides how frequently a card would compare to others; default is 100)
+new-page: true
+tags: events
+max-visits: 1
+on-arrival: {!
+action_time = 0;
+
+const contentElement = document.getElementById('content');
+contentElement.style.backgroundColor = '#98677e';
+
+const header = document.querySelector('header');
+header.style.color = '#28c4e7';
+contentElement.style.color = '#FFFFFF';
+
+const isMobile = window.innerWidth <= 768;
+const toolsElements = document.querySelectorAll('.tools');
+
+toolsElements.forEach(tool => {
+    if (isMobile) {
+        tool.style.marginLeft = '';
+        tool.style.padding = '0.6em';
+        tool.style.width = '';
+        tool.style.color = '#FFFFFF';
+        tool.style.backgroundColor = '#98677e';
+        tool.style.boxShadow = '4px 4px 16px rgba(255, 255, 255, 0.4)';
+    } else {
+        tool.style.marginLeft = '-6em';
+        tool.style.padding = '0.6em';
+        tool.style.width = '20rem';
+        tool.style.color = '#FFFFFF';
+        tool.style.backgroundColor = '#98677e';
+        tool.style.boxShadow = '4px 4px 16px rgba(255, 255, 255, 0.4)';
+    }
+});
+
+const qualitiesH1 = document.querySelector('#qualities h1');
+if (qualitiesH1) {
+    qualitiesH1.style.color = 'white';
+}
+
+
+const headerLinks = document.querySelectorAll('#header-links a');
+headerLinks.forEach(link => {
+    link.style.color = 'black';
+});
+
+const tabContainer = document.querySelector('.tab_container');
+if (tabContainer) {
+    tabContainer.style.backgroundColor = '#c3b8a0';
+}
+
+
+tabButtons.forEach(button => {
+    const computedStyle = window.getComputedStyle(button);
+    const originalBackground = computedStyle.backgroundColor;
+    button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = '#a89f8b';
+    });
+    button.addEventListener('mouseleave', () => {
+        if (!button.classList.contains('active')) {
+            button.style.backgroundColor = originalBackground;
+        }
+    });
+});
+
+window.changeTab('status.status_tab', 'status_tab')
+
+dendryUI.audioPlaylist = []
+
+!}
+
+# set-bg: img/street.jpg
+# audio: music/1930_1933/Backroom_Deal.ogg
+go-to: rubicon_crossing
+
+= The Trial of The Century begins
+
+(blablabla text) 
+
+With the dismissal of Brüning’s government—despite its parliamentary majority—the foundations of democracy are crumbling before our eyes.
+
+Whatever path Hindenburg takes now will be chosen not by the people, but by those who whisper in his ear.
+
+(blablabla text)
+
+Time slows. We enter the day-by-day struggle.
+
+@rubicon_crossing
+# audio: shuffle (music path in github)
+go-to: rubicon_crossing_2
+
+@rubicon_crossing_2
+on-arrival: {!
+
+dendryUI.audioQueue = []
+
+!}
