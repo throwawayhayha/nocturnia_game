@@ -41,10 +41,6 @@ if (qualitiesH1) {
     qualitiesH1.style.color = 'white';
 }
 
-const statusTab = document.getElementById('main_tab');
-statusTab.style.display = 'block';
-statusTab.style.width = '100%';
-
 const headerLinks = document.querySelectorAll('#header-links a');
 headerLinks.forEach(link => {
     link.style.color = 'black';
@@ -78,6 +74,11 @@ tabButtons.forEach(button => {
         }
     });
 });
+
+const leftTools = document.querySelector('.tools.left');
+if (leftTools) {
+    leftTools.style.display = 'block';
+}
 
 window.changeTab('status', 'main_tab')
 
