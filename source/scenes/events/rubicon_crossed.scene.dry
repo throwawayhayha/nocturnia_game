@@ -24,17 +24,20 @@ toolsElements.forEach(tool => {
         tool.style.padding = '0.6em';
         tool.style.width = '';
         tool.style.color = '#FFFFFF';
-        tool.style.backgroundColor = '#98677e';
+        tool.style.backgroundColor = '#c4c19f';
         tool.style.boxShadow = '4px 4px 16px rgba(255, 255, 255, 0.4)';
     } else {
         tool.style.marginLeft = '-6em';
         tool.style.padding = '0.6em';
         tool.style.width = '20rem';
         tool.style.color = '#FFFFFF';
-        tool.style.backgroundColor = '#98677e';
+        tool.style.backgroundColor = '#c4c19f';
         tool.style.boxShadow = '4px 4px 16px rgba(255, 255, 255, 0.4)';
     }
 });
+
+const mainTab = document.getElementById('main_tab');
+mainTab.style.width = '100%';
 
 const qualitiesH1 = document.querySelector('#qualities h1');
 if (qualitiesH1) {
