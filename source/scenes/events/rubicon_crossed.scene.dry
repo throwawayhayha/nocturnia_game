@@ -70,7 +70,7 @@ dendryUI.audioPlaylist = []
 
 !}
 go-to: rubicon_crossing
-# set-bg: img/street.jpg
+## set-bg: img/street.jpg
 # audio: music/1930_1933/Backroom_Deal.ogg
 
 = The Trial of The Century begins
