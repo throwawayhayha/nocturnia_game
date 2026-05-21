@@ -166,7 +166,7 @@ p.game-over {
 }
 
 ul.choices {
-  border: 2px solid #876;
+  border: 2px solid rgb(255, 161, 205);
   padding: 0;
   margin: 0.25em 0 0 0;
   list-style-type: none;
@@ -175,7 +175,7 @@ ul.choices {
 }
 
 ul.choices li {
-  border-bottom: 1px solid #876;
+  border-bottom: 1px solid rgb(255, 161, 205);
   padding: 0.5em;
 }
 
