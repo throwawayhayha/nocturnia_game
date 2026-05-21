@@ -7,8 +7,8 @@ tags: events
 max-visits: 1
 on-arrival: {!
 trial_started = 1;
-Q.action_time = 0;
-Q.day = 0;
+Q.action_time = 1;
+Q.day = 1;
 
 Q.prosecution_strength = 15;
 Q.defense_strength = Math.round((Q.knowledge_politics + Q.relation_darlyne)/3 + Q.relation_judiciary/5 + (Q.knowledge_law - Q.prosecution_strength)/2);
