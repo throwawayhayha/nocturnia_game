@@ -41,7 +41,7 @@ mainTab.style.width = '100%';
 
 const choiceElement = document.querySelector('ul.choices');
 if (choiceElement) {
-    choiceElement.style.border = '#FFFFFF';
+    choiceElement.style.border = '2px solid #FFFFFF';
 }
 
 
