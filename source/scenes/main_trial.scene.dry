@@ -3,7 +3,7 @@ title: Next actions
 is-hand: true
 max-cards: 2
 
-[? if day = 0 : = Before the Trial?][? if day >= 1 : = Day [+ day +] ?]
+= [? if day = 0 : Before the Trial?][? if day >= 1 : = Day [+ day +] ?]
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 

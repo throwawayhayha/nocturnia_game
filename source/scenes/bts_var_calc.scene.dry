@@ -3,9 +3,7 @@ new-page: true
 on-arrival: {!
 
 // 1. update dates
-if (Q.action_timer >= 2) {
-    Q.day += 1;
-}
+Q.day = Math.floor(Q.action_timer/2)
 
 has_event = 0;
 
