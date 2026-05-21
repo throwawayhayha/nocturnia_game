@@ -39,9 +39,9 @@ toolsElements.forEach(tool => {
 const mainTab = document.getElementById('main_tab');
 mainTab.style.width = '100%';
 
-const choiceElements = document.querySelectorAll('.ul');
-toolsElements.forEach(tool => {
-    tool.style.color = 'white';
+const choiceElements = document.querySelectorAll('ul.choices');
+choiceElements.forEach(choice => {
+    choice.style.color = 'white';
 });
 const qualitiesH1 = document.querySelector('#qualities h1');
 if (qualitiesH1) {
