@@ -39,7 +39,6 @@ go-to: return_2
 
 
 @dirty
-choose-if:
 view-if: knowledge_politics > 15 and relation_nobility > 8 
 on-arrival: dirty_play = 1;
 go-to: return_2
