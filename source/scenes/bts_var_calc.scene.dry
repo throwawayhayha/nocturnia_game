@@ -3,7 +3,7 @@ new-page: true
 on-arrival: {!
 
 // 1. update dates
-if (action_time >= 2) {
+if (action_timer >= 2) {
     day += 1;
 }
 

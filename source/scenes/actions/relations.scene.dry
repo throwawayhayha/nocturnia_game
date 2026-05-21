@@ -1,6 +1,6 @@
 title: Relationships
 new-page: true
-on-arrival: action_time += 1
+on-arrival: action_timer += 1
 max-visits: 14
 is-card: true
 # card-image: img/flags.jpg
