@@ -3,11 +3,11 @@ new-page: true
 on-arrival: action_timer += 1
 max-visits: 14
 is-card: true
-# card-image: img/flags.jpg
+card-image: img/relationship_card.jpg
 frequency: 100
 tags: card_actions
 
-= Building up knowledge
+= Relationships
 
 (blablabla ... opening line). Where should we focus our efforts to build on our relationships?
 

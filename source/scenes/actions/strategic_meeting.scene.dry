@@ -1,0 +1,50 @@
+title: Strategic Meeting
+new-page: true
+on-arrival: action_timer += 1
+max-visits: 14
+is-card: true
+card-image: img/strategic_meeting_card.jpg
+frequency: 100
+tags: card_actions
+
+= Strategic meeting
+
+(blablabla ... opening line). What actions should we prioritize in our strategy?
+
+- @offense: Go on the offense against the prosecutors' team.
+- @defense: Play it safe, and focus on blocking their attacks.
+- @dirty: Some dirty tricks behind the scenes wouldn't hurt... right?
+- @return: We can work with what we have now.
+
+@offense
+choose-if: knowledge_politics > 14 or day > 3
+unavailable-subtitle: We don't have enough preparation to go on the attack.
+on-arrival: prosecution_strength -= 2 + Math.round(relation_nobility/4); defense_strength += Math.round(knowledge_politics/3);
+go-to: return_2
+
+(blablabla offense stuff)
+
+
+@defense
+on-arrival: defense_strength += 2 + Math.round((relation_nobility + relation_judiciary)/8); prosecution_strength -= 2;
+go-to: return_2
+
+(blablabla defense stuff)
+
+
+@dirty
+choose-if:
+view-if: knowledge_politics > 15 and relation_nobility > 8 and  
+on-arrival: dirty_play = 1;
+go-to: return_2
+
+(blablabla dirty play stuff)
+
+
+@return
+go-to: return_2
+
+We can still work with what we have right now. Perhaps our efforts would be better placed elsewhere.
+
+
+@return_2

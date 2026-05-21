@@ -3,7 +3,7 @@ new-page: true
 on-arrival: action_timer += 1
 max-visits: 14
 is-card: true
-# card-image: img/flags.jpg
+card-image: img/knowledge_card.jpg
 frequency: 100
 tags: card_actions
 

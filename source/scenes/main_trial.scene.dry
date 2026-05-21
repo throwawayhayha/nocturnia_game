@@ -9,7 +9,7 @@ max-cards: 2
 
 @actions
 title: Action cards
-# card-image: img/reichstag_2.jpg
+card-image: img/image_deck.jpg
 is-deck: true
 
 - #card_actions
