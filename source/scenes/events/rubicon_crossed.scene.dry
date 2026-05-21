@@ -71,7 +71,7 @@ if (leftTools) {
     leftTools.style.display = 'block';
 }
 
-window.changeTab('status','main_tab')
+window.changeTab('status','main_tab');
 
 dendryUI.audioPlaylist = []
 
