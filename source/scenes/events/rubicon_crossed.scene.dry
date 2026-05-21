@@ -39,7 +39,7 @@ toolsElements.forEach(tool => {
 const mainTab = document.getElementById('main_tab');
 mainTab.style.width = '100%';
 
-const choiceElements = document.querySelector('a');
+const choiceElements = document.querySelector('ul.choices a');
 if (choiceElements) {
    choiceElements.style.color = '#FFFFFF';
 }
