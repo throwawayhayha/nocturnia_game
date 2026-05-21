@@ -19,14 +19,14 @@ tags: card_actions
 @offense
 choose-if: knowledge_politics > 14 or day > 3
 unavailable-subtitle: We don't have enough preparation to go on the attack.
-on-arrival: prosecution_strength -= 2 + Math.round(relation_nobility/4); defense_strength += Math.round(knowledge_politics/3);
+on-arrival: prosecution_strength -= (2 + Math.round(relation_nobility/4)); defense_strength += Math.round(knowledge_politics/3);
 go-to: return_2
 
 (blablabla offense stuff)
 
 
 @defense
-on-arrival: defense_strength += 2 + Math.round((relation_nobility + relation_judiciary)/8); prosecution_strength -= 2;
+on-arrival: defense_strength += (2 + Math.round((relation_nobility + relation_judiciary)/8)); prosecution_strength -= 2;
 go-to: return_2
 
 (blablabla defense stuff)
