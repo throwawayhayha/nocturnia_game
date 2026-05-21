@@ -35,13 +35,3 @@ Internal politics: [+ knowledge_politics : knowledges +]
 Law: [+ knowledge_law : knowledges +]
 
 Alchemy: [+ knowledge_alchemy : knowledges +]
-
-= (delete at end) variables
-
-action_timer = [+ action_timer +]
-
-day = [+ day +]
-
-# {!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
-
-# [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
