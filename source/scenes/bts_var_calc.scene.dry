@@ -4,7 +4,7 @@ on-arrival: {!
 
 // 1. update dates
 if (action_time >= 2) {
-    Q.day += 1;
+    day += 1;
 }
 
 has_event = 0;
