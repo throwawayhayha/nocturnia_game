@@ -32,7 +32,7 @@ if (typeof window !== "undefined" && window.generateBar) {
 !}
 go-to: events_choice if has_event = 1; main_trial if has_event = 0
 
-= Day [+ day +]
+= [? if day = 0 : Before the Trial?][? if day >= 1 : Day [+ day +] ?]
 
 @events_choice
 
