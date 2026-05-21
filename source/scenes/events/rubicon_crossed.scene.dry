@@ -41,6 +41,7 @@ const mainTab = document.getElementById('main_tab');
 mainTab.style.width = '100%';
 
 document.body.style.setProperty('--link-color', '#FFFFFF');
+document.body.style.setProperty('--choice-border-color',  rgb(255, 161, 205));
 
 const qualitiesH1 = document.querySelector('#qualities h1');
 if (qualitiesH1) {

@@ -1,10 +1,11 @@
 body {
-  --bg-color: #ebb2f6;
+  --bg-color: #f3f3e3;
   --border-color: #000;
   --content-bg-color: #f3f3f3;
   --text-color: #431;
   --link-color: #900;
   --link-hover-color: rgba(255, 0, 0, 0.1);
+  --choice-border-color: #876;
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
   --unavailable-color: #999;
   --tab-bg-color: #dedede;
@@ -166,7 +167,7 @@ p.game-over {
 }
 
 ul.choices {
-  border: 2px solid rgb(255, 161, 205);
+  border: 2px solid var(--choice-border-color);
   padding: 0;
   margin: 0.25em 0 0 0;
   list-style-type: none;
@@ -175,7 +176,7 @@ ul.choices {
 }
 
 ul.choices li {
-  border-bottom: 1px solid rgb(255, 161, 205);
+  border-bottom: 1px solid var(--choice-border-color);
   padding: 0.5em;
 }
 
