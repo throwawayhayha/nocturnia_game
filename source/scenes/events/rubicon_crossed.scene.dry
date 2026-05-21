@@ -67,7 +67,6 @@ if (leftTools) {
 }
 
 dendryUI.audioPlaylist = []
-
 !}
 go-to: rubicon_crossing
 ## set-bg: img/street.jpg
