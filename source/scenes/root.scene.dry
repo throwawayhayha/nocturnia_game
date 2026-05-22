@@ -46,6 +46,8 @@ Q.defense_strength = 0;
 Q.prosecution_strength = 0;
 
 // Secret tactics
+Q.dirty_play = 0;
+Q.secret_available = 0;
 Q.informant_network = 0;
 Q.freelancer_network = 0;
 Q.val_available = 0;
