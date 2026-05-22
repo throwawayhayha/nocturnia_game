@@ -7,13 +7,13 @@ Q.day = Math.floor(Q.action_timer/4);
 Q.secret_action_timer = Math.max(0, Q.secret_action_timer - 1);
 
 // update for secret actions
-if(Q.informant_network == 2){
+if(Q.informant_network > 1){
     Q.val_available = 1;
 }
-if(Q.freelancer_network == 2){
+if(Q.freelancer_network > 1){
     Q.ori_tata_available = 1;
 }
-if(Q.media_network == 2){
+if(Q.media_network > 1){
     Q.iggy_available = 1;
 }
 
