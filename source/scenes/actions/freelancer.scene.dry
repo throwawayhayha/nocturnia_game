@@ -1,5 +1,7 @@
 title: Freelancers
 new-page: true
+choose-if: ori_tata_available = 1
+unavailable-subtitle: We haven't built up enough relationship to trust them.
 on-arrival: secret_action_timer += 8
 max-visits: 2
 is-card: true

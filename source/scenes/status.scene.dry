@@ -5,9 +5,9 @@ is-special: true
 
 = **State of the Trial**
 
-Defense Counsel strength: [+ defense : defense_strength +]
+Defense Counsel strength: [+ defense_strength : defense_strength +]
 
-Prosecution strength: [+ prosecution : prosecution_strength +]
+Prosecution strength: [+ prosecution_strength : prosecution_strength +]
 
 
 = **Relationship**
