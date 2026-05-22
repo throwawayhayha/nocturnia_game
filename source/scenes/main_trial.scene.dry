@@ -1,15 +1,23 @@
 title: Next actions
-# set-bg: img/map_2.jpg
 is-hand: true
-max-cards: 2
+max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
 - @actions
+- @secret
 
 @actions
-title: Action cards
+title: Actions
 card-image: img/image_deck.jpg
 is-deck: true
 
 - #card_actions
+
+@secret
+title: Secret actions
+view-if: dirty_play and secret_action_timer <= 0
+# card-image: img/portraits/SchmidtRobert.jpg
+is-deck: true
+
+- @economic_policy

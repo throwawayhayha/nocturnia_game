@@ -2,8 +2,39 @@ title: Post Event
 new-page: true
 on-arrival: {!
 
-// 1. update dates
-Q.day = Math.floor(Q.action_timer/2)
+// update timers
+Q.day = Math.floor(Q.action_timer/4);
+Q.secret_action_timer -= 1;
+if(Q.secret_action_timer < 0){
+    Q.secret_action_timer = 0;
+}
+
+// update for secret actions
+if(Q.informant_network == 2){
+    val_available = 1;
+}
+if(Q.freelancer_network == 2){
+    ori_tata_available = 1;
+}
+if(Q.media_network == 2){
+    iggy_available = 1;
+}
+
+// update strength
+Q.strength_diff = Q.prosecution_strength - Q.defense_strength;
+
+if(Q.strength_diff > 4){
+    Q.prosecution_strength -= 1;
+} else if(Q.strength_diff > 2){
+    Q.prosecution_strength -= 0.5;
+} else if(Q.strength_diff > 0){
+    Q.prosecution_strength += 0.5;
+} else{
+    Q.prosecution_strength += 1;
+}
+
+# Q.defense_strength = Math.round((Q.knowledge_politics + Q.relation_darlyne)/3 + Q.relation_judiciary/5 + (Q.knowledge_law - Q.prosecution_strength)/2);
+
 
 has_event = 0;
 

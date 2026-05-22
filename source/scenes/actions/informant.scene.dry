@@ -1,0 +1,15 @@
+title: Information network
+new-page: true
+view-if: val_available = 1
+on-arrival: action_timer += 1; secret_action_timer += 8
+max-visits: 2
+is-card: true
+# card-image: img/relationship_card.jpg
+frequency: 100
+tags: secret_actions
+
+= Relationships
+
+(blablabla ... opening line). Where should we focus our efforts to build on our relationships?
+
+- @royals: The King and Queen of Nocturnia.

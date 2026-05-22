@@ -3,7 +3,7 @@ new-page: true
 is-special: true
 
 
-= **Trial Strength**
+= **State of the Trial**
 
 Defense Counsel strength: [+ defense : defense_strength +]
 
@@ -12,13 +12,13 @@ Prosecution strength: [+ prosecution : prosecution_strength +]
 
 = **Relationship**
 
-[? if not guilty : **Princess' status:** ?] [? if guilty : **Former Princess' status:** ?]
+[? if not guilty : **Princess's relation:** ?][? if guilty : **Former Princess's relation:** ?]
 
 Darlyne Nightbloom: [+ relation_darlyne : darlyne_relation +]
 
-Currently, she is [+ darlyne_mood : mood +]
+Currently, she is feeling [+ darlyne_mood : mood +]
 
-**Other relationships:**
+**Other relations:**
 
 King and Queen of Nocturnia: [+ relation_king : relationships +]
 
@@ -35,3 +35,5 @@ Internal politics: [+ knowledge_politics : knowledges +]
 Law: [+ knowledge_law : knowledges +]
 
 Alchemy: [+ knowledge_alchemy : knowledges +]
+
+# <span style="color: #------;">(text)</span>

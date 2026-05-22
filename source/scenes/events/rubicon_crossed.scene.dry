@@ -1,12 +1,13 @@
 title: The Trial of the Century begins
 subtitle: The fate of Nocturnia rests in their hands.
-# priority: 3 (decides the priority level of this scene compared to others)
-# frequency: 100 (decides how frequently a card would compare to others; default is 100)
+priority: 3
 new-page: true
 tags: events
 max-visits: 1
 on-arrival: {!
 trial_started = 1;
+
+Q.darlyne_mood -= 5;
 
 Q.prosecution_strength = 15;
 Q.defense_strength = Math.round((Q.knowledge_politics + Q.relation_darlyne)/3 + Q.relation_judiciary/5 + (Q.knowledge_law - Q.prosecution_strength)/2);
@@ -43,6 +44,7 @@ const mainTab = document.getElementById('main_tab');
 mainTab.style.width = '100%';
 
 document.body.style.setProperty('--link-color', '#FFFFFF');
+document.body.style.setProperty('--bg-color',  'rgb(246, 212, 228)');
 document.body.style.setProperty('--choice-border-color',  'rgb(255, 161, 205)');
 
 const qualitiesH1 = document.querySelector('#qualities h1');
@@ -79,15 +81,11 @@ go-to: rubicon_crossing
 set-bg: img/empty_room.jpg
 # audio: music/1930_1933/Backroom_Deal.ogg
 
-= *The Trial of The Century begins*
+= **The Trial of The Century begins**
 
-(blablabla text) 
+The day has finally arrived.
 
-With the dismissal of Brüning’s government—despite its parliamentary majority—the foundations of democracy are crumbling before our eyes.
-
-Whatever path Hindenburg takes now will be chosen not by the people, but by those who whisper in his ear.
-
-(blablabla text)
+The fate of Princess Darlyne - and with that, the future of Nocturnia - is no longer entirely in her hands, but in the hands of the Royal Tribunal.
 
 Time slows. We enter the day-by-day struggle.
 

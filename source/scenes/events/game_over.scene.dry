@@ -1,7 +1,10 @@
 title: Game Over.
 new-page: true
 go-to: eg_menu
-on-arrival: {! game_over = 1; this.achieve('game_completed'); !}
+on-arrival: {! 
+    game_over = 1; 
+    this.achieve('game_completed'); 
+!}
 
 ## Unfinished; must only be done at the very end.
 
@@ -13,7 +16,7 @@ on-arrival: {! game_over = 1; this.achieve('game_completed'); !}
 ##------ Darlyne's fate ------##
 
 @darlyne_survive
-title: Princess Darlyne lives on in Nocturnia!
+title: Princess Darlyne marches on in Nocturnia!
 ##view-if: verdict_win == 1
 tags: endings
 go-to: eg_menu
