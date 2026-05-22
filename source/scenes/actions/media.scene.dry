@@ -1,5 +1,5 @@
 title: Media connections
-new-page: 
+new-page: true
 choose-if: iggy_available = 1
 unavailable-subtitle: Our influence in the media still needs further improvement.
 on-arrival: secret_action_timer += 4

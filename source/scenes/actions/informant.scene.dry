@@ -1,5 +1,5 @@
 title: Information network
-new-page: 
+new-page: true
 choose-if: val_available = 1
 unavailable-subtitle: We haven't gathered enough information via our network.
 on-arrival: secret_action_timer += 8
