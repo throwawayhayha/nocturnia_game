@@ -20,4 +20,4 @@ view-if: dirty_play and secret_action_timer <= 0
 # card-image: img/portraits/SchmidtRobert.jpg
 is-deck: true
 
-- @economic_policy
+- #secret_actions

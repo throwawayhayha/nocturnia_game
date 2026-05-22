@@ -4,20 +4,17 @@ on-arrival: {!
 
 // update timers
 Q.day = Math.floor(Q.action_timer/4);
-Q.secret_action_timer -= 1;
-if(Q.secret_action_timer < 0){
-    Q.secret_action_timer = 0;
-}
+Q.secret_action_timer = Math.max(0, Q.secret_action_timer - 1);
 
 // update for secret actions
 if(Q.informant_network == 2){
-    val_available = 1;
+    Q.val_available = 1;
 }
 if(Q.freelancer_network == 2){
-    ori_tata_available = 1;
+    Q.ori_tata_available = 1;
 }
 if(Q.media_network == 2){
-    iggy_available = 1;
+    Q.iggy_available = 1;
 }
 
 // update strength
@@ -33,7 +30,7 @@ if(Q.strength_diff > 4){
     Q.prosecution_strength += 1;
 }
 
-# Q.defense_strength = Math.round((Q.knowledge_politics + Q.relation_darlyne)/3 + Q.relation_judiciary/5 + (Q.knowledge_law - Q.prosecution_strength)/2);
+// Q.defense_strength = Math.round((Q.knowledge_politics + Q.relation_darlyne)/3 + Q.relation_judiciary/5 + (Q.knowledge_law - Q.prosecution_strength)/2);
 
 
 has_event = 0;
