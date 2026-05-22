@@ -1,7 +1,7 @@
 title: Relationships
 new-page: true
 on-arrival: action_timer += 1
-max-visits: 24
+max-visits: 48
 is-card: true
 card-image: img/relationship_card.jpg
 frequency: 100

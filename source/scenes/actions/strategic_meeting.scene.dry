@@ -1,7 +1,7 @@
 title: Strategic Meeting
 new-page: true
 on-arrival: action_timer += 1
-max-visits: 24
+max-visits: 48
 is-card: true
 card-image: img/strategic_meeting_card.jpg
 frequency: 100

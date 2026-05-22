@@ -1,12 +1,10 @@
 title: Media connections
 new-page: true
-view-if: iggy_available = 1
-on-arrival: action_timer += 1; secret_action_timer += 4
+on-arrival: secret_action_timer += 4
 max-visits: 3
 is-card: true
 card-image: img/relationship_card.jpg
 frequency: 100
-tags: secret_actions
 
 = Relationships
 
