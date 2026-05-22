@@ -5,10 +5,15 @@ is-special: true
 
 = **State of the Trial**
 
-Defense Counsel strength: [+ defense_strength : defense_strength +]
+Defense Counsel strength: [+ defense_strength : defend_strength +]
 
-Prosecution strength: [+ prosecution_strength : prosecution_strength +]
+Prosecution strength: [+ prosecution_strength : prosec_strength +]
 
+((delete after))
+
+defend: [+ defense_strength +]
+
+prosec: [+ prosecution_strength +]
 
 = **Relationship**
 
