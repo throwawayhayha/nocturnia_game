@@ -25,10 +25,10 @@ Q.started = 1;
 
 // Mood and relationships
 Q.darlyne_mood = 3;
-Q.relation_darlyne = 5; 
-Q.relation_king = 5; 
-Q.relation_nobility = 0; 
-Q.relation_judiciary = 2; 
+Q.relation_darlyne = 8; 
+Q.relation_king = 7; 
+Q.relation_nobility = 3; 
+Q.relation_judiciary = 5; 
 Q.relation_alchemy_center = 10; 
 
 // Knowledge
@@ -39,6 +39,7 @@ Q.knowledge_politics = 7;
 // Timer
 Q.action_timer = 0;
 Q.secret_action_timer = 0;
+Q.secret_action_counts = 0;
 Q.day = 0;
 
 // Trial strength

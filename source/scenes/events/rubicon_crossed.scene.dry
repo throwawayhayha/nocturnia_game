@@ -76,6 +76,18 @@ window.changeTab('status','main_tab');
 dendryUI.audioPlaylist = []
 
 !}
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/dadar_3.png";  // change this image at some point
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 go-to: rubicon_crossing
 set-bg: img/empty_room.jpg
 # audio: music/1930_1933/Backroom_Deal.ogg
@@ -84,7 +96,7 @@ set-bg: img/empty_room.jpg
 
 The day has finally arrived.
 
-The fate of Princess Darlyne - and with that, the future of Nocturnia - is no longer entirely in her hands, but in the hands of the Royal Tribunal.
+The fate of Princess Darlyne — and with that, the future of Nocturnia — is no longer entirely in her hands, but in the hands of the Royal Tribunal.
 
 Time slows. We enter the day-by-day struggle.
 

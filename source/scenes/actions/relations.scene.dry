@@ -13,38 +13,42 @@ tags: card_actions
 
 - @royals: The King and Queen of Nocturnia.
 - @nobles: The nobility.
-- @courts: The judiciary.
+- @courts: The Royal Tribunal.
 - @alchemy: The Alchemy Center.
 - @return: We can stand alone, for now.
 
 @royals
 on-arrival: relation_king += 2; relation_darlyne += 1; relation_nobility -= 2; relation_judiciary -= 1;
-go-to: return_2
 
-(blablabla about closer relationship with ---) 
+Our meeting with the King and Queen of Nocturnia have gone quite well, and we have built a closer relationship as a result. 
+
+Princess Darlyne is delighted at our meeting. However, some nobles detest our approach at a closer relationship with the King, and the Royal Tribunal might see it as an attempt to influence the direction of the trial's proceedings.
+
 
 @nobles
 on-arrival: relation_nobility += 2; relation_darlyne -= 3; relation_king -= 1; relation_judiciary += 1;
-go-to: return_2
 
-(blablabla about closer relationship with ---) 
+Our meeting with several members of the nobility have gone quite well, and we have built a closer relationship as a result. 
+
+Princess Darlyne, however, is not pleased by our eagerness to meet them. Perhaps we'll have to keep that in mind for our next meeting.
+
 
 @courts
 on-arrival: knowledge_law += 2; relation_judiciary += 2; relation_nobility -= 2;
-go-to: return_2
 
-(blablabla about closer relationship with ---) 
+Our discussion with several members of the Royal Tribunal — including with the Chief Judge — have gone quite well, and we have built a closer relationship as a result. 
+
+Various insights from the discussion has helped increase our expertise in law. However, some nobles are voicing their disapproval, as they see it as an attempt to interfere with the proceedings of the trial.
+
 
 @alchemy
-on-arrival: knowledge_alchemy += 2; relation_darlyne += 1; relation_alchemy_center += 2;
-go-to: return_2
+on-arrival: knowledge_alchemy += 2; relation_darlyne += 2; relation_alchemy_center += 2; darlyne_mood += 2;
 
-(blablabla about closer relationship with ---) 
+Our visit to the Alchemy Center have gone quite well, and we have built a closer relationship with the institution as a result. 
+
+Various insights from the visit has helped increase our expertise in alchemy. Princess Darlyne is delighted at our meeting, and she looks forward to another visit as soon as possible.
+
 
 @return
-go-to: return_2
 
-We can still work with what we have right now. Perhaps our efforts would be better placed elsewhere.
-
-
-@return_2
+Whether it is because we *cannot* or *will not*, we do not approach any party at this moment. Perhaps our efforts would be better placed elsewhere.
