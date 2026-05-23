@@ -16,7 +16,7 @@ is-deck: true
 
 @secret
 title: Secret actions
-view-if: dirty_play and secret_action_timer <= 0 and (val_available or ori_tata_available or iggy_available)
+view-if: secret_action_timer <= 0 and (val_available or ori_tata_available or iggy_available)
 # card-image: img/portraits/SchmidtRobert.jpg
 is-deck: true
 

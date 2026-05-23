@@ -5,7 +5,6 @@ new-page: true
 tags: events
 max-visits: 1
 on-arrival: {!
-trial_started = 1;
 
 Q.darlyne_mood -= 5;
 

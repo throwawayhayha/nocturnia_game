@@ -18,7 +18,7 @@ if(Q.media_network > 1){
 }
 
 // update strength
-Q.strength_diff = Q.prosecution_strength - Q.defense_strength;
+Q.diff_strength = Q.prosecution_strength - Q.defense_strength;
 
 if(Q.strength_diff > 4){
     Q.prosecution_strength -= 1;

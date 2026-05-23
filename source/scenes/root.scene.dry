@@ -42,6 +42,7 @@ Q.secret_action_timer = 0;
 Q.day = 0;
 
 // Trial strength
+Q.diff_strength = 0;
 Q.defense_strength = 0;
 Q.prosecution_strength = 0;
 
