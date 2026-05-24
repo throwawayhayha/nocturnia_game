@@ -7,9 +7,15 @@ card-image: img/knowledge_card.jpg
 frequency: 100
 tags: card_actions
 
+// Finished, but might need further fixes and improvements
+
 = Building up knowledge
 
-(blablabla ... opening line). Which subject should we focus our efforts on for now?
+Though our defense counsel consists of experienced lawyers, it is important for us to improve our knowledge whenever it is possible to do so. 
+
+In furthering our knowledge, we will have a greater insight in our ability to choose and organize our strategy in the courtroom accordingly. Perhaps we could even further our relations with different parties through our improved knowledge as a result.
+
+Which subject should we focus our efforts on for now?
 
 - @politics_know: The inner politics of Nocturnia's nobility.
 - @law_know: The laws and regulations in Nocturnia.
@@ -20,25 +26,31 @@ tags: card_actions
 subtitle: Perhaps we could gain some insight to how their inner minds work?
 choose-if: knowledge_politics <= 25
 unavailable-subtitle: You have mastered this subject.
-on-arrival: knowledge_politics += 2; knowledge_alchemy -= 1; knowledge_law -=1; relation_nobility += 3; relation_king += 1; relation_darlyne -= 2;
+on-arrival: knowledge_politics += 3; knowledge_alchemy -= 1; knowledge_law -=1; relation_nobility += 3; relation_king += 1; relation_darlyne -= 1
 
 We have increased our knowledge about the internal politics of Nocturnia. 
+
+The insight we've gained have also increased our understanding of the nobility, thus improving our relationship.
 
 @law_know
 subtitle: Perhaps understanding the law could give an edge to our cause?
 choose-if: knowledge_law <= 25
 unavailable-subtitle: You have mastered this subject.
-on-arrival: knowledge_law += 2; knowledge_alchemy -= 1; knowledge_politics -=1; relation_judiciary += 3; relation_nobility -= 2;
+on-arrival: knowledge_law += 3; knowledge_alchemy -= 1; knowledge_politics -=1; relation_judiciary += 3; relation_nobility -= 1;
 
-We have increased our knowledge about the laws and regulations in Nocturnia. 
+We have increased our knowledge about the laws and regulations in Nocturnia.
+
+The insight we've gained have also increased our understanding of the Royal Tribunal and the judiciary as a whole, thus improving our relationship.
 
 @alchemy_know
 subtitle: Perhaps our mastery in alchemy could prove helpful in our defense?
 choose-if: knowledge_alchemy <= 25
 unavailable-subtitle: You have mastered this subject.
-on-arrival: knowledge_alchemy += 2; knowledge_law -= 1; knowledge_politics -=1; relation_alchemy_center += 3; relation_darlyne += 2;
+on-arrival: knowledge_alchemy += 3; knowledge_law -= 1; knowledge_politics -=1; relation_alchemy_center += 3; relation_darlyne += 2;
 
 We have increased our knowledge and expertise in alchemy.
+
+The insight we've gained have also increased our understanding of the Alchemy Center, thus improving our relationship.
 
 @return
 

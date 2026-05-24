@@ -2,15 +2,15 @@ title: You are summoned by the King #2
 new-page: true
 tags: events
 
-## You and Darlyne decides to meet with the Royal Family
-## Unfinished
+// You and Darlyne decides to meet with the Royal Family
+// Unfinished
 
 - @king_meet: The King of Nocturnia is inside.
-- @rubicon_crossed
+- @the_trial_begins
 
 @king_meet
 subtitle: You wonder what awaits behind the majestic door.
 new-page: true
 
-sdss
+sdssdsdsd
 

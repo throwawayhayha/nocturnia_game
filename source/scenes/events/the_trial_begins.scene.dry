@@ -88,9 +88,9 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
-go-to: rubicon_crossing
+go-to: trial_begins
 set-bg: img/empty_room.jpg
-# audio: music/1930_1933/Backroom_Deal.ogg
+audio: music/greenwich_in_the_sky_marasy.mp3 loop
 
 = **The Trial of The Century begins**
 
@@ -100,12 +100,12 @@ The fate of Princess Darlyne — and with that, the future of Nocturnia — is n
 
 Time slows. We enter the day-by-day struggle.
 
-@rubicon_crossing
-go-to: rubicon_crossing_2
+@trial_begins
+go-to: trial_begins_2
 # audio: shuffle (music path in github)
 
 
-@rubicon_crossing_2
+@trial_begins_2
 on-arrival: {!
 
 dendryUI.audioQueue = []

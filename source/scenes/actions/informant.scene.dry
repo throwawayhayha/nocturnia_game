@@ -2,12 +2,10 @@ title: Information network
 new-page: true
 choose-if: val_available = 1
 unavailable-subtitle: We haven't gathered enough information via our network.
-on-arrival: secret_action_timer += 8
-max-visits: 2
-is-card: true
-# card-image: img/relationship_card.jpg
+max-visits: 1
 frequency: 100
+on-arrival: secret_action_timer += 8
 
-= Relationships
+= Information Network
 
 (blablabla ... opening line). Where should we focus our efforts to build on our relationships?
