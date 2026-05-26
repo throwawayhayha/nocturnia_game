@@ -45,7 +45,7 @@ Q.day = 0;
 // Trial strength
 Q.diff_strength = 0;
 Q.defense_strength = 0;
-Q.prosecution_strength = 0;
+Q.prosecution_strength = 15;
 
 // Secret tactics
 Q.dirty_play = 0;
