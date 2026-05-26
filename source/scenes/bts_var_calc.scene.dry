@@ -71,15 +71,6 @@ if(Q.relation_alchemy_center < 0){
     Q.relation_alchemy_center = 0;
 }
 
-// avoids null for prosecution and defense strength
-if(Q.defense_strength = "null"){
-    Q.defense_strength = 0;
-}
-if(Q.prosecution_strength = "null"){
-    Q.prosecution_strength = 0;
-}
-
-
 
 Q.has_event = 0;
 
