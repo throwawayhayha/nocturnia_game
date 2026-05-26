@@ -10,4 +10,19 @@ on-arrival: secret_action_timer += 4
 
 (blablabla ... opening line). Where should we focus our efforts to build on our relationships?
 
+- @iggy: Ignis Grimoire.
+
+@iggy
+subtitle: (...idk...)
+# face-image: img/ignis_censored_image.jpg
+
+(blablabla...)
+
+- @signed_iggy: (...blablabla Iggy agrees n whatnot...)
+
+@signed_iggy
+on-arrival: iggy_move = 1
+
+(blablabla iggy agrees)
+
 # relation_judiciary += 1; relation_king += 2; relation_darlyne += 2; darlyne_mood += 3; relation_nobility -= 2;

@@ -1,8 +1,8 @@
 title: Oriana has fulfilled the request.
 subtitle: The sabotaging operation has been successful.
-view-if: ori_move = 1
+view-if: ori_move = 1 and not ori_act_done
 new-page: true
 tags: events
-on-arrival: prosecution_strength -= 2; prosecution_strength -= 1 if (prosecution_strength - defense_strength > 2); prosecution_strength -= 1 if (prosecution_strength - defense_strength > 4); knowledge_politics += 3; relation_nobility -= 3
+on-arrival: ori_act_done = 1; prosecution_strength -= 2; prosecution_strength -= 1 if (prosecution_strength - defense_strength > 2); prosecution_strength -= 1 if (prosecution_strength - defense_strength > 4); knowledge_politics += 3; relation_nobility -= 3
 
 = A successful sabotage!

@@ -54,16 +54,43 @@ if(Q.prosecution_strength > 40){
 }
 
 
-has_event = 0;
+// limits the max. and min. for relations
+if(Q.relation_darlyne < 0){
+    Q.relation_darlyne = 0;
+}
+if(Q.relation_king < 0){
+    Q.relation_king = 0;
+}
+if(Q.relation_nobility < 0){
+    Q.relation_nobility = 0;
+}
+if(Q.relation_judiciary < 0){
+    Q.relation_judiciary = 0;
+}
+if(Q.relation_alchemy_center < 0){
+    Q.relation_alchemy_center = 0;
+}
+
+// avoids null for prosecution and defense strength
+if(Q.defense_strength = "null"){
+    Q.defense_strength = 0;
+}
+if(Q.prosecution_strength = "null"){
+    Q.defense_strength = 0;
+}
+
+
+
+Q.has_event = 0;
 
 // check if there are any cards in #event, and then go to main if not.
 
 var scene = this.game.scenes['bts_var_calc.events_choice'];
 var choices = this._compileChoices(scene);
 if (choices && choices[0].title != "Continue...") {
-    has_event = 1;
+    Q.has_event = 1;
 } else {
-    has_event = 0;
+    Q.has_event = 0;
 }
 
 // pre-load all of the event images

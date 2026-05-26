@@ -6,6 +6,8 @@ max-visits: 1
 frequency: 100
 on-arrival: secret_action_timer += 8
 
+## Finished, but might need further fixes and improvements
+
 = Information Network
 
 With our concerted efforts over the last few days, we have successfully established a relatively wide range of connections with our network.

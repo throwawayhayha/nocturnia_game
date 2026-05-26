@@ -1,0 +1,8 @@
+title: Ignis has fulfilled the request.
+subtitle: The operation across the media is growing in success.
+view-if: iggy_move = 1 and not iggy_act_done
+new-page: true
+tags: events
+on-arrival: iggy_act_done = 1; prosecution_strength -= 2; prosecution_strength -= 1 if (prosecution_strength - defense_strength > 2); prosecution_strength -= 1 if (prosecution_strength - defense_strength > 4); knowledge_politics += 3; relation_nobility -= 3
+
+= A successful media operation!
