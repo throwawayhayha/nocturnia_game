@@ -76,7 +76,7 @@ if(Q.defense_strength = "null"){
     Q.defense_strength = 0;
 }
 if(Q.prosecution_strength = "null"){
-    Q.defense_strength = 0;
+    Q.prosecution_strength = 0;
 }
 
 
