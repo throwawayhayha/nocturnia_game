@@ -55,6 +55,12 @@ Q.freelancer_network = 0;
 Q.val_available = 0;
 Q.iggy_available = 0;
 Q.ori_tata_available = 0;
+
+// Limiting secret actions possible
+Q.val_move = 0;
+Q.ori_move = 0;
+Q.tata_move = 0;
+Q.iggy_move = 0;
 !}
 go-to: opening
 

@@ -26,12 +26,18 @@ Q.diff_strength = Q.prosecution_strength - Q.defense_strength;
 
 if(Q.diff_strength > 6){
     Q.prosecution_strength -= 2;
+    Q.defense_strength += 2;
 } else if(Q.diff_strength > 2){
     Q.prosecution_strength -= 1;
+    Q.defense_strength += 1;
 } else if(Q.diff_strength > 0){
-    Q.prosecution_strength += 2;
+    Q.defense_strength -= 1;
+} else if(Q.diff_strength < -2){
+    Q.prosecution_strength += 1;
+    Q.defense_strength -= 1;
 } else{
-    Q.prosecution_strength += 3;
+    Q.prosecution_strength += 2;
+    Q.defense_strength -= 2;
 }
 
 // limits the max. and min. for strength

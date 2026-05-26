@@ -1,0 +1,8 @@
+title: Valthea has fulfilled the request.
+subtitle: Beyond expectations, truly nothing short of a mastery in manipulation.
+view-if: val_move = 1
+new-page: true
+tags: events
+on-arrival: prosecution_strength -= 3; prosecution_strength -= 2 if (prosecution_strength - defense_strength > 4); prosecution_strength -= 2 if (prosecution_strength - defense_strength > 2); knowledge_politics += 5; relation_nobility -= 5; relation_darlyne += 5; darlyne_mood += 4; relation_judiciary += 3; relation_king += 5; 
+
+= A masterpiece in manipulation

@@ -2,10 +2,58 @@ title: Freelancers
 new-page: true
 choose-if: ori_tata_available = 1
 unavailable-subtitle: We haven't built up enough relationship to trust them.
-max-visits: 1
+max-visits: 2
 frequency: 100
 on-arrival: secret_action_timer += 8
 
+## Finished, but might need further fixes and improvements
+
 = Freelancers
 
-(blablabla ... opening line). Where should we focus our efforts to build on our relationships?
+With our concerted efforts over the past few days, we have successfully established a good relationship with two unaffiliated freelancers willing to join our cause!
+
+Though we can form a contract with them, we could only do so one at a time. So, the question as it stands is: who do we prefer to take up the job for now? 
+
+- @solstair: Oriana Solstair?
+- @sylvaine: Thalita Sylvaine?
+
+
+@solstair
+subtitle: A self-proclaimed freelancer whose job resembles a mercenary more than anything else.
+choose-if: ori_move < 1
+unavailable-subtitle: She is only willing to accept our request once.
+on-arrival: ori_move = 1
+face-image: img/oriana_censored_image.jpg
+
+Oriana Solstair, a self-proclaimed freelancer whose job resembles a mercenary more than anything else. She is relatively well-known in the unseen part of this kingdom as a principled mercenary, refusing to take up certain requests when they go against her moral code.
+
+We have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she do not want any further involvement in the trial.
+
+- @signed_ori: Oriana finally agrees to sign the contract with us.
+
+@signed_ori
+
+The request in our contract for her to formulate and act upon a plan to sabotage the prosecution team is accepted without much fuss.
+
+Now, with that matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
+
+
+@sylvaine
+subtitle: A rowdy, energetic girl with a surprisingly powerful aerokinetic ability.
+choose-if: tata_move < 1
+unavailable-subtitle: She is only willing to accept our request once.
+on-arrival: tata_move = 1
+face-image: img/thalita_censored_image.jpg
+
+Thalita Sylvaine, a rowdy, energetic girl with a surprisingly powerful aerokinetic ability. Though she looks quite young, she has gained quite a bit of notoriety around Mistral with her ability to control the wind in her favor.
+
+We have gotten along surprisingly well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she is wary of getting deeply involved in this trial.
+
+- @signed_tata: Thalita finally agrees to sign the contract with us.
+
+@signed_tata
+
+The request in our contract for her to formulate and act upon a plan to sabotage the prosecution team is accepted without much fuss.
+
+Now, with that matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
+

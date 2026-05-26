@@ -8,4 +8,31 @@ on-arrival: secret_action_timer += 8
 
 = Information Network
 
-(blablabla ... opening line). Where should we focus our efforts to build on our relationships?
+With our concerted efforts over the last few days, we have successfully established a relatively wide range of connections with our network.
+
+One of the most significant contact we have is with a famous actress and singer.
+
+She introduced herself as...
+
+- @valthea: Valthea Nankila.
+
+@valthea
+subtitle: A world-class actress with a rumoured double life as a secret informant.
+face-image: img/valthea_censored_image.jpg
+
+Valthea Nankila, a world-class actress with a rumoured double life behind the scenes. Indeed, there are whispers about how she is working as a secret informant, with networks spanning the entire continent. 
+
+Of course, as outrageous as it sounds, we cannot deny its possibility, and our previous meetings have simply strengthened that belief.
+
+Thanks to our good connections, we have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she does not want any further involvement in the trial.
+
+- @signed_val: Valthea finally agrees to collaborate with us.
+
+@signed_val
+on-arrival: val_move = 1
+
+The request in our collaboration for crucial pieces of information about the prosecution team is accepted without much fuss.
+
+Though there are several other conditions for the agreement to work, it's nothing too big to be handled anyway. In the end, we have safely secured her collaboration and resources into our fold.
+
+Now, with that matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
