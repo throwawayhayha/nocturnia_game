@@ -53,6 +53,8 @@ Q.secret_available = 0;
 Q.informant_network = 0;
 Q.freelancer_network = 0;
 Q.media_network = 0;
+
+// Availability of characters
 Q.val_available = 0;
 Q.iggy_available = 0;
 Q.ori_available = 0;

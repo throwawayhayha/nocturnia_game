@@ -16,7 +16,7 @@ is-deck: true
 
 @secret
 title: Secret actions
-view-if: secret_action_timer <= 0 and (val_available or ori_available or tata_available or iggy_available) and secret_action_counts < 4
+view-if: secret_action_timer <= 0 and (val_available = 1 or ori_available = 1 or tata_available = 1 or iggy_available = 1) and secret_action_counts < 4
 card-image: img/secret_action_card.jpg
 is-deck: true
 

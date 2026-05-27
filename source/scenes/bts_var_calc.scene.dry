@@ -21,16 +21,16 @@ if(Q.media_network >= 2){
 }
 
 // update timer delay for secret actions
-if(Q.val_available = 1 && Q.val_timer < 3){
+if(Q.val_available && Q.val_timer < 3){
     Q.val_timer += 1;
 }
-if(Q.ori_available = 1 && Q.ori_timer < 3){
+if(Q.ori_available && Q.ori_timer < 3){
     Q.ori_timer += 1;
 }
-if(Q.tata_available = 1 && Q.tata_timer < 3){
+if(Q.tata_available && Q.tata_timer < 3){
     Q.tata_timer += 1;
 }
-if(Q.iggy_available = 1 && Q.iggy_timer < 3){
+if(Q.iggy_available && Q.iggy_timer < 3){
     Q.iggy_timer += 1;
 }
 
