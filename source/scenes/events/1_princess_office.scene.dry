@@ -21,7 +21,7 @@ Even though it's something that you have seen quite often since you've worked he
 - @why_right: "Why the right time?"
 
 @desk_messy
-on-arrival: relation_darlyne -= 2
+on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
 
 "...The desk is as messy as usual, huh?" You respond with a cheeky remark. "I wonder what you've been working on, Your Highness."
 
@@ -59,6 +59,7 @@ She really, *really* is a prodigy in a league of her own.
 - @next_research: "So, what is the next step?"
 
 @next_research
+on-arrival: knowledge_alchemy += 2; darlyne_mood += 2;
 
 "So... what would be the next steps after that, Your Highness?" you ask. Princess Darlyne's expression turns into a thoughtful one as she rests her chin on her hand. 
 
@@ -134,7 +135,7 @@ The next few minutes is spent in near-silence as Princess Darlyne tries to calm 
 - @hope: "I hope nothing big happens."
 
 @its_fine
-on-arrival: relation_darlyne += 3
+on-arrival: relation_darlyne += 3; darlyne_mood += 2;
 
 "Don't worry, if anything happens, I'll always help you," you confidently reply with a grin on your face.
 
@@ -153,7 +154,7 @@ You sigh inwardly as you pick up the rest of the flasks on the desk. Time for an
 - @next_file: Let's get back to work.
 
 @hope
-on-arrival: relation_darlyne -= 1
+on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
 
 "It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
 

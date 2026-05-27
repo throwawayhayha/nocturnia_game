@@ -30,6 +30,7 @@ You let out a flat unconvinced stare, but she merely keeps her silent grin as a 
 - @why_flasks: "What are all those flasks for?"
 
 @why_flasks
+on-arrival: knowledge_alchemy += 2; darlyne_mood += 2; relation_darlyne += 1;
 
 "By the way... what are all those scattered flasks for?" you ask. Though the floor of the alchemy chamber has been witnesses to messier scenes, it's still not that often that you see so many of those in one place, after all.
 
@@ -103,7 +104,7 @@ The next few minutes is spent in near-silence as Princess Darlyne tries to calm 
 - @hope: "I hope nothing big happens."
 
 @its_fine
-on-arrival: relation_darlyne += 3
+on-arrival: relation_darlyne += 3; darlyne_mood += 2;
 
 "Don't worry, if anything happens, I'll always help you," you confidently reply with a grin on your face.
 
@@ -122,7 +123,7 @@ You sigh inwardly as you pick up the rest of the flasks on the floor. Time for a
 - @next_file: Let's get back to work.
 
 @hope
-on-arrival: relation_darlyne -= 1
+on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
 
 "It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
 

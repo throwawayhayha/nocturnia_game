@@ -2,8 +2,7 @@ title: Media connections
 new-page: true
 choose-if: iggy_available = 1
 unavailable-subtitle: Our influence in the media still needs further improvement.
-max-visits: 2
-frequency: 100
+max-visits: 1
 on-arrival: secret_action_timer += 4
 
 = Media connections

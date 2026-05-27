@@ -18,7 +18,7 @@ tags: card_actions
 - @return: We can stand alone, for now.
 
 @royals
-on-arrival: relation_king += 2; relation_darlyne += 1; relation_nobility -= 2; relation_judiciary -= 1;
+on-arrival: relation_king += 2; relation_darlyne += 2; relation_nobility -= 2; relation_judiciary -= 1; darlyne_mood += 2;
 
 Our meeting with the King and Queen of Nocturnia have gone quite well, and we have built a closer relationship as a result. 
 

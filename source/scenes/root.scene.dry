@@ -56,6 +56,12 @@ Q.val_available = 0;
 Q.iggy_available = 0;
 Q.ori_tata_available = 0;
 
+// Timer for secret actions
+Q.val_timer = 0;
+Q.ori_timer = 0;
+Q.tata_timer = 0;
+Q.iggy_timer = 0;
+
 // Limiting secret actions possible
 Q.val_move = 0;
 Q.ori_move = 0;

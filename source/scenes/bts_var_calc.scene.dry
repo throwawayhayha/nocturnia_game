@@ -19,6 +19,20 @@ if(Q.media_network > 1){
     Q.iggy_available = 1;
 }
 
+// update timer delay for secret actions
+if(Q.val_available = 1 && Q.val_timer < 3){
+    Q.val_timer += 1;
+}
+if(Q.ori_available = 1 && Q.ori_timer < 3){
+    Q.ori_timer += 1;
+}
+if(Q.tata_available = 1 && Q.tata_timer < 3){
+    Q.tata_timer += 1;
+}
+if(Q.iggy_available = 1 && Q.iggy_timer < 3){
+    Q.iggy_timer += 1;
+}
+
 // update strength, but calculation can change if too overpowered or underpowered during playtesting
 
 Q.defense_strength += Math.round((0.5*Q.knowledge_politics + 0.3*Q.knowledge_law + 0.1*Q.knowledge_alchemy)/12 + (0.2*Q.relation_alchemy_center +  0.4*Q.relation_judiciary + 0.3*Q.relation_nobility + 0.3*Q.relation_king) / 10);

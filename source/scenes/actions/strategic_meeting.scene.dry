@@ -21,10 +21,10 @@ What actions should we prioritize in our strategy?
 - @return: We can work with what we have for now.
 
 @offense
-choose-if: knowledge_politics > 14 or day > 3
+choose-if: knowledge_politics > 10 or day > 3
 unavailable-subtitle: We don't have enough preparation to go on the attack.
 on-arrival: {!
-    Q.prosecution_strength -= (2 + Math.round(Q.relation_nobility/4)); 
+    Q.prosecution_strength -= (2 + Math.round(Q.relation_nobility/8)); 
     Q.defense_strength += (2 + Math.round(Q.knowledge_politics/3));
 !}
 
@@ -35,8 +35,10 @@ Attack is the best defense, after all, and turning the pressure right back towar
 
 @defense
 on-arrival: {!
-    Q.defense_strength += (2 + Math.round((Q.relation_nobility + Q.relation_judiciary)/8)); 
-    Q.prosecution_strength -= 2;
+    if(Q.defense_strength - Q.prosecution_strength < 4){
+        Q.defense_strength += (1 + Math.round((Q.relation_nobility + Q.relation_judiciary)/8));
+    }
+    Q.prosecution_strength -= 1;
 !}
 
 The best strategy we can adopt for now is to play it safe, and focus our preparation on blocking every single one of their potential attacks.
@@ -44,7 +46,7 @@ The best strategy we can adopt for now is to play it safe, and focus our prepara
 They are the ones with a point to prove, after all, and it will be beneficial for us to not allow any opening for them for the time being. 
 
 @dirty
-view-if: knowledge_politics > 15 and relation_nobility > 8 
+view-if: knowledge_politics > 10 and relation_nobility > 13 and day > 1
 on-arrival: dirty_play = 1;
 max-visits: 1
 

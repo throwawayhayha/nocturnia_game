@@ -77,7 +77,7 @@ It turns out, the person resting its hand on you is none other than Princess Dar
 - @answer_2: "I was intending to finish my researching part first."
 
 @answer_1
-on-arrival: relation_darlyne -= 2
+on-arrival: darlyne_mood -= 1;
 
 "...My apologies, Your Highness. There have been too many things happening recently," you say as you bow your head slightly in apology.
 
@@ -88,7 +88,7 @@ As Princess Darlyne moves to sit on the seat next to you, you notice her carryin
 - @what_is_that: "What are those?"
 
 @answer_2
-on-arrival: relation_darlyne += 2
+on-arrival: darlyne_mood += 2;
 
 "...My apologies, Your Highness, I was intending to finish my part of research first," you say as you bow your head slightly in apology. "I think some of the things I've written down will be useful in the future."
 
@@ -114,7 +114,7 @@ As the conversation settles into a temporary lull, you wonder if you should brin
 - @not_bring_up: Avoid the subject.
 
 @bring_up
-on-arrival: brought_up += 1;
+on-arrival: brought_up = 1;
 
 Inwardly, you take a deep breath. 
 
@@ -170,7 +170,7 @@ The next few minutes is spent in near-silence as Princess Darlyne tries to calm 
 - @hope: "I hope nothing big happens."
 
 @its_fine
-on-arrival: relation_darlyne += 3
+on-arrival: relation_darlyne += 3; darlyne_mood += 2;
 
 "Don't worry, if anything happens, I'll always help you," you confidently reply with a grin on your face.
 
@@ -189,11 +189,11 @@ You sigh inwardly as you pick up the rest of the flasks. Time for another errand
 - @next_file: Let's get back to work.
 
 @hope
-on-arrival: relation_darlyne -= 1
+on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
 
 "It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
 
-Princess Darlyne lets out a chuckle. She is still visibly unconvinced, but you get the feeling that she just chooses to believe your words anyway.
+Princess Darlyne doesn't seem to be too impressed by your attempt at a joke, but she lets out a chuckle anyway. She is still visibly unconvinced, and you get the feeling that she simply chooses to believe your words.
 
 "Pfft, thank you, my dear assistant," Princess Darlyne cheekily responds, and you notice that tears are no longer falling from her eyes. "I hope I can always count on you."
 
@@ -208,6 +208,7 @@ You sigh inwardly as you pick up the rest of the flasks from the bag. Time for a
 - @next_file: Let's get back to work.
 
 @not_bring_up
+on-arrival: knowledge_alchemy += 2
 
 "...What were those flasks for?" You ask, deciding to break the silence with a simple question. 
 
