@@ -54,7 +54,8 @@ Q.informant_network = 0;
 Q.freelancer_network = 0;
 Q.val_available = 0;
 Q.iggy_available = 0;
-Q.ori_tata_available = 0;
+Q.ori_available = 0;
+Q.tata_available = 0;
 
 // Timer for secret actions
 Q.val_timer = 0;
