@@ -21,16 +21,16 @@ if(Q.media_network >= 2){
 }
 
 // update timer delay for secret actions
-if(Q.val_move = 1 && Q.val_timer < 6){
+if(Q.val_move && Q.val_timer < 6){
     Q.val_timer += 1;
 }
-if(Q.ori_move = 1 && Q.ori_timer < 6){
+if(Q.ori_move && Q.ori_timer < 6){
     Q.ori_timer += 1;
 }
-if(Q.tata_move = 1 && Q.tata_timer < 6){
+if(Q.tata_move && Q.tata_timer < 6){
     Q.tata_timer += 1;
 }
-if(Q.iggy_move = 1 && Q.iggy_timer < 6){
+if(Q.iggy_move && Q.iggy_timer < 6){
     Q.iggy_timer += 1;
 }
 
