@@ -7,9 +7,13 @@ card-image: img/relationship_card.jpg
 frequency: 100
 tags: card_actions
 
+## Finished, but might need further fixes and improvements
+
 = Relationships
 
-(blablabla ... opening line). Where should we focus our efforts to build on our relationships?
+As the upcoming session of the trial is yet to begin, we can utilize some of the spare time in between to meet up with various important figures across Nocturnia and improve our relationships with them. 
+
+Where should we focus our efforts to build on our relationships?
 
 - @royals: The King and Queen of Nocturnia.
 - @nobles: The nobility.
@@ -50,5 +54,6 @@ Various insights from the visit has helped increase our expertise in alchemy. Pr
 
 
 @return
+on-arrival: darlyne_mood += 2; relation_darlyne += 1;
 
 Whether it is because we *cannot* or *will not*, we do not approach any party at this moment. Perhaps our efforts would be better placed elsewhere.

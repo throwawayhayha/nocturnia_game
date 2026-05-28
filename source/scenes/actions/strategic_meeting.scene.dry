@@ -21,14 +21,14 @@ What actions should we prioritize in our strategy?
 - @return: We can work with what we have for now.
 
 @offense
-choose-if: knowledge_politics > 10 or day > 3
+choose-if: knowledge_politics > 10 or knowledge_law > 12 or day > 3
 unavailable-subtitle: We don't have enough preparation to go on the attack.
 on-arrival: {!
     Q.prosecution_strength -= (2 + Math.round(Q.relation_nobility/8)); 
     Q.defense_strength += (2 + Math.round(Q.knowledge_politics/3));
 !}
 
-With our expertise in Nocturnia's inner politics, we can go on the offensive in the courtroom against the prosecutors' statements! 
+With our expertise in Nocturnia's internal politics and laws, we can go on the offensive in the courtroom against the prosecutors' statements! 
 
 Attack is the best defense, after all, and turning the pressure right back towards them could prove to be a winning strategy in this trial.
 
@@ -57,5 +57,6 @@ With various nobles backing the case against us, it is not inconceivable to beli
 This fight will not only take place inside the court, but also outside of it, and we will have to organize our strategy accordingly.
 
 @return
+on-arrival: darlyne_mood += 2; relation_darlyne += 1;
 
 We can still work with what we have for now. Perhaps our preparation efforts would be better placed elsewhere.

@@ -32,9 +32,9 @@ Q.relation_judiciary = 5;
 Q.relation_alchemy_center = 10; 
 
 // Knowledge
-Q.knowledge_law = 10; 
+Q.knowledge_law = 9; 
 Q.knowledge_alchemy = 15; 
-Q.knowledge_politics = 7;
+Q.knowledge_politics = 5;
 
 // Timer
 Q.action_timer = 0;

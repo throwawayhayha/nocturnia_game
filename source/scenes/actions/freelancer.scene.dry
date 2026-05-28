@@ -3,7 +3,7 @@ new-page: true
 choose-if: ori_available = 1 or tata_available = 1
 unavailable-subtitle: We haven't built up enough relationship to trust them.
 max-visits: 2
-on-arrival: secret_action_timer += 8
+on-arrival: secret_action_timer += 8; secret_action_counts += 1
 
 ## Finished, but might need further fixes and improvements
 
@@ -22,12 +22,11 @@ subtitle: A self-proclaimed freelancer whose job resembles a mercenary more than
 choose-if: ori_move < 1
 unavailable-subtitle: She is only willing to accept our request once.
 on-arrival: ori_move = 1
-face-image: img/oriana_image.jpg
-# face-image: img/oriana_censored_image.jpg
+face-image: img/oriana_censored_image.jpg
 
 Oriana Solstair, a self-proclaimed freelancer whose job resembles a mercenary more than anything else. She is relatively well-known in the unseen part of this kingdom as a principled mercenary, refusing to take up certain requests when they go against her moral code.
 
-We have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she does not want any further involvement in the trial.
+We have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will accept our request only once, as she does not want any further involvement in the trial.
 
 - @signed_ori: Oriana finally agrees to sign the contract with us.
 
@@ -43,12 +42,11 @@ subtitle: A rowdy, energetic girl with a surprisingly powerful aerokinetic abili
 choose-if: tata_move < 1
 unavailable-subtitle: She is only willing to accept our request once.
 on-arrival: tata_move = 1
-face-image: img/thalita_image.jpg
-# face-image: img/thalita_censored_image.jpg
+face-image: img/thalita_censored_image.jpg
 
 Thalita Sylvaine, a rowdy, energetic girl with a surprisingly powerful aerokinetic ability. Though she looks quite young, she has gained quite a bit of notoriety around Mistral with her ability to control the wind in her favor.
 
-We have gotten along surprisingly well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she is wary of getting deeply involved in this trial.
+We have gotten along surprisingly well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will accept our request only once, as she is wary of getting deeply involved in this trial.
 
 - @signed_tata: Thalita finally agrees to sign the contract with us.
 

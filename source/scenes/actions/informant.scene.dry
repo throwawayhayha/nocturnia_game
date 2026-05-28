@@ -3,17 +3,17 @@ new-page: true
 choose-if: val_available = 1
 unavailable-subtitle: We haven't gathered enough information via our network.
 max-visits: 1
-on-arrival: secret_action_timer += 8
+on-arrival: secret_action_timer += 8; secret_action_counts += 1
 
 ## Finished, but might need further fixes and improvements
 
 = Information Network
 
-With our concerted efforts over the past few days, we have successfully established a relatively wide range of connections with our network.
+With our concerted efforts over the past few days, we have successfully established a relatively wide range of connections with numerous contacts. However, to avoid any unreliable sources that could ruin our quality of information, we have to vet through our contacts carefully before we could look for an agreement with them.
 
-One of the most significant contact we have is with a famous actress and singer.
+In the aftermath, we have decided to go with what could very well be the most significant and well-known name on the list.
 
-She introduced herself as...
+Her name is...
 
 - @valthea: Valthea Nankila.
 
@@ -25,7 +25,7 @@ Valthea Nankila, a world-class actress with a rumoured double life behind the sc
 
 Of course, as outrageous as it sounds, we cannot deny its possibility, and our previous meetings have simply strengthened that belief. That is also precisely why we have decided to go along with her, after all.
 
-Thanks to our good connections, we have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will only accept our request only once, as she does not want any further involvement in the trial.
+Thanks to our good connections, we have gotten along quite well with her in our previous meetings, and she didn't seem to mind taking up our side. However, she has made it clear that she will accept our request only once, as she does not want any further involvement in the trial.
 
 - @signed_val: Valthea finally agrees to collaborate with us.
 
