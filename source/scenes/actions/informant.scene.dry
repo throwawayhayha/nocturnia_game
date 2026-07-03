@@ -3,7 +3,7 @@ new-page: true
 choose-if: val_available = 1
 unavailable-subtitle: We haven't gathered enough information via our network.
 max-visits: 1
-on-arrival: secret_action_timer += 8; secret_action_counts += 1
+on-arrival: secret_action_timer += 8
 
 ## Finished, but might need further fixes and improvements
 

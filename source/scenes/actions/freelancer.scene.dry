@@ -3,7 +3,7 @@ new-page: true
 choose-if: ori_available = 1 or tata_available = 1
 unavailable-subtitle: We haven't built up enough relationship to trust them.
 max-visits: 2
-on-arrival: secret_action_timer += 8; secret_action_counts += 1
+on-arrival: secret_action_timer += 8
 
 ## Finished, but might need further fixes and improvements
 

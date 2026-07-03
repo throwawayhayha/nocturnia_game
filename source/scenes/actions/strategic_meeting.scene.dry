@@ -46,13 +46,16 @@ The best strategy we can adopt for now is to play it safe, and focus our prepara
 They are the ones with a point to prove, after all, and it will be beneficial for us to not allow any opening for them for the time being. 
 
 @dirty
-view-if: knowledge_politics > 10 and relation_nobility > 13 and day > 1
+choose-if: knowledge_politics > 10 and relation_nobility > 13 and day > 1
+unavailable-subtitle: [? if knowledge_politics <= 10: We don't have enough insight about their internal politics. ?] [? if relation_nobility <= 13: A closer relationship with the nobility could help with this.?]
 on-arrival: dirty_play = 1;
 max-visits: 1
 
 This trial will have immense ramification on the future of Nocturnia, especially with Princess Darlyne's status as the first individual in the line of succession.
 
-With various nobles backing the case against us, it is not inconceivable to believe that it would be in their interest for this trial to result in her defeat. Even worse, it wouldn't be out of the realm of possibility that they might aim for the princess to be banished from this kingdom.
+With various parts of the nobility backing the case against us, it is not inconceivable to believe that it would be in their interest for this trial to result in her defeat. Even worse, it wouldn't be out of the realm of possibility that they might aim for the princess to be banished from this kingdom.
+
+However, quite a few of them have also prepared to discreetly help us due to both our close relations and their enmity towards several nobles that are opposing us.
 
 This fight will not only take place inside the court, but also outside of it, and we will have to organize our strategy accordingly.
 
