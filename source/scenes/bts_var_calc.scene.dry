@@ -2,12 +2,6 @@ title: Post Event
 new-page: true
 on-arrival: {!
 
-// check if bgm is playing
-const isPlaying = (dendryUI.audioQueue && dendryUI.audioQueue.length > 0);
-  
-if (!isPlaying && Q.day < 3) {
-    dendryUI.playAudio('music/greenwich_in_the_sky_marasy.mp3');
-}
 
 // update timers
 
@@ -116,6 +110,13 @@ if (this.ui && this.ui.show_portraits) {
         }
     }
 }
+
+// check if bgm is playing (LOW-PRIORITY)
+// const isPlaying = (dendryUI.audioQueue && dendryUI.audioQueue.length > 0);
+// if (!isPlaying && Q.day < 3) {
+//     dendryUI.currentAudioURL = "music/greenwich_in_the_sky_marasy.mp3";
+// }
+
 
 if (typeof window !== "undefined" && window.generateBar) {
 }
