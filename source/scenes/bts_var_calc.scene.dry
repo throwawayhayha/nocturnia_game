@@ -5,7 +5,7 @@ on-arrival: {!
 // check if bgm is playing
 const isPlaying = (dendryUI.audioQueue && dendryUI.audioQueue.length > 0);
   
-if (!isPlaying && day < 3) {
+if (!isPlaying && Q.day < 3) {
     dendryUI.playAudio('music/greenwich_in_the_sky_marasy.mp3');
 }
 
