@@ -1,6 +1,5 @@
 title: The Trial of the Century begins
 subtitle: The fate of Nocturnia rests in their hands.
-priority: 3
 new-page: true
 max-visits: 1
 on-arrival: {!
@@ -89,6 +88,8 @@ on-display: {!
 go-to: trial_begins
 set-bg: img/empty_room.jpg
 audio: music/greenwich_in_the_sky_marasy.mp3 loop
+## priority: 3
+
 
 = **The Trial of The Century begins**
 

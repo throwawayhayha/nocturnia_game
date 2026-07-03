@@ -15,6 +15,12 @@ defend: [+ defense_strength +]
 
 prosec: [+ prosecution_strength +]
 
+action_timer: [+ action_timer +]
+
+day: [+ day +]
+
+
+
 = **Relationship**
 
 [? if not guilty : **Princess's relation:** ?][? if guilty : **Former Princess's relation:** ?]
