@@ -46,7 +46,8 @@ The best strategy we can adopt for now is to play it safe, and focus our prepara
 They are the ones with a point to prove, after all, and it will be beneficial for us to not allow any opening for them for the time being. 
 
 @dirty
-choose-if: knowledge_politics > 10 and relation_nobility > 13 and day > 1
+choose-if: knowledge_politics > 10 and relation_nobility > 13
+view-if: day >= 2
 unavailable-subtitle: [? if knowledge_politics <= 10: We don't have enough insight about their internal politics. ?] [? if relation_nobility <= 13: A closer relationship with the nobility could help with this.?]
 on-arrival: dirty_play = 1;
 max-visits: 1
