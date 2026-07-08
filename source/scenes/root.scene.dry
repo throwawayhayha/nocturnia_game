@@ -55,22 +55,30 @@ Q.freelancer_network = 0;
 Q.media_network = 0;
 
 // Availability of characters
-Q.val_available = 0;
-Q.iggy_available = 0;
-Q.ori_available = 0;
-Q.tata_available = 0;
+Q.monarch_available = 0;
+Q.ori_tata_available = 0;
 
 // Timer for secret actions
 Q.val_timer = 0;
 Q.ori_timer = 0;
 Q.tata_timer = 0;
-Q.iggy_timer = 0;
+Q.iggy_timer_1 = 0;
+Q.iggy_timer_2 = 0;
 
 // Limiting secret actions possible
 Q.val_move = 0;
 Q.ori_move = 0;
 Q.tata_move = 0;
-Q.iggy_move = 0;
+Q.iggy_move_1 = 0;
+Q.iggy_move_2 = 0;
+
+// Result of the Trial
+Q.verdict_win = 0;
+Q.verdict_lose = 0;
+
+// Sentence received if guilty
+Q.sentence_exile = 0;
+Q.sentence_life = 0;
 !}
 go-to: opening
 

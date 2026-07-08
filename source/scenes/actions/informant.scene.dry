@@ -1,11 +1,11 @@
 title: Information network
 new-page: true
-choose-if: val_available = 1
+choose-if: monarch_available = 1
 unavailable-subtitle: We haven't gathered enough information via our network.
-max-visits: 1
+max-visits: 3
 on-arrival: secret_action_timer += 8
 
-## Finished, but might need further fixes and improvements
+## Unfinished, massive change to become M0narch stuff
 
 = Information Network
 
@@ -15,10 +15,14 @@ In the aftermath, we have decided to go with what could very well be the most si
 
 Her name is...
 
+- @iggy_1: Ignis Grimoire.
+- @iggy_2: Ignis Grimoire.
 - @valthea: Valthea Nankila.
 
 @valthea
 subtitle: A world-class actress with a rumoured double life as a secret informant.
+choose-if: val_move < 1
+unavailable-subtitle: She is only willing to accept our request once.
 face-image: img/valthea_censored_image.jpg
 
 Valthea Nankila, a world-class actress with a rumoured double life behind the scenes. Indeed, there are whispers about how she is working as a secret informant, with networks spanning the entire continent. 
@@ -37,3 +41,31 @@ The request in our collaboration for crucial pieces of information about the pro
 Though there are several other conditions for the agreement to work, it's nothing too big to be handled anyway. In the end, we have safely secured her collaboration and resources into our fold.
 
 Now, with that matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
+
+
+@iggy_1
+view-if: iggy_move_1 < 1
+subtitle: An enigmatic bartender with an elusive background
+face-image: img/ignis_censored_image.jpg
+
+Ignis Grimoire, an enimagtic bartender with, as far as our research have gone, no officially-recorded background. (. . .)
+
+(. . .)
+
+(. . .), and he didn't seem to mind working taking up our offer. However, he has made it clear that he would prefer to avoid getting too deeply involved in this trial.
+
+- @signed_iggy_1: Ignis finally agrees to cooperate with us.
+
+@signed_iggy_1
+on-arrival: iggy_move_1 = 1
+
+(blablabla iggy agrees n whatnot)
+
+@iggy_2
+view-if: iggy_move_1 > 0 and iggy_move_2 < 1
+subtitle: An enigmatic bartender with an elusive background
+unavailable-subtitle: He refuses any further involvement in this trial.
+on-arrival: iggy_move_2 = 1
+face-image: img/ignis_censored_image.jpg
+
+(blablabla ignis continues his works n whatnot)

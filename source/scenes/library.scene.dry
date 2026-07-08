@@ -10,9 +10,12 @@ Herein contains relevant information about the Kingdom of Nocturnia in this era.
 
 - @lib_nocturnia: Kingdom of Nocturnia
 - @lib_royal_fam: The Royal Family
+- @darlyne_nbloom: Princess Darlyne Nightbloom
 - @lib_nobility: Nobility
 - @lib_imperial_forum: Imperial Forum
 - @judiciary: Supreme Court
+- @informants: Informants
+- @freelancers: Freelancers
 - @root: Back
 
 @lib_nocturnia
@@ -52,3 +55,23 @@ go-to: library_menu
 **Supreme Court**
 
 The Supreme Court is the highest existing court in the Kingdom of Nocturnia. This court handles cases that are either highly controversial or involving high-profile individuals. The head of this court is often the most senior and experienced judge in the Kingdom, and their decisions are considered final and can never be appealed afterwards.
+
+@informants
+view-if: monarch_available = 1
+go-to: library_menu
+
+**Informants**
+
+(. . . Valthea Nankila . . .)
+
+(. . . Ignis Grimoire . . .)
+
+@freelancers
+view-if: ori_tata_available = 1
+go-to: library_menu
+
+**Freelancers**
+
+(. . . Oriana Solstair . . .)
+
+(. . . Thalita Sylvaine . . .)

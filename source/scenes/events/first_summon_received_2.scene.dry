@@ -1,15 +1,40 @@
 title: You are summoned by the King #2
 new-page: true
 
-## You and Darlyne decides to meet with the Royal Family
-## Unfinished
-
 - @king_meet: The King of Nocturnia is inside.
-- @the_trial_begins
 
 @king_meet
 subtitle: You wonder what awaits behind the majestic door.
 new-page: true
 
-sdsdssds
+The two of you step inside as the guard opens the vast door. The King, you notice, sits still on top of the throne at the end of the room.
+
+The red carpet, which you had walked not too rarely, suddenly feels wider than ever before. Your heart beats with increasing intensity as you kneel together with Princess Darlyne in front of the King.
+
+It almost feels like a lifetime when the King finally speaks.
+
+"Greetings, ------, and... my daughter," the King trails off slightly at the end.
+
+- @greet: "With our utmost respect, we greet, Your Grace." 
+
+@greet
+
+"With our utmost respect, we greet, Your Grace." 
+
+As you finish your greetings, the King gestures both of you to stand up.
+
+"I think..." the King takes a deep breath as he pauses. "...the two of you have understood the reason behind why I am summoning the two of you here."
+
+You gulp inwardly as you nod. "Yes, Your Grace."
+
+- @skip_meeting
+
+@skip_meeting
+title: ... And the meeting continues...
+go-to: first_summon_received_end
+
+
+
+
+
 

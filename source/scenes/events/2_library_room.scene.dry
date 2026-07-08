@@ -12,8 +12,13 @@ However, when you step your feet inside, you couldn't spot anyone else in this r
 - @search: Look around the place.
 
 @stay
+on-arrival: darlyne_mood -= 1; darlyne_relation -= 1
+
+You decide to stay where you are, not far away from the reading table near the door. After all, if Princess Darlyne is indeed inside, it would be a matter of time before she crosses path with him standing here.
 
 
 
 @search
+
+
 

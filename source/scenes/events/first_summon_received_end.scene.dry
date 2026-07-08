@@ -1,0 +1,33 @@
+title: The meeting comes to an end
+new-page: true
+
+## You and Darlyne exits the room
+## Unfinished
+
+Another two hours pass before the meeting finally comes to a conclusion. 
+
+In the end, the King declares that he would do his utmost to support Princess Darlyne and you in the event of a major backlash from the nobility.
+
+However, though he claims that it is his duty as a father to ensure that no harm befall upon his daughter, the King also plainly states that there is no guarantee that his effort would fully work.
+
+You could see an expression of regret in the Princess's face. Even as she walked through the red carpet towards the door, she has looked rather... gloomy, to say the least.
+
+As you walk steadily behind, you wonder if you should probably say something to soften the mood.
+
+- @cheer_up: Offer her another word of comfort, perhaps?
+- @let_her_be: Give her some space to sort her thoughts out.
+
+@cheer_up
+
+
+
+- @the_trial_begins
+
+
+
+
+@let_her_be
+
+
+
+- @the_trial_begins
