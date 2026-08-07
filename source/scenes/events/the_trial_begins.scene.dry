@@ -63,9 +63,9 @@ headerLinks.forEach(link => {
     link.style.color = 'black';
 });
 
-const statsLinks = document.querySelector('#stats-links');
-if (statsLinks) {
-    statsLinks.style.display = 'inline-block';
+const statsLink = document.querySelector('#stats-link');
+if (statsLink) {
+    statsLink.style.display = 'inline-block';
 }
 
 const leftTools = document.querySelector('.tools.left');
