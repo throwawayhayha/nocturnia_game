@@ -16,7 +16,7 @@ Herein contains relevant information about the Kingdom of Nocturnia in this era.
 - @lib_judiciary: Supreme Court
 - @lib_informants: Informants
 - @lib_freelancers: Freelancers
-- @root: Back
+- @lib_root: Back
 
 @lib_nocturnia
 go-to: library_menu
@@ -83,3 +83,6 @@ go-to: library_menu
 (. . . Oriana Solstair . . .)
 
 (. . . Thalita Sylvaine . . .)
+
+@lib_root
+go-to: bts_var_calc.upcoming if started = 1; root if started = 0
