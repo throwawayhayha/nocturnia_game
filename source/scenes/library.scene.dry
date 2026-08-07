@@ -16,7 +16,7 @@ Herein contains relevant information about the Kingdom of Nocturnia in this era.
 - @lib_judiciary: Supreme Court
 - @lib_informants: Informants
 - @lib_freelancers: Freelancers
-- @lib_root: Back
+- @root: Back
 
 @lib_nocturnia
 go-to: library_menu

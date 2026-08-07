@@ -15,8 +15,9 @@ This is a short story from another world. The story of a trial that shook the en
 @menu_start
 
 - @start: Start
-- @credits: Credits
-- @disclaim: Disclaimer
+- @library
+- @credits
+- @disclaim
 
 @start
 new-page: true
