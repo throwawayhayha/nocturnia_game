@@ -63,7 +63,7 @@ headerLinks.forEach(link => {
     link.style.color = 'black';
 });
 
-const statsLinks = document.querySelectorAll('#stats-links');
+const statsLinks = document.querySelector('#stats-links');
 if (statsLinks) {
     statsLinks.style.display = 'inline-block';
 }
