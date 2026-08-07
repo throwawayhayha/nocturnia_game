@@ -1,33 +1,76 @@
 title: The meeting comes to an end
 new-page: true
+go-to: meeting_skip_1
 
-## You and Darlyne exits the room
-## Unfinished
+## The meeting comes to an end, and you try to comfort Darlyne for a bit
+## Finished, but perhaps could be polished a bit more
 
-Another two hours pass before the meeting finally comes to a conclusion. 
 
-In the end, the King declares that he would do his utmost to support Princess Darlyne and you in the event of a major backlash from the nobility.
+@meeting_skip_1
+title: The meeting continues...
+new-page: true
+go-to: meeting_skip_2
 
-However, though he claims that it is his duty as a father to ensure that no harm befall upon his daughter, the King also plainly states that there is no guarantee that his effort would fully work.
 
-You could see an expression of regret in the Princess's face. Even as she walked through the red carpet towards the door, she has looked rather... gloomy, to say the least.
+@meeting_skip_2
+title: ...and the meeting goes on...
+new-page: true
+go-to: meeting_skip_3
 
-As you walk steadily behind, you wonder if you should probably say something to soften the mood.
 
-- @cheer_up: Offer her another word of comfort, perhaps?
+@meeting_skip_3
+title: ...and the meeting finally comes to an end.
+new-page: true
+
+The meeting had lasted for another two hours before it can finally come to a conclusion. 
+
+In the end, the King declares that he would do his utmost to support Princess Darlyne and you in the event of a major backlash from the nobility. However, though he claims that it is his duty as a father to ensure that no harms befall upon his daughter, the King also plainly states that there is no guarantee that his effort would fully work.
+
+The world of nobility is ruthless, after all. Perhaps even more than what you imagined sometimes.
+
+You could see an expression of regret in the Princess's face. Even as she walked through the red carpet and towards the door, she has looked rather... gloomy, to say the least.
+
+As you walk steadily behind her, you wonder if you should probably say something to soften the mood.
+
+- @cheer_up: Offer her some words of comfort, perhaps?
 - @let_her_be: Give her some space to sort her thoughts out.
 
 @cheer_up
+on-arrival: darlyne_mood += 2; darlyne_relation += 1
+
+It's quite hard to see her being so... out of it. As you quicken your pace to walk next to her, you try to think of something — *anything* — to say that could help her ease her mind.
+
+"Your Highness... I know that many things are happening beyond any of our control, but..." you trail off briefly, taking a deep breath as you let out a smile, "...as the saying goes, there's always a light at the end of the tunnel, right?"
+
+You pause once more, trying to come up with something more to say. Princess Darlyne remains quiet next to you, but she seems to be carefully listening.
+
+"We — or rather, *you*, Your Highness — have gone through this before, and you've managed to win," you continue, now in a much more confident tone. "We can definitely win it again."
+
+She still does not give a reply, but this time, you could see a small smile appear on her lips.
+
+No more words are exchanged until the two of you return to the Princess's office, but you could feel that her mood has improved noticeably.
 
 
-
-- @the_trial_begins
-
-
+- @next_page
 
 
 @let_her_be
+on-arrival: darlyne_relation += 2; darlyne_mood += 1
+
+It's quite hard to see her being so... out of it. However, you don't exactly know whether giving her a word of comfort is a good idea or not. 
+
+Sometimes, giving a bit of space is the more preferable course of action. Whatever you want to say has probably crossed her mind before, and piling it up seems rather... unnecessary, to say the least.
+
+In the end, you decide to hold back from saying anything towards her.
+
+You still keep your walking distance close to her, even as you remain quiet. Perhaps this small gesture could be enough to make her feel... less alone.
+
+No more words are exchanged until the two of you return to the Princess's office, but you could feel that your understanding of the Princess have improved considerably.
 
 
+- @next_page
 
-- @the_trial_begins
+@next_page
+title: Well, time to go back to work.
+subtitle: And finish the rest of the day.
+go-to: king_public_statement

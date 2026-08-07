@@ -27,10 +27,18 @@ As you finish your greetings, the King gestures both of you to stand up.
 
 You gulp inwardly as you nod. "Yes, Your Grace."
 
+The King let out a long sigh.
+
+"Before I begin... I would like for everyone in here  — with the exception of Princess Darlyne and her assistant — to exit this room at once."
+
+Silently, the guards standing next to the throne disperse, and you can also hear footsteps getting further away from where you are standing.
+
+As the sound of footsteps slowly disappear, you can hear the doors closing from way behind you...
+
 - @skip_meeting
 
 @skip_meeting
-title: ... And the meeting continues...
+title: ...and the meeting can finally begin.
 go-to: first_summon_received_end
 
 

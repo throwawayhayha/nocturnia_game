@@ -127,7 +127,7 @@ You decide to remain silent where you stand for now, waiting for her to come bac
 
 As much as you want to assure her by saying *No, it's nothing but an empty rumour*, you know that this matter is completely out of your hands.
 
-The next few minutes is spent in near-silence as Princess Darlyne tries to calm herself down with several consecutive deep breaths. You patiently wait in silence until her anger subsides.
+The next few minutes is spent in near-silence as Princess Darlyne tries to calm herself down with several consecutive deep breaths. You patiently wait without saying a word until her anger subsides.
 
 "...I'm sorry you had to witness that," Princess Darlyne apologizes with a raspy voice as she wipes her watery eyes. "I thought the chaos from last time has subsided, but..."
 
@@ -154,7 +154,7 @@ You sigh inwardly as you pick up the rest of the flasks on the desk. Time for an
 - @next_file: Let's get back to work.
 
 @hope
-on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
+on-arrival: relation_darlyne += 1; darlyne_mood += 1;
 
 "It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
 

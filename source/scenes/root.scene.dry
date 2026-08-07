@@ -10,7 +10,7 @@ go-to: bts_var_calc if started = 1; menu_start if started = 0
 
 This is a short story from another world. The story of a trial that shook the entire continent, from the very eyes of the one standing closest to it.
 
-*This mini-game is a non-commercial fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
+*This mini-game is a fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
 
 @menu_start
 
@@ -71,6 +71,8 @@ Q.ori_move = 0;
 Q.tata_move = 0;
 Q.iggy_move_1 = 0;
 Q.iggy_move_2 = 0;
+Q.iggy_1_act_done = 0;
+Q.iggy_2_act_done = 0;
 
 // Result of the Trial
 Q.verdict_win = 0;

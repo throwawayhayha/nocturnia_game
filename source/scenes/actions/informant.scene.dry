@@ -11,9 +11,9 @@ on-arrival: secret_action_timer += 8
 
 With our concerted efforts over the past few days, we have successfully established a relatively wide range of connections with numerous contacts. However, to avoid any unreliable sources that could ruin our quality of information, we have to vet through our contacts carefully before we could look for an agreement with them.
 
-In the aftermath, we have decided to go with what could very well be the most significant and well-known name on the list.
+In the aftermath, we have decided to go with some of what could very well be the most significant and well-known names on the list.
 
-Her name is...
+The informant we will go with is...
 
 - @iggy_1: Ignis Grimoire.
 - @iggy_2: Ignis Grimoire.
@@ -23,6 +23,7 @@ Her name is...
 subtitle: A world-class actress with a rumoured double life as a secret informant.
 choose-if: val_move < 1
 unavailable-subtitle: She is only willing to accept our request once.
+audio: music/val_intro.mp3 loop
 face-image: img/valthea_censored_image.jpg
 
 Valthea Nankila, a world-class actress with a rumoured double life behind the scenes. Indeed, there are whispers about how she is working as a secret informant, with networks spanning the entire continent. 
@@ -62,7 +63,8 @@ on-arrival: iggy_move_1 = 1
 (blablabla iggy agrees n whatnot)
 
 @iggy_2
-view-if: iggy_move_1 > 0 and iggy_move_2 < 1
+view-if: iggy_move_1 > 0
+choose-if: iggy_move_2 < 1
 subtitle: An enigmatic bartender with an elusive background
 unavailable-subtitle: He refuses any further involvement in this trial.
 on-arrival: iggy_move_2 = 1

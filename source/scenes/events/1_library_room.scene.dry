@@ -11,9 +11,9 @@ That is also one of the reasons why *any* position in the Royal Palace, especial
 
 As you walk through the library, your eyes wander from shelves to shelves in search of some interesting books to study. Finally, you found a book titled...
 
-- @chemistry: Natural Alchemy of the World Ahead.
-- @law: Under the Nightbloom: Evolution of Law and Order in Nocturnia.
-- @relations: Circles and Squares: Between the Nobility's Handshakes
+- @chemistry: *Natural Alchemy of the World Ahead.*
+- @law: *Under the Nightbloom: Evolution of Law and Order in Nocturnia.*
+- @relations: *Circles and Squares: Between the Nobility's Handshakes*
 
 @chemistry
 on-arrival: knowledge_alchemy += 3; knowledge_politics -= 2; knowledge_law -= 2
@@ -27,7 +27,6 @@ However, with major breakthroughs in various parts of the scientific community, 
 Without much hesitation, you grab the book from the shelf before heading towards the reading tables to read it.
 
 - @next_scene
-
 
 @law
 on-arrival: knowledge_law += 3; knowledge_alchemy -= 2; knowledge_politics -= 2
@@ -57,29 +56,27 @@ title: And then...
 
 You don't know how long it has been since you started reading when, out of nowhere, you suddenly feel a hand rests itself on your left shoulder.
 
-- @next_scene_2: ...?
-
-@next_scene_2
-
 "Wha-!" You hold back your surprised scream as you turn your head to the left.
 
 It turns out, the person resting its hand on you is none other than Princess Darlyne herself.
 
-- @next_scene_3: Princess... Darlyne?
+- @next_scene_2: "Princess... Darlyne?"
 
-@next_scene_3
+@next_scene_2
+
+"Princess... Darlyne?"
 
 "Yes, it's me," Princess Darlyne pulls her hand back as she crosses her arms. "Didn't I tell you to meet me in the office last week?"
 
 "Uh..." You let out a sheepish smile.
 
-- @answer_1: "My apologies, there's been too many things happening recently."
+- @answer_1: "My apologies, there's been too many things on my mind recently."
 - @answer_2: "I was intending to finish my researching part first."
 
 @answer_1
 on-arrival: darlyne_mood -= 1;
 
-"...My apologies, Your Highness. There have been too many things happening recently," you say as you bow your head slightly in apology.
+"...My apologies, Your Highness. There might've been too many things on minds recently," you say as you bow your head slightly in apology.
 
 Princess Darlyne swiftly shakes her head. "No, it's fine, ----. I was just wondering where you were a while back."
 
@@ -90,7 +87,7 @@ As Princess Darlyne moves to sit on the seat next to you, you notice her carryin
 @answer_2
 on-arrival: darlyne_mood += 2;
 
-"...My apologies, Your Highness, I was intending to finish my part of research first," you say as you bow your head slightly in apology. "I think some of the things I've written down will be useful in the future."
+"...My apologies, Your Highness, I was intending to finish my part of research first," you say as you bow your head slightly in apology. "I think some of the things I've written down here will be useful in the future."
 
 "...I suppose that's fair." Princess Darlyne sighs as she shakes her head. "Tasks have been piling up over the last few days, after all."
 
@@ -162,7 +159,7 @@ You decide to remain silent in your seat for now, waiting for her to come back t
 
 As much as you want to assure her by saying *No, it's nothing but an empty rumour*, you know that this matter is completely out of your hands.
 
-The next few minutes is spent in near-silence as Princess Darlyne tries to calm herself down with several consecutive deep breaths. You patiently wait in silence until her anger subsides.
+The next few minutes is spent in near-silence as Princess Darlyne tries to calm herself down with several consecutive deep breaths. You patiently wait without saying a word until her anger subsides.
 
 "...I'm sorry you had to witness that," Princess Darlyne apologizes with a raspy voice as she wipes her watery eyes. "I thought the chaos from last time has subsided, but..."
 
@@ -189,7 +186,7 @@ You sigh inwardly as you pick up the rest of the flasks. Time for another errand
 - @next_file: Let's get back to work.
 
 @hope
-on-arrival: relation_darlyne -= 1; darlyne_mood -= 2;
+on-arrival: relation_darlyne += 1; darlyne_mood += 1;
 
 "It's fine, we can hope that nothing big happens," you reply with a reassuring grin on your face. "Nothing ever happens anyway."
 
