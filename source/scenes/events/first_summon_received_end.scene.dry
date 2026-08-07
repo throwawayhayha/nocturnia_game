@@ -1,22 +1,23 @@
 title: The meeting comes to an end
 new-page: true
-go-to: meeting_skip_1
 
 ## The meeting comes to an end, and you try to comfort Darlyne for a bit
 ## Finished, but perhaps could be polished a bit more
 
+- @meeting_skip_1
 
 @meeting_skip_1
 title: The meeting continues...
 new-page: true
-go-to: meeting_skip_2
+
+- @meeting_skip_2
 
 
 @meeting_skip_2
 title: ...and the meeting goes on...
 new-page: true
-go-to: meeting_skip_3
 
+- @meeting_skip_3
 
 @meeting_skip_3
 title: ...and the meeting finally comes to an end.

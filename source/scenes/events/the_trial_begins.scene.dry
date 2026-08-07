@@ -64,9 +64,9 @@ headerLinks.forEach(link => {
 });
 
 const statsLinks = document.querySelectorAll('#stats-links');
-statsLinks.forEach(link => {
-    link.style.display = 'inline-block';
-});
+if (statsLinks) {
+    statsLinks.style.display = 'inline-block';
+}
 
 const leftTools = document.querySelector('.tools.left');
 if (leftTools) {
