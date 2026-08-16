@@ -1,5 +1,6 @@
 Title: Library
 new-page: true
+is-special: true
 go-to: library_menu
 
 = The Library
