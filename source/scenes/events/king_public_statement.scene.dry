@@ -129,7 +129,7 @@ Though she appreciates you going out of your way to look for her, but it would s
 @visit_if
 max-visits: 1
 go-to: option_visit
-on-arrival: knowledge_politics =+ 2; visit_if_seen = 1
+on-arrival: knowledge_politics += 2; visit_if_seen = 1
 
 As you consider your options, you get reminded that it *has* been quite a while since you visited the Imperial Forum.
 
