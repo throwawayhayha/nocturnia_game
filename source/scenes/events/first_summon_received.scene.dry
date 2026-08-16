@@ -44,4 +44,114 @@ As you bid a respectful nod to the butler, Princess Darlyne walks ahead, with yo
 - @time_to_go: It's time to go.
 
 @time_to_go
-go-to: first_summon_received_2
+new-page: true
+
+- @king_meet: The King of Nocturnia is inside.
+
+@king_meet
+subtitle: You wonder what awaits behind the majestic door.
+new-page: true
+
+The two of you step inside as the guard opens the vast door. The King, you notice, sits still on top of the throne at the end of the room.
+
+The red carpet, which you had walked not too rarely, suddenly feels wider than ever before. Your heart beats with increasing intensity as you kneel together with Princess Darlyne in front of the King.
+
+It almost feels like a lifetime when the King finally speaks.
+
+"Greetings, ------, and... my daughter," the King trails off slightly at the end.
+
+- @greet: "With our utmost respect, we greet, Your Grace." 
+
+@greet
+
+"With our utmost respect, we greet, Your Grace." 
+
+As you finish your greetings, the King gestures both of you to stand up.
+
+"I think..." the King takes a deep breath as he pauses. "...the two of you have understood the reason behind why I am summoning the two of you here."
+
+You gulp inwardly as you nod. "Yes, Your Grace."
+
+The King let out a long sigh.
+
+"Before I begin... I would like for everyone in here  — with the exception of Princess Darlyne and her assistant — to exit this room at once."
+
+Silently, the guards standing next to the throne disperse, and you can also hear footsteps getting further away from where you are standing.
+
+As the sound of footsteps slowly disappear, you can hear the doors closing from way behind you...
+
+- @skip_meeting
+
+@skip_meeting
+title: ...and the meeting can finally begin.
+new-page: true
+
+- @meeting_skip_1
+
+@meeting_skip_1
+title: The meeting continues...
+new-page: true
+
+- @meeting_skip_2
+
+
+@meeting_skip_2
+title: ...and the meeting goes on...
+new-page: true
+
+- @meeting_skip_3
+
+@meeting_skip_3
+title: ...and the meeting finally comes to an end.
+subtitle: At last!
+new-page: true
+
+The meeting had lasted for another two hours before it can finally come to a conclusion. 
+
+In the end, the King declares that he would do his utmost to support Princess Darlyne and you in the event of a major backlash from the nobility. However, though he claims that it is his duty as a father to ensure that no harms befall upon his daughter, the King also plainly states that there is no guarantee that his effort would fully work.
+
+The world of nobility is ruthless, after all. Perhaps even more than what you imagined sometimes.
+
+You could see an expression of regret in the Princess's face. Even as she walked through the red carpet and towards the door, she has looked rather... gloomy, to say the least.
+
+As you walk steadily behind her, you wonder if you should probably say something to soften the mood.
+
+- @cheer_up: Offer her some words of comfort, perhaps?
+- @let_her_be: Give her some space to sort her thoughts out.
+
+@cheer_up
+on-arrival: darlyne_mood += 2; darlyne_relation += 1
+
+It's quite hard to see her being so... out of it. As you quicken your pace to walk next to her, you try to think of something — *anything* — to say that could help her ease her mind.
+
+"Your Highness... I know that many things are happening beyond any of our control, but..." you trail off briefly, taking a deep breath as you let out a smile, "...as the saying goes, there's always a light at the end of the tunnel, right?"
+
+You pause once more, trying to come up with something more to say. Princess Darlyne remains quiet next to you, but she seems to be carefully listening.
+
+"We — or rather, *you*, Your Highness — have gone through this before, and you've managed to win," you continue, now in a much more confident tone. "We can definitely win it again."
+
+She still does not give a reply, but this time, you could see a small smile appear on her lips.
+
+No more words are exchanged until the two of you return to the Princess's office, but you could feel that her mood has improved noticeably.
+
+- @next_page
+
+@let_her_be
+on-arrival: darlyne_relation += 2; darlyne_mood += 1
+
+It's quite hard to see her being so... out of it. However, you don't exactly know whether giving her a word of comfort is a good idea or not. 
+
+Sometimes, giving a bit of space is the more preferable course of action. Whatever you want to say has probably crossed her mind before, and piling it up seems rather... unnecessary, to say the least.
+
+In the end, you decide to hold back from saying anything towards her.
+
+You still keep your walking distance close to her, even as you remain quiet. Perhaps this small gesture could be enough to make her feel... less alone.
+
+No more words are exchanged until the two of you return to the Princess's office, but you could feel that your understanding of the Princess have improved considerably.
+
+- @next_page
+
+@next_page
+title: Well, time to go back to work.
+subtitle: And finish the rest of the day.
+go-to: king_public_statement

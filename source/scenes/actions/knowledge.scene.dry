@@ -4,7 +4,7 @@ on-arrival: action_timer += 1
 max-visits: 48
 is-card: true
 card-image: img/knowledge_card.jpg
-frequency: 100
+frequency: 1000
 tags: card_actions
 
 ## Finished, but might need further fixes and improvements
@@ -20,7 +20,7 @@ Which subject should we focus our efforts on for now?
 - @politics_know: The inner politics of Nocturnia's nobility.
 - @law_know: The laws and regulations in Nocturnia.
 - @alchemy_know: The knowledge of alchemy.
-- @return: We can work with what we have now.
+- @return: We can work with what we have for now.
 
 @politics_know
 subtitle: Perhaps we could gain some insight to how their inner minds work?

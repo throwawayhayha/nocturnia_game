@@ -81,12 +81,11 @@ To add fuel to the fire, however, the King was also reportedly on his way to att
 
 ...God knows what will happen next.
 
-However, there have been some rumours flying out of the room that there is about to be a compromise solution.
+However, there have been some rumours flying out of the Forum that there is about to be a compromise solution.
 
 An unprecedented one, in fact.
 
 The compromise solution is to put Princess Darlyne Nightbloom on trial.
-
 
 
 - @next_page
@@ -94,8 +93,59 @@ The compromise solution is to put Princess Darlyne Nightbloom on trial.
 @next_page
 title: ...What? 
 new-page: true
+go-to: option_visit
 
-dfsadfdgfsd
+"...There's no way."
+
+It's the only thing you could come up with as a reply after hearing such a suggestion. *The Princess* herself, put on trial?
+
+You could see Rea holding back a laugh on her face. In its place, instead, is a rather sarcastic smile. You can feel that the smile isn't exactly directed towards you, however.
+
+"Well, what else would you expect for them to suggest?" Rea shrugs nonchalantly as she picks another artbook from the table. "The factions were about nearly evenly split as well, so either way that's a guaranteed headache."
+
+Once again, you don't really know what to say in response. Perhaps it's because there are too many informations that you need to process in such a short time.
+
+Rea is already focusing once more on the artbook she is reading, leaving you with your own papers once again.
+
+You begin to ponder what to do after you're done with this paper.
+
+@option_visit
+
+- @visit_if: Visit the Imperial Forum.
+- @visit_dadar: Meet with Princess Darlyne.
+- @return_home: Return home.
+
+@visit_dadar
+max-visits: 1
+go-to: option_visit
+on-arrival: darlyne_relation += 2; darlyne_mood += 2; visit_dadar_seen = 1
+
+You think of meeting up with Princess Darlyne once more, especially as you have just gained important pieces of information from your last conversation with Rea. However, you soon discover that she is still too busy with her own paperworks.
+
+Though she appreciates you going out of your way to look for her, but it would still take another hour or two before she is available.
+
+[? if not visit_if_seen: Perhaps there are other, better things that could be done. ?] [? if visit_if_seen: Is going home really the only option left now? ?]
+
+@visit_if
+max-visits: 1
+go-to: option_visit
+on-arrival: knowledge_politics =+ 2; visit_if_seen = 1
+
+As you consider your options, you get reminded that it *has* been quite a while since you visited the Imperial Forum.
+
+When you are already a short distance away from the Imperial Forum's building, however, you see that it is crowded outside. *Very* crowded, in fact. You can hear several passersby in front of you wonder about what could the meeting have been like that the Forum is still closed "*even after those people have been going back-and-forth inside for several hours*".
+
+[? if not visit_dadar_seen: Perhaps there are other, better things that could be done. ?] [? if visit_dadar_seen: Is going home really the only option left now? ?]
+
+@return_home
+view-if: visit_dadar_seen and visit_if_seen
+
+Well, when no preferrable alternatives come to mind, going back to your own house is rarely a bad idea, isn't it?
+
+In the end, you decide to head straight back home after there are no more paperworks to be done for the day.
+
+## option to next page?
+
 
 
 - @the_trial_begins
