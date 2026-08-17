@@ -5,15 +5,21 @@ is-special: true
 
 = **State of the Trial**
 
-Defense Counsel strength: [+ defense_strength : defend_strength +]
+Defense Counsel strength: [+ diff_strength : defend_strength +]
 
-Prosecution strength: [+ prosecution_strength : prosec_strength +]
+Prosecution strength: [+ diff_strength : prosec_strength +]
+
+The balance of this trial is [+ trial_balance +] 
+
+# (note: find better words for ts above)
 
 ((delete after))
 
 defend: [+ defense_strength +]
 
 prosec: [+ prosecution_strength +]
+
+difference: [+ diff_strength +]
 
 action_timer: [+ action_timer +]
 

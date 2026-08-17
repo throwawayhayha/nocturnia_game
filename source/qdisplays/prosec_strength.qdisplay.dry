@@ -1,6 +1,5 @@
-
-(..7) divided
-(8..11) doubtful
-(12..18) cautious
-(19..22) confident
-(23..) strong
+(..-6) divided
+(-5..-2) doubtful
+(-1..1) cautious
+(2..5) confident
+(6..) strong
