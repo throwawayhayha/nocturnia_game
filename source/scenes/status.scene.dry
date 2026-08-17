@@ -9,7 +9,7 @@ Defense Counsel strength: [+ diff_strength : defend_strength +]
 
 Prosecution strength: [+ diff_strength : prosec_strength +]
 
-The balance of this trial is [+ trial_balance +] 
+The balance of this trial is [+ diff_strength : trial_balance +] 
 
 # (note: find better words for ts above)
 
