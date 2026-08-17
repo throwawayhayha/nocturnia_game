@@ -7,14 +7,11 @@ new-page: true
 ## Supreme Court summoned
 ## Royal Tribunal is formed
 
+## Unfinished
+
 - @new_day_1: Another day passes by...
 
 @new_day_1
-new-page: true
-
-- @new_day_2: And another day passes by...
-
-@new_day_2
 new-page: true
 
 - @new_day_2: And another day passes by...
@@ -35,17 +32,7 @@ new-page: true
 
 Several days have passed since the emergency session of the Imperial Forum. There has not been much happening, but you could feel that it is closer to the calm before the storm instead of any sort of genuine peace.
 
-You are simply assistant
+You are simply assistant (. . . unfinished)
 
 
 - @the_trial_begins
-
-## The next day arrives, time-skip into you being in library already
-## The King had announced his speech, defending Darlyne and denouncing the rumours
-## The Imperial Forum is on an emergency session
-## The nobility is currently on a heated debate between support and opposition of the speech
-## The King is reportedly on his way to attend the emergency session
-## There are whispers of a compromise solution by putting Darlyne on an independent trial led by Supreme Court
-## You decide to go on a sneak visit to the Forum 
-
-## Unfinished
