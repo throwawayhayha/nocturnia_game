@@ -20,7 +20,7 @@ Though we can form a contract with them, we could only do so one at a time. So, 
 @solstair
 subtitle: A self-proclaimed freelancer whose job resembles a mercenary more than anything else.
 choose-if: ori_move < 1
-unavailable-subtitle: She is only willing to accept our request once.
+unavailable-subtitle: She is no longer available to accept our request.
 on-arrival: ori_move = 1
 face-image: img/oriana_censored_image.jpg
 

@@ -13,7 +13,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
-  font-family: "Minion Pro", Georgia, serif;
+  font-family: Newsreader, Georgia, serif;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;

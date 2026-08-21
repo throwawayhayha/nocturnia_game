@@ -1,0 +1,36 @@
+title: A Short Discussion with the Princess
+new-page: true
+
+## Unfinished
+
+(You head towards the Princess's office and enter it.)
+(Inside, you are greeted with Princess Darlyne on the desk pouring over a mountain of books and papers)
+(She gives you a wide smile, but you can see how tired she looks like now.)
+(She tells you to sit down and ask what you come in here for.) 
+
+- @things_discuss: "Quite a few things, Your Highness."
+
+@things_discuss
+
+(You reply that you have several things to discuss.)
+(You tell her about everything you have scribbled in your paper and all the information you've got so far.)
+(The Princess then inquires about who )
+
+
+
+- @prosecution_react: Next, the Prosecutors.
+
+@prosecution_react
+
+
+
+- @defendant_react: Lastly, the Defendants.
+
+@defendant_react
+
+
+
+
+
+
+- @the_trial_begins

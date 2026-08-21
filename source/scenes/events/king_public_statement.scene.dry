@@ -88,11 +88,10 @@ An unprecedented one, in fact.
 The compromise solution is to put Princess Darlyne Nightbloom on trial.
 
 
-- @next_page
+- @wait_what
 
-@next_page
-title: ...What? 
-new-page: true
+@wait_what
+title: ...What?
 go-to: option_visit
 
 "...What?"

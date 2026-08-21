@@ -1,12 +1,6 @@
 title: Supreme Court announces the formation of Royal Tribunal
 new-page: true
 
-
-## A few days have passed since
-## King compromises
-## Supreme Court summoned
-## Royal Tribunal is formed
-
 ## Unfinished
 
 - @new_day_1: Another day passes by...
@@ -30,9 +24,67 @@ new-page: true
 @new_day_4
 new-page: true
 
-Several days have passed since the emergency session of the Imperial Forum. There has not been much happening, but you could feel that it is closer to the calm before the storm instead of any sort of genuine peace.
+## A few days have passed since the Imperial Forum
+## The compromise have been agreed upon
+## Supreme Court summoned
+## Royal Tribunal is formed
 
-You are simply assistant (. . . unfinished)
 
+Several days have passed since the emergency session of the Imperial Forum. Though the newspapers' fiery reports are starting to quieten down, you could feel that it is closer to the calm before the storm instead of any sort of genuine peace. It almost feels like those hawkish headlines are sitting at the back, waiting patiently for their turns to appear. 
 
-- @the_trial_begins
+Well, not that there are much things you can do anyway. You are simply a working assistant for the Princess, after all, and your scope of work is relatively quite limited to do anything significant.
+
+You have, however, been weighing your options as you prepare for various potential developments of the situation. 
+
+Those thinkings are reinforced even more with some of your recent conversations with a representative from the Imperial Forum. There are many key information that you have gained from them.
+
+*(This is just a lengthily summarized chronology as to why the trial is set to happen. You don't have to read through this if you wish; these are simply for the purpose of understanding the plot.)*
+
+- @result_session: First, the result of the Emergency Session.
+
+@result_session
+
+**The Emergency Session**
+
+The emergency session following the King's Speech saw heated debate across the entire hemicycle. The Forum was equally split, and it nearly erupted into violent clashes a few times.
+
+The compromise was only reached when several nobles from both sides argued for a fairer solution to this whole issue. That is, of course, putting up Princess Darlyne's cases on a public trial.
+
+The suggestion was met with a loud applause; perhaps the loudest the room has ever heard in its history. 
+
+- @king_reaction: Then... how did the King respond?
+
+@king_reaction
+
+The King, of course, showed immense displeasure upon hearing the suggestion. However, due to the suggestion being supported by a supermajority, the King reluctantly had to agree with them.
+
+Of course, the veto power can overrule any and all motions from the Forum. However, doing so would risk losing the nobility's already declining trust in his rule and even potentially risk a major revolt.
+
+And so, the King agreed, but with the amendment that the trial must be carried out by none other than the Supreme Court of Nocturnia.
+
+- @supreme_court_role: What about the Supreme Court's role?
+
+@supreme_court_role
+
+**The Supreme Court enters the discussion**
+
+The Supreme Court, as it stands, is set to be the one carrying out the trial. As the most independent body in this Kingdom, a trial overseen by the Supreme Court would hold the strongest acknowledgement from everyone regardless of the result.
+
+The biggest reason for their involvement, however, is the fact that there is no precedent for putting a Royal Family member on trial. In fact, this would be the first ever instance, not only in Nocturnia, but *in the history of this world*. Whether they will utilize an existing procedure or create a special one from scratch remains to be seen.
+
+- @next_page: So... what next?
+
+@next_page
+
+"So... what next?"
+
+You inwardly mutter to yourself as you continue scribbling on your paper. The newspapers haven't caught wind of any of this yet, but it would be easy for them to sense that something big is coming.
+
+Though rumours have begun swirling about the possibility of putting the Princess on a public trial, there is still no consensus as to *who* or *what* specifically would oversee such a trial.
+
+As you ponder once more over your scribbles, you decide that perhaps meeting Princess Darlyne would be better to clear things up.
+
+- @lets_go: Well, time to go to the Princess's office.
+
+@lets_go
+go-to: discussion_with_princess
