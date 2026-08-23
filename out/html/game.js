@@ -217,16 +217,18 @@
     window.dendryUI.saveSettings();
     };
 
-  /*window.disableAnimateBg = function() {
-      window.dendryUI.animate_bg = false;
-      window.dendryUI.saveSettings();
+  window.enableGrayMode = function() {
+    window.dendryUI.gray_mode = true;
+    document.body.classList.add('gray-mode');
+    window.dendryUI.saveSettings();
   };
-
-  window.enableAnimateBg = function() {
-      window.dendryUI.animate_bg = true;
-      window.dendryUI.saveSettings();
-  };*/
-
+  
+  window.disableGrayMode = function() {
+    window.dendryUI.gray_mode = false;
+    document.body.classList.remove('gray-mode');
+    window.dendryUI.saveSettings();
+  };
+  
   // populates the checkboxes in the options view
  window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;

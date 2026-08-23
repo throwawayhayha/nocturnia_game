@@ -59,7 +59,6 @@ It was a relatively short speech, lasting no more than ten or so minutes. Unsurp
 
 What has certainly been *way* more interesting, however, is the reaction of the nobility, which perfectly segues into the next part, which is...
 
-
 - @imperial_forum_response: The Imperial Forum's responses.
 
 @imperial_forum_response
@@ -74,7 +73,6 @@ The opposing nobles know that they wouldn't stand a chance if they were standing
 
 To add fuel to the fire, however, the King was also reportedly on his way to attend the emergency session. His Majesty is probably already inside, watching through the chaos as we are talking in here right now.
 
-
 - @what_now: So... what happens next?
 
 @what_now
@@ -87,11 +85,11 @@ An unprecedented one, in fact.
 
 The compromise solution is to put Princess Darlyne Nightbloom on trial.
 
-
 - @wait_what
 
 @wait_what
 title: ...What?
+new-page: true
 go-to: option_visit
 
 "...What?"
@@ -100,7 +98,11 @@ It's the only word that could come out of your mouth after hearing such a sugges
 
 You could see Rea holding back a laugh on her face. In its place, instead, is a rather sarcastic smile. You can feel that the smile isn't exactly directed towards you, however.
 
-"Well, what else would you expect for them to suggest?" Rea shrugs nonchalantly as she picks another artbook from the table. "The factions were almost evenly split as well, so either way that's a guaranteed headache."
+"Well, what else would you expect for them to suggest?" Rea shrugs nonchalantly as she picks another artbook from the table. "The factions were almost evenly split as well, so that would be a guaranteed headache either way."
+
+- @silent_again: ...
+
+@silent_again
 
 Once again, you don't really know what to say in response. Perhaps it's because there are too many informations that you need to process in such a short time.
 
@@ -147,4 +149,4 @@ In the end, you decide to head straight back to your house after there are no mo
 
 @head_home
 title: Time to finish the rest of the day.
-go-to: supreme_court_announcement
+go-to: deadlock_in_imperial_forum

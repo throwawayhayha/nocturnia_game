@@ -615,6 +615,10 @@ img {
   }
 }
 
+.tooltip-text {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 
 /* New stuff just for this game */
 

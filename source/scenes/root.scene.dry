@@ -12,7 +12,6 @@ This is a short story from another world. The story of a trial that shook the en
 
 *This mini-game is a fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
 
-
 @menu_start
 
 - @start: Start
@@ -38,6 +37,7 @@ Q.knowledge_alchemy = 15;
 Q.knowledge_politics = 5;
 
 // Timer
+Q.royal_tribunal_formed = 0;
 Q.action_timer = 0;
 Q.secret_action_timer = 0;
 Q.secret_action_counts = 0;

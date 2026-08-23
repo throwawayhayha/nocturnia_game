@@ -18,8 +18,10 @@ Herein contains relevant information about the Kingdom of Nocturnia in this era.
 - @lib_nobility: Nobility
 - @lib_imperial_forum: Imperial Forum
 - @lib_judiciary: Supreme Court
+- @lib_royal_tribunal: Royal Tribunal
 - @lib_informants: Informants
 - @lib_freelancers: Freelancers
+- @remove_when_done: rubicon test
 - @backSpecialScene: Exit library.
 
 @lib_nocturnia
@@ -64,9 +66,17 @@ Equivalent to a parliament, the Imperial Forum is where members meet to debate l
 @lib_judiciary
 go-to: library_menu
 
-**Supreme Court**
+**Supreme Court of the Kingdom of Nocturnia**
 
-The Supreme Court is the highest existing court in the Kingdom of Nocturnia. This court handles cases that are either highly controversial or involving high-profile individuals. The head of this court is often the most senior and experienced judge in the Kingdom, and their decisions are considered final and can never be appealed afterwards.
+The Supreme Court of the Kingdom of Nocturnia, commonly called simply as the Supreme Court, is the highest existing court in the Kingdom of Nocturnia. This court handles cases that are either highly controversial or involving high-profile individuals. The head of this court is often the most senior and experienced judge in the Kingdom, and their decisions are considered final and can never be appealed afterwards.
+
+@lib_royal_tribunal
+view-if: royal_tribunal_formed = 1
+go-to: library_menu
+
+**Royal Tribunal of the Kingdom of Nocturnia**
+
+The Royal Tribunal of the Kingdom of Nocturnia, commonly called simply as the Royal Tribunal, is a special tribunal formed in order to try Princess Darlyne Nightbloom, the heir-apparent to the Kingdom of Nocturnia. The tribunal is overseen directly by the Supreme Court.
 
 @lib_informants
 view-if: monarch_available = 1
@@ -74,9 +84,9 @@ go-to: library_menu
 
 **Informants**
 
-(. . . Valthea Nankila . . .)
+Ignis Grimoire is . . . (. . . Ignis Grimoire . . .)
 
-(. . . Ignis Grimoire . . .)
+Valthea Nankila is . . . (. . . Valthea Nankila . . .)
 
 @lib_freelancers
 view-if: ori_tata_available = 1
@@ -84,6 +94,11 @@ go-to: library_menu
 
 **Freelancers**
 
-(. . . Oriana Solstair . . .)
+Oriana Solstair is . . . (. . . Oriana Solstair . . .)
 
-(. . . Thalita Sylvaine . . .)
+Thalita Sylvaine is . . . (. . . Thalita Sylvaine . . .)
+
+@remove_when_done
+new-page: true
+
+- @the_trial_begins

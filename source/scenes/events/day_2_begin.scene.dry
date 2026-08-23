@@ -1,4 +1,45 @@
-title: The morning newspaper has arrived!
+title: Day 2 begins
+new-page: true
+
+- @option_intro_1: Another day comes to an end...
+
+@option_intro_1
+subtitle: ...and another one begins anew.
+new-page: true
+
+= Another early morning
+
+You wake up rather early in the morning once again as the sun is yet to be visible above the horizon. 
+
+That makes it two-in-a-row, then. A new record, huh?
+
+Taking a glance at the clock, you notice that there is still quite some time left before you have to go to the Royal Palace. As you prepare for the day, your mind begins wandering about...
+
+- @the_news: The news.
+
+@the_news
+
+...Yeah. The headline-grabbing news that appeared just yesterday morning.
+
+Truth be told, it's neither the most insane thing you've ever heard in your entire life, nor is it the most far-fetched. Actually, that is also partially why the news had been so shocking to read about at first.
+
+Princess Darlyne did mention a bit about the chaos from a while back. Though it was quite some time before you got into this role, you've heard about it from the newspapers and some of your past lecturers talking about them.
+
+You don't exactly remember much, but there was a major controversy involving Princess Darlyne's alchemy research with several nobles who disapprove of some of her actions. The nobles eventually backed down after some sort of settlement, but even now you could still see some unresolved tensions between them.
+
+Deep inside, your biggest hope is for the news to die down soon, one way or another. There is no telling what would happen if whatever happens next explodes way beyond any of your control.
+
+- @next_up: And then...
+
+@next_up
+
+Before you realize it, the sun is already well and above the horizon, and the sky has already turned a rather bright blue.
+
+You quickly finish up your preparation before heading towards the door. Everything is nicely put into the bag, and you are now ready to go.
+
+- @head_out: It's time to head out.
+
+@head_out
 new-page: true
 
 - @newspaper_1: The morning newspaper has arrived!
@@ -53,4 +94,4 @@ Quickly, you fold the newspaper into the bag as you run as fast as you can towar
 @second_meet
 title: Time to go to work.
 subtitle: Before everything comes crashing down.
-go-to: day_2
+go-to: palace_day_2

@@ -3,34 +3,89 @@ new-page: true
 
 ## Unfinished
 
-(You head towards the Princess's office and enter it.)
-(Inside, you are greeted with Princess Darlyne on the desk pouring over a mountain of books and papers)
-(She gives you a wide smile, but you can see how tired she looks like now.)
-(She tells you to sit down and ask what you come in here for.) 
+As you reach the Princess's office, you knock on the door as you usually do with several papers still in your hand.
 
-- @things_discuss: "Quite a few things, Your Highness."
+When you open the door, you are greeted with the sight of Princess Darlyne, sitting on the desk, pouring over a mountain of books and papers.
 
-@things_discuss
+"Good day, Levon!" Princess Darlyne greets with a wide smile. "So, what brings you here, then?"
 
-(You reply that you have several things to discuss.)
-(You tell her about everything you have scribbled in your paper and all the information you've got so far.)
-(The Princess then inquires about who )
+As you reply with a greeting of your own, you can't help but notice how tired she looks despite her smile. Her lack of sleep is glaringly visible from her unkempt hair, along with dark circles underneath her eyes.
+
+You begin to wonder if it's even appropriate to come in and talk to the Princess when she is in a bad state.
+
+- @sleepenough: "Have you even had enough sleep, Your Highness?"
+- @paper_talk: "There are a few things I'd like to talk about, Your Highness."
+
+@sleepenough
+on-arrival: darlyne_mood += 2; relation_darlyne += 1
+
+"There are several things I'd like to discuss, but..." you reply with a bit of hesitancy in your voice, "...you look exhausted, Your Highness."
+
+Princess Darlyne lets out a chuckle. "Pfft, it's all good, Levon. I appreciate your concerns," she responds as she waves her hands in a dismissive manner. "There's no need to worry about me, though. I've felt worse before."
+
+You are still hardly convinced by her response. However, you remember how she got severely annoyed the last time you tried to ask her about when did she last sleep, so you reluctantly decide to hold back.
+
+Also, Princess Darlyne in her half-asleep state can be a sight to behold sometimes. It's not something anyone gets to see, after all. A true privilege, indeed.
+
+"So, what is it that you wanted to talk about?" she asks again as she tidies up a stack of papers on her desk.
+
+- @paper_talk: "There are a few things I'd like to talk about, Your Highness."
+
+@paper_talk
+
+"So... these are some of the things I'd like to talk about, Your Highness." You hand over the paper that you've scribbled before to the Princess. "I received many information from the conversations I had with some... Imperial Forum members, quite a while ago."
+
+Princess Darlyne skims through the paper, her eyes moving back-and-forth as she processes the scribbles that you've written.
+
+...Now that you think about it, you should've organized your scribbling first before you hand the paper over to her.
+
+Luckily, it seems that she understands what you've written just fine. At least, judging from how she nods every now and then while reading through it.
+
+"The plan as it stands is... to put me on a public trial, overseen by the Supreme Court themselves?" Princess Darlyne mumbles as she picks up a different paper from the desk. She seems to say something under her breath afterwards, but you couldn't exactly hear what she is muttering about.
+
+It doesn't take long before she hands the paper back to you. She gives a smile as she picks up a few more papers. "I've read through what you wrote, and there are quite a few interesting information in there. It also matches with some of the information I've received from... a good contact of mine."
+
+Though it's understandable that a royal princess would have access to special sources, you couldn't completely hide your surprise.
+
+"You have your own sources that confirm this?"
+
+"Pretty much, but it's nothing that you'd need to worry about for now," Princess Darlyne remarks with a confident voice. "One thing that I should tell you however, is that it seems that the Supreme Court's involvement is pretty much confirmed at this point."
+
+- @rumour_true: So the rumours were true, after all...
+
+@rumour_true
+
+Indeed, the remarks from Princess Darlyne practically confirms the rumour that the Supreme Court will be in charge of the trial.
+
+"Now that the Supreme Court will be in charge of the trial, though," you ponder aloud, "I wonder if there's any more information on how would the trial be conducted?" 
+
+Princess Darlyne remains silent for a brief few seconds. "Hmm... I did hear that there will be a special body formed for this trial. A <span class="tooltip-text" title="A tribunal is a special court, specifically formed to officially focus on a specific legal topic or issue.">tribunal</span> of sorts, I guess?"
+
+"Do you think those people will announce it at the same time?"
+
+"Perhaps, who knows?" Princess Darlyne gives a nonchalant shrug. "It's just political intrigue all the way at this point... I have as much knowledge as you have at this point."
+
+- @what_strategy: Then... what is to be done?
+
+@what_strategy
+
+"Then... what is to be done?"
+
+"Who knows? I don't even know what do at this point," she answers as she ruffles through her hair in exasperation. The frustration in her voice could hardly be any clearer than that.
+
+The room falls silent as Princess Darlyne rests her forehead on her palmed fist. Both of you have no idea what to say, and the silence feels more like a comfortable enough alternative for now.
+
+"I... I think we should probably have some early preparation, but what...?" you try to suggest, but your shaky voice trail off at the end. The uncertainty is very much palpable at this point.
+
+Princess Darlyne suddenly stands up from her desk. "Perhaps we can continue this tomorrow. My mind is getting foggy, and I don't think it'll do us any good to continue like this."
+
+Absentmindedly, you nod along, and before you realize it, Princess Darlyne is already gone from the room.
+
+As if still on autopilot, you tidy up the scattered papers and books on the desk before heading out to lock the door.
 
 
+- @next_page: Well, perhaps it's time to finish some other tasks?
 
-- @prosecution_react: Next, the Prosecutors.
-
-@prosecution_react
-
-
-
-- @defendant_react: Lastly, the Defendants.
-
-@defendant_react
-
-
-
-
-
-
-- @the_trial_begins
+@next_page
+subtitle: Or just go have some rest, whatever, it's up to you.
+go-to: tribunal_announcement
