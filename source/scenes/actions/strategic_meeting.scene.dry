@@ -1,10 +1,11 @@
 title: Strategic Meeting
 new-page: true
-on-arrival: action_timer += 1
+view-if: strategic_meet_timer <= 0
+on-arrival: action_timer += 1; strategic_meet_timer += 3
 max-visits: 48
 is-card: true
 card-image: img/strategic_meeting_card.jpg
-frequency: 500
+frequency: 1000
 tags: card_actions
 
 ## Finished, but might need further fixes and improvements

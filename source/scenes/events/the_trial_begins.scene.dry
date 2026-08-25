@@ -92,8 +92,7 @@ on-display: {!
 !}
 go-to: trial_begins
 set-bg: img/empty_room.jpg
-audio: music/greenwich_in_the_sky_marasy.mp3 loop
-## priority: 3
+audio: music/greenwich_in_the_sky_marasy.mp3
 
 = **The Trial of The Century begins**
 
@@ -105,8 +104,7 @@ Time slows. We enter the day-by-day struggle.
 
 @trial_begins
 go-to: trial_begins_2
-# audio: shuffle (music path in github)
-
+# audio: shuffle (music path in github) // use this only if there's another song that could be added
 
 @trial_begins_2
 on-arrival: {!

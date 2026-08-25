@@ -2,7 +2,6 @@ title: Status
 new-page: true
 is-special: true
 
-
 = **State of the Trial**
 
 Defense Counsel strength: [+ diff_strength : defend_strength +]
@@ -24,8 +23,6 @@ difference: [+ diff_strength +]
 action_timer: [+ action_timer +]
 
 day: [+ day +]
-
-
 
 = **Relationship**
 

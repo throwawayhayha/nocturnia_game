@@ -7,6 +7,10 @@ on-arrival: {!
 Q.day = Math.floor(Q.action_timer/3);
 Q.secret_action_timer = Math.max(0, Q.secret_action_timer - 1);
 
+if(Q.strategic_meet_timer > 0){
+    Q.strategic_meet_timer -= 1;
+}
+
 // update for secret actions
 
 if(Q.informant_network >= 2){

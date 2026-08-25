@@ -36,9 +36,13 @@ Q.knowledge_law = 9;
 Q.knowledge_alchemy = 15; 
 Q.knowledge_politics = 5;
 
+// Whether the tribunal has already been formed
+// I lowkey forgot what this variable is about icl
+Q.royal_tribunal_formed = 0; 
+
 // Timer
-Q.royal_tribunal_formed = 0;
 Q.action_timer = 0;
+Q.strategic_meet_timer = 0
 Q.secret_action_timer = 0;
 Q.secret_action_counts = 0;
 Q.day = 0;
