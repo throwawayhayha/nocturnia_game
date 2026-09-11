@@ -1,8 +1,7 @@
 title: Strategic Meeting
 new-page: true
-view-if: strategic_meet_timer <= 0
-on-arrival: action_timer += 1; strategic_meet_timer += 3
-max-visits: 48
+view-if: strategic_meeting_timer <= 0
+on-arrival: action_timer += 1; strategic_meeting_timer += 3
 is-card: true
 card-image: img/strategic_meeting_card.jpg
 frequency: 1000
@@ -23,10 +22,10 @@ What actions should we prioritize in our strategy?
 
 @offense
 choose-if: knowledge_politics > 10 or knowledge_law > 12 or day > 3
-unavailable-subtitle: We don't have enough preparation to go on the attack.
+unavailable-subtitle: We do not possess enough insight to go on the attack.
 on-arrival: {!
-    Q.prosecution_strength -= (2 + Math.floor(Q.relation_nobility/8)); 
-    Q.defense_strength += (2 + Math.floor(Q.knowledge_politics/3));
+    Q.prosecution_strength -= (1 + Math.floor(Q.relation_nobility/8)); 
+    Q.defense_strength += Math.floor(Q.knowledge_politics/3);
 !}
 
 With our improved knowledge and expertise, we can improvise our prepared statements to go on the offensive in the courtroom.

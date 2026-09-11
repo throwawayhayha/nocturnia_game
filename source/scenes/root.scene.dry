@@ -10,7 +10,7 @@ go-to: bts_var_calc if started = 1; menu_start if started = 0
 
 This is a short story from another world. The story of a trial that shook the entire continent, from the very eyes of the one standing closest to it.
 
-*This mini-game is a fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
+*This game is a fan-made work of fiction, and thus must not be mistaken for official work. See Disclaimer for further reading.*
 
 @menu_start
 
@@ -42,7 +42,8 @@ Q.royal_tribunal_formed = 0;
 
 // Timer
 Q.action_timer = 0;
-Q.strategic_meet_timer = 0
+Q.strategic_meeting_timer = 0;
+Q.secret_meeting_timer = 0;
 Q.secret_action_timer = 0;
 Q.secret_action_counts = 0;
 Q.day = 0;

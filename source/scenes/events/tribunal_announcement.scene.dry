@@ -1,12 +1,12 @@
-title: The Supreme Court announces the formation of the Royal Tribunal
+title: Today, the day of the Supreme Court's announcement
 new-page: true
 
 ## Finished, but could be polished a lot more
 
-- @option_intro_1: Another day comes to an end...
+- @option_intro_1: And another day comes to an end...
 
 @option_intro_1
-subtitle: ...and another one begins anew.
+subtitle: ...as another one begins anew.
 new-page: true
 
 = An early morning
@@ -21,9 +21,11 @@ However, that pleasant feeling does not last very long. As you prepare for the d
 
 @the_news
 
-...the possibility that the Princess herself would face a public trial. The uncomfortable hunch from yesterday's discussion still persists, and what you — and perhaps everyone else — thought was unthinkable is now creeping ever closer to become a certain reality.
+...the possibility that the Princess herself would face a public trial. 
 
-At this point, you don't know if the fact that there is no precedent to this issue is comforting, or actually terrifying instead. This is a completely new territory that no one has ever breached before in history, and whatever happens next, no matter how insignificant it is, will be decisive.
+The uncomfortable hunch from yesterday's discussion still persists, and what you — and perhaps everyone else — thought was unthinkable is now creeping ever closer to become a certain reality. 
+
+At this point, you don't know if the fact that there is no precedent to this issue is actually comforting or perhaps terrifying instead. This is a completely new territory that no one has ever breached before in history, and whatever happens next, no matter how insignificant it is, will be decisive.
 
 - @next_up: And then...
 
@@ -41,9 +43,12 @@ new-page: true
 - @newspaper_1: The morning newspaper has arrived!
 
 @newspaper_1
+subtitle: What is it this time...?
 new-page: true
 
-The morning newspaper arrives in front of the door right as you are about to head out. Hesitantly, you pick it up to read what the headline said.
+The morning newspaper arrives in front of the door right as you are about to head out.
+
+Hesitantly, you pick it up to read what the headline says.
 
 - @headline: And the headline reads...
 
@@ -53,7 +58,7 @@ The morning newspaper arrives in front of the door right as you are about to hea
 
 *And the scandal surrounding the Princess of Nocturnia is officially heading to a public trial!*
 
-- @what: ...
+- @what: . . . .
 
 @what
 
@@ -67,13 +72,15 @@ A nauseating feeling begins to rise up your throat.
 
 *"Is there even a way out of this?"* you ponder inwardly as you fold the newspaper into your bag.
 
-Frankly, you don't even know what to feel about the announcement. On one hand, it saves Princess Darlyne from the immediate worst-case scenario, which would have undoubtedly been severe. On the other, however, the direction of this tribunal is going to be unpredictable.
+Frankly, you don't even know what to feel about the announcement.
 
-It's not that far-fetched to imagine that the tribunal's verdict has been pre-determined from the start, rendering it no different to a <span class="tooltip-text" title="A public trial in which the guilt or innocence of the defendant has already been determined.">show trial</span>. Even worse, it might as well be <span class="tooltip-text" title="A court that ignores established standards of law or justice and may ignore due process to arrive at a predetermined conclusion.">A kangaroo court</span> of sorts. A shame to the entire nation.
+On one hand, it saves Princess Darlyne from the immediate worst-case scenario, an instant punishment which would have undoubtedly been severe. On the other, however, the direction of this tribunal is going to be unpredictable.
 
-*No*, you shake your head quickly, *this train of thoughts has to stop.*
+It's not that far-fetched to imagine that the tribunal's verdict has been pre-determined from the start, rendering it no different to a <span class="tooltip-text" title="A public trial in which the guilt or innocence of the defendant or accused has already been determined.">show trial</span>. Even worse, it might as well be a <span class="tooltip-text" title="A court that ignores established standards of law or justice and may ignore due process to arrive at a predetermined conclusion.">kangaroo court</span> of sorts. A shame to the entire nation.
 
-You hope that it is simply your mind playing up to the occasion, imagining every possible outcome — even the worst ones. You shake your head once more.
+*No*, you shake your head quickly, *my mind is going too far now.*
+
+You hope that it is simply your mind overthinking the situation, anxiously imagining every possible outcome, even the worst ones. You shake your head once more.
 
 With the sun already shining brightly in the sky, you pick up your bag as you quickly run towards the carriage heading to the Royal Palace.
 
@@ -81,5 +88,5 @@ With the sun already shining brightly in the sky, you pick up your bag as you qu
 
 @next_page
 title: Time to go to work.
-subtitle: Many things have to be discussed.
+subtitle: There are many things to be discussed about.
 go-to: discussion_with_princess_2

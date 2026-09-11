@@ -51,3 +51,5 @@ Law: [+ knowledge_law : knowledges +]
 Alchemy: [+ knowledge_alchemy : knowledges +]
 
 # <span style="color: #------;">(text)</span>
+
+# for subtitle: ...<br>...(new_line)

@@ -1,7 +1,6 @@
 title: Relationships
 new-page: true
 on-arrival: action_timer += 1
-max-visits: 48
 is-card: true
 card-image: img/relationship_card.jpg
 frequency: 1000
@@ -38,7 +37,7 @@ Princess Darlyne, however, is not pleased by our eagerness to meet them. Perhaps
 @courts
 on-arrival: knowledge_law += 2; relation_judiciary += 2; relation_nobility -= 2;
 
-Our brief discussion with several members of the Royal Tribunal — including with the Chief Judge — have gone quite well, and we have built a closer relationship as a result. 
+Our brief discussion with several members of the Royal Tribunal [? if ((day = 1) or (day = 3)): — including with the Chief Judge — ?] have gone quite well, and we have built a closer relationship as a result. 
 
 Various insights from the discussion has helped increase our expertise in law. However, some nobles are voicing their disapproval, as they see it as an attempt to interfere with the proceedings of the trial.
 

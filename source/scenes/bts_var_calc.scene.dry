@@ -7,8 +7,11 @@ on-arrival: {!
 Q.day = Math.floor(Q.action_timer/3);
 Q.secret_action_timer = Math.max(0, Q.secret_action_timer - 1);
 
-if(Q.strategic_meet_timer > 0){
-    Q.strategic_meet_timer -= 1;
+if(Q.strategic_meeting_timer > 0){
+    Q.strategic_meeting_timer -= 1;
+}
+if(Q.secret_meeting_timer > 0){
+    Q.secret_meeting_timer -= 1;
 }
 
 // update for secret actions
@@ -21,20 +24,20 @@ if(Q.freelancer_network >= 2){
 }
 
 // update timer delay for secret actions
-if(Q.val_move && Q.val_timer < 6){
+if(Q.val_move && Q.val_timer < 4){
     Q.val_timer += 1;
 }
-if(Q.ori_move && Q.ori_timer < 6){
+if(Q.ori_move && Q.ori_timer < 4){
     Q.ori_timer += 1;
 }
-if(Q.tata_move && Q.tata_timer < 6){
+if(Q.tata_move && Q.tata_timer < 4){
     Q.tata_timer += 1;
 }
-if(Q.iggy_move_1 && Q.iggy_timer_1 < 5){
+if(Q.iggy_move_1 && Q.iggy_timer_1 < 3){
     Q.iggy_timer_1 += 1;
 }
 
-if(Q.iggy_move_2 && Q.iggy_timer_2 < 5){
+if(Q.iggy_move_2 && Q.iggy_timer_2 < 3){
     Q.iggy_timer_2 += 1;
 }
 

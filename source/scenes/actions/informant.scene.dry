@@ -5,7 +5,7 @@ unavailable-subtitle: We haven't gathered enough information via our network.
 max-visits: 3
 on-arrival: secret_action_timer += 8
 
-## Unfinished, massive change to become M0narch stuff
+## Finished, but might need some more tweaks and polishing for M0narch stuff
 
 = Information Network
 
@@ -23,8 +23,9 @@ The informant we will be working with is...
 subtitle: A world-class actress with a rumoured double life as a secret informant.
 choose-if: val_move < 1
 unavailable-subtitle: She is only willing to accept our request once.
-audio: music/val_intro.mp3
 face-image: img/valthea_censored_image.jpg
+audio: music/val_intro.mp3
+## Audio needs to be fixed; something's wrong with the dendrynexus engine.
 
 Valthea Nankila, a world-class actress with a rumoured double life behind the scenes. Indeed, there are whispers about how she is working as a secret informant, with networks spanning the entire continent. 
 
@@ -41,8 +42,7 @@ The request in our collaboration for crucial pieces of information about the pro
 
 Though there are several other conditions for the agreement to work, it's nothing too big to be handled anyway. In the end, we have safely secured her collaboration and resources into our fold.
 
-Now, with that matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
-
+Now, with this matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
 
 @iggy_1
 view-if: iggy_move_1 < 1
@@ -51,16 +51,18 @@ face-image: img/ignis_censored_image.jpg
 
 Ignis Grimoire, an enimagtic bartender with, as far as our research have gone, no officially-recorded background. He is rumoured to also be working as a butler, but no one seems to know where.
 
-(. . .)
+The bar in which Ignis is working as a bartender is said to be infamous as a haven of secrets. Many high-profile individuals from wealthy merchants to military officers spend not an insignificant amount of money to trade for sensitive information in this place. It will be a major advantage if we can acquire important insights through this place.
 
-(. . .), and he didn't seem to mind working taking up our offer. However, he has made it clear that he would prefer to avoid getting too deeply involved in this trial.
+Thanks to our good connections, we have gotten along quite well with him in our previous meetings, and he didn't seem to mind accepting our request for intelligence. However, he declares that he does not wish to be involved deeply in this trial.
 
 - @signed_iggy_1: Ignis finally agrees to cooperate with us.
 
 @signed_iggy_1
 on-arrival: iggy_move_1 = 1
 
-(blablabla iggy agrees n whatnot)
+Our request for crucial information about the prosecution team is accepted without much fuss. With no other conditions from him to be resolved, we have safely secured his collaboration into our fold.
+
+Now, with this matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.
 
 @iggy_2
 view-if: iggy_move_1 > 0
@@ -70,4 +72,8 @@ unavailable-subtitle: He refuses any further involvement in this trial.
 on-arrival: iggy_move_2 = 1
 face-image: img/ignis_censored_image.jpg
 
-(blablabla ignis continues his works n whatnot)
+Ignis's success in completing our previous request proved to be useful in our defense, and capitalizing on his ability once more would definitely be a sensible move to make. Surprisingly, despite previously declaring that he does not wish to be deeply involved in our case, he has chosen to accept our request! 
+
+However, Ignis also declared that this will be the last time he would work together with us, as he no longer wishes to be involved any further in this trial.
+
+Now, with this matter settled for the moment, we can refocus our attention back elsewhere. There are more urgent things to be done.

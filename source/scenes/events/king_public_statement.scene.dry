@@ -90,7 +90,6 @@ The compromise solution is to put Princess Darlyne Nightbloom on trial.
 @wait_what
 title: ...What?
 new-page: true
-go-to: option_visit
 
 "...What?"
 
@@ -103,6 +102,7 @@ You could see Rea holding back a laugh on her face. In its place, instead, is a 
 - @silent_again: ...
 
 @silent_again
+go-to: option_visit
 
 Once again, you don't really know what to say in response. Perhaps it's because there are too many informations that you need to process in such a short time.
 

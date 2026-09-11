@@ -39,7 +39,14 @@ You have, however, been weighing your options as you sit alone inside the Palace
 
 Those thinkings are reinforced even more with some of your recent conversations with a representative from the Imperial Forum. There are many key information that you have gained from them.
 
-*(This is just a lengthily summarized chronology as to why the trial is set to happen. You don't have to read through this if you wish; these are simply for the purpose of understanding the plot.)*
+*(This is just a lengthily summarized chronology as to why the trial is set to happen. You don't have to read through this if you wish; these are simply for the purpose of understanding the plot. Do you want to read it?)*
+
+- @sure_read: (Of course, I'd want to read it!)
+- @nah_skip: (Nah, just skip it.)
+
+@sure_read
+
+Alright.
 
 - @result_session: First, the result of the Emergency Session.
 
@@ -75,13 +82,20 @@ As the highest existing court in this Kingdom, a trial overseen by the Supreme C
 
 The biggest reason for their involvement, however, is the fact that there is no precedent for putting a Royal Family member on trial. In fact, this would be the first ever instance, not only in Nocturnia, but *in the history of this world*. Whether they will utilize an existing procedure or create a special one from scratch remains to be seen.
 
-- @next_page: So... what next?
+- @next_page
+
+@nah_skip
+
+Alright.
+
+- @next_page
 
 @next_page
+title: So... what next?
 
 "So... what next?"
 
-You inwardly mutter to yourself as you continue scribbling on your paper. The newspapers haven't caught wind of any of this yet, but it would be easy for them to sense that something big is coming.
+You inwardly mutter to yourself as you continue scribbling on your paper. The newspapers haven't caught wind of anything that you've heard before yet, but it would be easy for them to sense that something big is coming.
 
 Though rumours have begun swirling about the possibility of putting the Princess on a public trial, there is still no consensus as to *who* or *what* specifically would oversee such a trial.
 
