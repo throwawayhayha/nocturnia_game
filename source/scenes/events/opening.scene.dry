@@ -79,7 +79,9 @@ The morning newspaper arrives in front of the door right as you are about to hea
 - @headline: And the headline reads...
 
 @headline
-audio: music/dadar_intro.mp3 loop
+on-arrival: {!
+    window.playGameAudio("music/dadar_intro.mp3")
+!}
 
 = REVEALED: THE CRIMES OF NOCTURNIA’S PRINCESS!
 

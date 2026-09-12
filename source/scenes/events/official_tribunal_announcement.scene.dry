@@ -1,7 +1,8 @@
 title: The Supreme Court announces the formation of the Royal Tribunal
 new-page: true
+on-arrival: royal_tribunal_formed = 1
 
-## Finished, but could be polished a lot more
+## Unfinished
 
 - @option_intro_1: It is time for the Supreme Court's announcement...
 
@@ -11,39 +12,57 @@ new-page: true
 
 = The Supreme Court's Announcement
 
-Today, the Supreme Court of Nocturnia declares that, in order to resolve the matters surrounding the *alleged* conduct of the Princess of Nocturnia, it has accepted the task requested by His Majesty, the King of Nocturnia — together with the Imperial Forum of Nocturnia — to form a Royal Tribunal.
+Today, the Supreme Court of Nocturnia declares that, in order to resolve the matters surrounding the *alleged* conduct of the Princess of Nocturnia, it has accepted the task requested by His Majesty, the King of Nocturnia — together with the Imperial Forum of Nocturnia — to form an official tribunal. Henceforth, the tribunal shall be named the Royal Tribunal of Nocturnia.
 
 To ensure the utmost fairness and respect, the tribunal shall be held in public and in full accordance with the Constitution.
 
-- @judges_define: The Judges of the Tribunal.
+The structure of the Royal Tribunal shall be as follows...
+
+- @judges_define: First, the Judges of the Tribunal.
 
 @judges_define
 
-**The Judges**
+**The Judges of the Royal Tribunal**
 
-sfsfasgvdfgavd
+The judge chosen to lead the Royal Tribunal shall be the President of the Supreme Court, and he will also be accompanied with two more senior judges to help him throughout the trial.
 
-- @prosecution_define: The Prosecution.
+- @prosecution_define: Next, the Prosecution.
 
 @prosecution_define
 
 **The Prosecution**
 
-fgsfhhgfhf
+The Prosecution as officially designated by the Supreme Court for this trial shall be as follows:
 
-- @defendant_define: The Defendant.
+[? if royal_tribunal_formed: - [REDACTED] ?]
+
+[? if royal_tribunal_formed: - [REDACTED] ?]
+
+(. . .)
+
+[? if royal_tribunal_formed: - [REDACTED] ?]
+
+The status of the Prosecution shall remain until the conclusion of the trial.
+
+- @defendant_define: Next, the Defendant.
 
 @defendant_define
 
 **The Defendant**
 
-sdfsfafdsfvad
+The Defendant as officially designated by the Supreme Court for this trial shall be as follows:
+
+[? if royal_tribunal_formed: - Princess **Darlyne Nightbloom** of Nocturnia ?]
+
+The status of the Defendant shall remain until the conclusion of the tribunal.
 
 - @schedule_set: The Schedule.
 
 @schedule_set
 
-**The schedule of the Tribunal**
+The first session of the trial shall officially be set to begin exactly one month from this announcement.
+
+Each side must prepare their own evidence and witnesses to be submitted to the trial.
 
 ## Judges for the tribunal are announced.
 ## The Prosecution is designated by the Tribunal (the nobility (or the Kingdom?))

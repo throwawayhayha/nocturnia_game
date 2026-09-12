@@ -24,7 +24,9 @@ subtitle: A world-class actress with a rumoured double life as a secret informan
 choose-if: val_move < 1
 unavailable-subtitle: She is only willing to accept our request once.
 face-image: img/valthea_censored_image.jpg
-audio: music/val_intro.mp3
+on-arrival: {!
+    window.playGameAudio("music/val_intro.mp3")
+!}
 ## Audio needs to be fixed; something's wrong with the dendrynexus engine.
 
 Valthea Nankila, a world-class actress with a rumoured double life behind the scenes. Indeed, there are whispers about how she is working as a secret informant, with networks spanning the entire continent. 

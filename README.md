@@ -1,9 +1,17 @@
-# Dendry Starter Pack
+# Nocturnia: Trial of the Century
 
-This is a starter pack for [Dendry](https://github.com/aucchen/dendry) games. It includes a
-basic game structure, a sample story, and a few useful extensions.
+**Nocturnia: Trial of the Century** is an interactive fan-fiction revolving around the story behind Darlyne Nightbloom's banishment from the Royal Palace and the Kingdom of Nocturnia as a whole, shortly before she joined a secret transnational organization – Whicker Butler.
 
-## Getting Started
+## So... what is this?
+
+This was originally a small project that came to my mind when I was thinking of making another lore-related fan-fiction in the WBverse (as I like to call it).
+
+This has been (and still is) a fun exercise in writing for me. 
+
+
+
+--------------- Delete below when done --------------
+Of course, this should in no way be mistaken for official work. In fact, I may tinker around with the writing – or even the plot as a whole – if there are further additions or changes to the lore in the future.
 
 First, duplicate (fork) this repository by clicking the "Use this template" button in the top right.  
 <img width="176" alt="image" src="https://github.com/smwhr/dendry-starter-pack/assets/1090485/425a706a-ec08-49ff-a573-f6a768525ba9">  

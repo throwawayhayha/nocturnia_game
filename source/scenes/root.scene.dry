@@ -38,6 +38,7 @@ Q.knowledge_politics = 5;
 
 // Whether the tribunal has already been formed
 // I lowkey forgot what this variable is about icl
+// I'll just use this for the list thingy alright
 Q.royal_tribunal_formed = 0; 
 
 // Timer

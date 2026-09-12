@@ -315,6 +315,86 @@
     window.updateSidebar();
   };
 
-  //Stopping audio to let a new one play
-  
+// Stopping audio to let a new one play
+// Perhaps the numbers can be optimized for a better experience later on?
+
+window.currentAudioElement = null;
+
+window.playGameAudio = function(audioSrc, fadeDuration = 3000) {
+    const oldAudio = window.currentAudioElement;
+
+    // Create and start the new audio right away at volume 0
+    const newAudio = document.createElement('audio');
+    newAudio.src = audioSrc;
+    newAudio.loop = true;
+    newAudio.preload = 'auto';
+    newAudio.volume = 0; // Start silent to fade in
+    document.body.appendChild(newAudio);
+
+    newAudio.play().catch(err => console.log("Playback blocked:", err));
+    window.currentAudioElement = newAudio;
+
+    // Perform crossfade (fade out old, fade in new simultaneously)
+    const steps = 100;
+    const intervalTime = fadeDuration / steps;
+    
+    let fadeOutStep = 0;
+    console.log("Fading out audio...")
+
+    const fadeOutInterval = setInterval(() => {
+        fadeOutStep++;
+        const progress = fadeOutStep / steps;
+
+        // Fade out old track if it exists
+        if (oldAudio && oldAudio.volume > 0.01) {
+            oldAudio.volume = Math.max(0, 1 - progress);
+        }
+    }, intervalTime);
+    
+    let fadeInStep = 0;
+    console.log("Now playing: ", currentAudioElement)
+
+    const fadeInInterval = setInterval(() => {
+        fadeInStep++;
+        const progress = fadeInStep*2 / steps;
+
+        // Fade in new track
+        if (newAudio.volume < 1) {
+            newAudio.volume = Math.min(1, progress);
+        }
+
+        // Cleanup when done
+        if (fadeInStep >= steps) {
+            clearInterval(fadeInInterval);
+            if (oldAudio) {
+                oldAudio.pause();
+                oldAudio.remove();
+            }
+        }
+                
+    }, intervalTime);
+};
+
+// Simple fade-out stop function
+window.stopGameAudio = function(fadeDuration = 1000) {
+    if (!window.currentAudioElement) return;
+    const audio = window.currentAudioElement;
+    window.currentAudioElement = null;
+
+    const steps = 20;
+    const intervalTime = fadeDuration / steps;
+    let currentStep = 0;
+
+    const fadeInterval = setInterval(() => {
+        currentStep++;
+        audio.volume = Math.max(0, 1 - (currentStep / steps));
+
+        if (currentStep >= steps) {
+            clearInterval(fadeInterval);
+            audio.pause();
+            audio.remove();
+        }
+    }, intervalTime);
+};
+
 }());
